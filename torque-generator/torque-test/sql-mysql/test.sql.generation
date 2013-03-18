@@ -1,0 +1,513 @@
+
+
+  Platform used: org.apache.torque.engine.platform.PlatformMysqlImpl
+
+
+  SQL file to be created: oracleoutputFile.sql
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: Yes       
+    Primary Key: Yes       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+    Primary Key: No       
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+

@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
+<document>
+ <properties>
+  	<title>How Templates Work</title>
+    <author email="monroe@dukece.com">Greg Monroe</author>
+ </properties>
+
+ <body>
+ 
+  <section name="How Templates Work">
+    <p>
+    <b>Table of Contents</b>
+    </p>
+    <p>
+      <ol>
+        <li>
+          <a href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a href="#Process Overview">
+            Process Overview
+          </a>
+        </li>
+        <li>
+          <a href="#Template Files">
+            Template Files
+          </a>
+        </li>
+        <li>
+          <a href="#Template Variables">
+            Template Variables
+          </a>
+        </li>
+        <li>
+          <a href="#The XML Custom Option Element">
+            The XML Custom Option Element
+          </a>
+        </li>
+      </ol>
+    </p>
+  </section>
+  
+  <section name="Introduction">
+    <p>
+      This section explains how the generator works internally.  If you
+      are happy with the generator as it is, you need not read this section.
+      It is not intended to be a tutorial, but rather a overview framework 
+      that points people interested in enhancing or creating custom 
+      templates to the resources needed to work with Torque templates.
+    </p>
+    <p>
+      Once you understand the Template internals, see the 
+      <a href="custom-templates.html">Custom Templates</a> document for
+      information on how to use it. 
+    </p>
+    
+  </section>
+  
+  <section name="Process Overview">
+    <p>
+      The Torque Generator is designed to do many different tasks. (see
+      the <a href="tasks-reference.html">Tasks Reference</a> documentation).  
+      These tasks generate text based output like: Java code; SQL 
+      scripts; etc.  Many of these outputs specific to the database type
+      specified in the generation setting.
+    </p>
+    <p>
+      The Generator tasks are based on a Java based template engine
+      called <a href="http://velocity.apache.org">Velocity</a> (in
+      particular, the Texen component).  The Velocity engine uses 
+      a set of task specific template files written in the 
+      Velocity Template Language (VTL), the XML schema info, and 
+      project build properties to produce the required output.
+    </p>
+    <p>
+      To understand how the Torque template files work, you should become 
+      familiar with the VTL syntax by reviewing the 
+      <a href="http://velocity.apache.org/docs/user-guide.html">Velocity
+      user guide</a>.
+    </p>
+  </section>
+  
+  <section name="Template Files">
+    <p>
+      The Torque template files are plain text VTL files with the extention of 
+      &quot;.vm&quot;.  These files are packaged in the 
+      torque-gen-templates&lt;version&gt;.jar in the lib directory of the 
+      binary distribution. This jar file can be unpacked to access this files.
+      Or alternatively, you can find them under the torque/templates/src 
+      directory in the source distribution or SVN repository.
+    </p>
+    <p>
+      The template files are organized under a main directory called
+      templates which has five or so different directory branches under it. 
+      Each of these branches is roughly related to a Torque Task.
+      To learn which directories and templates apply to which Generator task, 
+      you need to identify the Control.vm template associated 
+      with that task.  The Control.vm files are the main entry points for
+      all tasks.
+    </p>
+    <p>
+      The easiest way to find a task's Control.vm file is to use the 
+      default.properties file (located in the root directory of the binary 
+      distribution). Search thru this file for properties 
+      that start with "torque.templates."  The ending part of the property
+      key is generally the task name and the value is the associated Control.vm
+      file.  E.g. the property, "torque.template.sql = sql/base/Control.vm", 
+      means the sql task Control file is the templates/sql/base/Control.vm file
+      in the template jar.      
+    </p>
+    <p>
+      These Control.vm files can be examined to understand the overall flow
+      of a task's process and to find the main template files that will 
+      be parsed to produce various parts of the output. Note that in some
+      cases, the parsed template files may call other templates.
+    </p>
+  </section>
+  
+  <section name="Template Variables">
+    <p>
+      Once you start looking at the VTL code in the templates, you'll wonder 
+      where all the Velocity variables are getting set.  Well, there are two 
+      places these come from.
+    </p>
+    <p>
+      First, all the torque.* build properties defined in the
+      default.properties file and any project related property file are passed
+      into the templates.  These are converted to Velocity format by removing
+      the "torque." prefix, removing the remaining dots (".") and capitalizing
+      the letter after it.  E.g. torque.output.dir becomes $outputDir.
+    </p>
+    <p>
+      Second, the *-schema.xml files are converted into the OM objects in the 
+      <code>org.apache.torque.engine.database.model</code> package.  These are 
+      passed to the  Velocity controller as object variables, like $dataModel.  
+      In Velocity, any object property (e.g. getProp), can be referred to by 
+      $objectVar.prop.  In addition, any methods in this object can also be 
+      called by referring to them as $objectVar.getSomething( parm, parm ).  
+    </p>
+  </section>
+  
+  <section name="The XML Custom Option Element">
+    <p>
+      With the release of Version 3.3, the XML DTD supports an
+      &lt;option key=&quot;key&quot; value=&quot;value&quot;&gt; element 
+      intended for use by custom templates. Zero or more of these elements 
+      can be nested (as the first item) inside the dataset, table, column, 
+      foreign-key, index, and unique schema elements.  For example:
+    </p>
+    <p>
+      <ul>
+        &lt;table ....&gt;
+           &lt;option key=&quot;mysql-table-type&quot; value=&quot;INNOB&quot;/&gt;
+           ....
+        &lt;/table&gt;
+      </ul>
+    </p>
+    <p>
+      These key/value attributes will then populate the options map in the 
+      associated database model class.  Custom templates can access these
+      values with code like:
+    </p>
+    <p>
+      <ul>
+        #if ( {table.getOption(&quot;mysql-table-type&quot;)})
+          ${table.getOption(&quot;mysql-table-type&quot;)}
+        #end
+      </ul>
+    </p>
+  </section> 
+ </body>
+</document>

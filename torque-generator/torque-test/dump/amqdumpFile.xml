@@ -1,0 +1,2260 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE dataset SYSTEM "file://test-data.dtd">
+<dataset name="all">
+
+
+            <ActivemqLock Id="1"/>
+
+            <ActivemqMsgs Id="8" Container="queue://test" MsgidProd="ID:e2f30b4699e74eb-3852-1262913306250-2:1:2:1" MsgidSeq="1" Expiration="0"/>
+
+            <EsbParams NodeId="743" Name="useConnectionPool" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="watchTopicAdvisories" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="optimizedMessageDispatch" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="sendTimeout" Value="0" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="closeTimeout" Value="15000" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="dispatchAsync" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="useAsyncSend" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="alwaysSyncSend" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="useCompression" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="useRetroactiveConsumer" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="objectMessageSerializationDefered" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="disableTimeStampsByDefault" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="optimizeAcknowledge" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="producerWindowSize" Value="0" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="copyMessageOnSend" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="statsEnabled" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="alwaysSessionAsync" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="queuePrefetch" Value="1000" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="maximumPendingMessageLimit" Value="0" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="durableTopicPrefetch" Value="100" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="queueBrowserPrefetch" Value="500" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="topicPrefetch" Value="32766" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="optimizeDurableTopicPrefetch" Value="1000" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="inputStreamPrefetch" Value="100" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="useCollisionAvoidance" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="collisionAvoidancePercent" Value="15" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="useExponentialBackOff" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="maximumRedeliveries" Value="6" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="initialRedeliveryDelay" Value="1000" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="backOffMultiplier" Value="5" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.randomize" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.useExponentialBackOff" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.maxReconnectDelay" Value="30000" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.maxReconnectAttempts" Value="5" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="USE_FAILOVER" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.reconnectDelayExponent" Value="2" ParamType="mq"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.initialReconnectDelay" Value="10" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="useConnectionPool" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="watchTopicAdvisories" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="optimizedMessageDispatch" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="sendTimeout" Value="0" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="closeTimeout" Value="15000" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="dispatchAsync" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="useAsyncSend" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="alwaysSyncSend" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="useCompression" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="useRetroactiveConsumer" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="objectMessageSerializationDefered" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="disableTimeStampsByDefault" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="optimizeAcknowledge" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="producerWindowSize" Value="0" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="copyMessageOnSend" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="statsEnabled" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="alwaysSessionAsync" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="queuePrefetch" Value="1000" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="maximumPendingMessageLimit" Value="0" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="durableTopicPrefetch" Value="100" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="queueBrowserPrefetch" Value="500" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="topicPrefetch" Value="32766" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="optimizeDurableTopicPrefetch" Value="1000" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="inputStreamPrefetch" Value="100" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="useCollisionAvoidance" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="collisionAvoidancePercent" Value="15" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="useExponentialBackOff" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="maximumRedeliveries" Value="6" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="initialRedeliveryDelay" Value="1000" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="backOffMultiplier" Value="5" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.randomize" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.useExponentialBackOff" Value="true" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.maxReconnectDelay" Value="30000" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.maxReconnectAttempts" Value="5" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="USE_FAILOVER" Value="false" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.reconnectDelayExponent" Value="2" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.initialReconnectDelay" Value="10" ParamType="mq"/>
+
+            <EsbParams NodeId="762" Name="useConnectionPool" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="watchTopicAdvisories" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="optimizedMessageDispatch" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="sendTimeout" Value="0" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="closeTimeout" Value="15000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="dispatchAsync" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="useAsyncSend" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="alwaysSyncSend" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="useCompression" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="useRetroactiveConsumer" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="objectMessageSerializationDefered" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="disableTimeStampsByDefault" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="optimizeAcknowledge" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="producerWindowSize" Value="0" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="copyMessageOnSend" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="statsEnabled" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="alwaysSessionAsync" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="queuePrefetch" Value="1000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="maximumPendingMessageLimit" Value="0" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="durableTopicPrefetch" Value="100" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="queueBrowserPrefetch" Value="500" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="topicPrefetch" Value="32766" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="optimizeDurableTopicPrefetch" Value="1000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="inputStreamPrefetch" Value="100" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="useCollisionAvoidance" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="collisionAvoidancePercent" Value="15" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="useExponentialBackOff" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="maximumRedeliveries" Value="6" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="initialRedeliveryDelay" Value="1000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="backOffMultiplier" Value="5" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.randomize" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.useExponentialBackOff" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.maxReconnectDelay" Value="30000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.maxReconnectAttempts" Value="5" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="USE_FAILOVER" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.reconnectDelayExponent" Value="2" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="762" Name="reconnectPolicy.initialReconnectDelay" Value="10" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="useConnectionPool" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="watchTopicAdvisories" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="optimizedMessageDispatch" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="sendTimeout" Value="0" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="closeTimeout" Value="15000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="dispatchAsync" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="useAsyncSend" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="alwaysSyncSend" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="useCompression" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="useRetroactiveConsumer" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="objectMessageSerializationDefered" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="disableTimeStampsByDefault" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="optimizeAcknowledge" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="producerWindowSize" Value="0" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="copyMessageOnSend" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="statsEnabled" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="alwaysSessionAsync" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="queuePrefetch" Value="1000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="maximumPendingMessageLimit" Value="0" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="durableTopicPrefetch" Value="100" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="queueBrowserPrefetch" Value="500" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="topicPrefetch" Value="32766" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="optimizeDurableTopicPrefetch" Value="1000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="inputStreamPrefetch" Value="100" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="useCollisionAvoidance" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="collisionAvoidancePercent" Value="15" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="useExponentialBackOff" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="maximumRedeliveries" Value="6" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="initialRedeliveryDelay" Value="1000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="backOffMultiplier" Value="5" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.randomize" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.useExponentialBackOff" Value="true" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.maxReconnectDelay" Value="30000" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.maxReconnectAttempts" Value="5" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="USE_FAILOVER" Value="false" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.reconnectDelayExponent" Value="2" ParamType="amq.connection.params"/>
+
+            <EsbParams NodeId="743" Name="reconnectPolicy.initialReconnectDelay" Value="10" ParamType="amq.connection.params"/>
+
+            
+            <J3AuthToken AuthToken="authtoken:20fc0c2f-7fbc-4bd7-aa09-5b473a955c05" AuthorizedName="root" Created="2009-12-24 13.53.57.890000000" LastUsed="2009-12-24 13.53.57.890000000" NumberOfUses="0" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:b58833aa-79e6-4961-83c2-fbeeb82e69a9" AuthorizedName="root" Created="2009-12-24 13.54.12.843000000" LastUsed="2009-12-24 13.54.12.843000000" NumberOfUses="0" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:d9678c1b-91d6-4a06-8a5a-27bc821e6023" AuthorizedName="root" Created="2009-12-24 13.54.29.171000000" LastUsed="2009-12-24 13.54.29.171000000" NumberOfUses="0" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:759e86ae-dae0-452b-a1a0-7b81dba05132" AuthorizedName="root" Created="2009-12-24 13.54.43.781000000" LastUsed="2009-12-24 13.54.43.781000000" NumberOfUses="0" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:8a21a778-c598-4525-9ef8-5ee26ca6aa74" AuthorizedName="root" Created="2009-12-24 14.17.29.750000000" LastUsed="2009-12-24 14.17.29.750000000" NumberOfUses="0" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:748a125b-9788-481c-a34f-0988772f20ad" AuthorizedName="root" Created="2009-12-24 14.17.32.343000000" LastUsed="2009-12-24 14.17.32.343000000" NumberOfUses="0" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:ebba330f-f0e4-446b-bbc6-f1f777d0b7eb" AuthorizedName="root" Created="2009-12-24 14.18.11.375000000" LastUsed="2009-12-24 14.18.12.296000000" NumberOfUses="3" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:18169c1f-109a-435b-aa04-87cd5c9d2003" AuthorizedName="root" Created="2009-12-24 14.18.12.343000000" LastUsed="2009-12-24 14.18.12.359000000" NumberOfUses="1" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:a2a1d306-f984-4b2d-a5ef-1aa80bdd9859" AuthorizedName="root" Created="2009-12-24 14.18.12.484000000" LastUsed="2009-12-24 14.18.13.234000000" NumberOfUses="3" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:47f03ace-ff87-4ac3-8d0b-e8af4dfec6c5" AuthorizedName="root" Created="2009-12-24 14.18.13.281000000" LastUsed="2009-12-24 14.18.13.375000000" NumberOfUses="2" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:97b432c0-43d1-4feb-84bb-0c633e60914b" AuthorizedName="root" Created="2009-12-24 14.36.55.968000000" LastUsed="2009-12-24 14.36.57.468000000" NumberOfUses="3" TokenState="1"/>
+
+            <J3AuthToken AuthToken="authtoken:168229a7-927e-40de-813d-ec4355409ff2" AuthorizedName="root" Created="2009-12-24 15.4.37.234000000" LastUsed="2009-12-24 15.4.38.703000000" NumberOfUses="3" TokenState="1"/>
+
+            <J3BindingCategoryBag Id="27" EntityKey="uddi:juddi.apache.org:servicebindings-custodytransfer-ws"/>
+
+            <J3BindingCategoryBag Id="9" EntityKey="uddi:juddi.apache.org:servicebindings-inquiry-ws"/>
+
+            <J3BindingCategoryBag Id="15" EntityKey="uddi:juddi.apache.org:servicebindings-publish-ws"/>
+
+            <J3BindingCategoryBag Id="44" EntityKey="uddi:juddi.apache.org:servicebindings-publisher-ws"/>
+
+            <J3BindingCategoryBag Id="21" EntityKey="uddi:juddi.apache.org:servicebindings-security-ws"/>
+
+            <J3BindingCategoryBag Id="33" EntityKey="uddi:juddi.apache.org:servicebindings-subscription-ws"/>
+
+            <J3BindingCategoryBag Id="39" EntityKey="uddi:juddi.apache.org:servicebindings-subscriptionlistener-ws"/>
+
+            <J3BindingDescr Id="7" Descr="UDDI Inquiry API V3" EntityKey="uddi:juddi.apache.org:servicebindings-inquiry-ws"/>
+
+            <J3BindingDescr Id="13" Descr="UDDI Publication API V3" EntityKey="uddi:juddi.apache.org:servicebindings-publish-ws"/>
+
+            <J3BindingDescr Id="19" Descr="UDDI Security API V3" EntityKey="uddi:juddi.apache.org:servicebindings-security-ws"/>
+
+            <J3BindingDescr Id="25" Descr="UDDI Custody and Ownership Transfer API V3" EntityKey="uddi:juddi.apache.org:servicebindings-custodytransfer-ws"/>
+
+            <J3BindingDescr Id="31" Descr="UDDI Subscription API V3" EntityKey="uddi:juddi.apache.org:servicebindings-subscription-ws"/>
+
+            <J3BindingDescr Id="37" Descr="UDDI Subscription Listener API V3" EntityKey="uddi:juddi.apache.org:servicebindings-subscriptionlistener-ws"/>
+
+            <J3BindingDescr Id="43" Descr="jUDDI Publisher Service API V3" EntityKey="uddi:juddi.apache.org:servicebindings-publisher-ws"/>
+
+            <J3BindingTemplate EntityKey="uddi:juddi.apache.org:servicebindings-inquiry-ws" AccessPointType="wsdlDeployment" AccessPointUrl="http://macdaddy:8080/juddiv3/services/inquiry?wsdl" ServiceKey="uddi:juddi.apache.org:services-inquiry"/>
+
+            <J3BindingTemplate EntityKey="uddi:juddi.apache.org:servicebindings-publish-ws" AccessPointType="wsdlDeployment" AccessPointUrl="http://macdaddy:8080/juddiv3/services/publish?wsdl" ServiceKey="uddi:juddi.apache.org:services-publish"/>
+
+            <J3BindingTemplate EntityKey="uddi:juddi.apache.org:servicebindings-security-ws" AccessPointType="wsdlDeployment" AccessPointUrl="http://macdaddy:8080/juddiv3/services/security?wsdl" ServiceKey="uddi:juddi.apache.org:services-security"/>
+
+            <J3BindingTemplate EntityKey="uddi:juddi.apache.org:servicebindings-custodytransfer-ws" AccessPointType="wsdlDeployment" AccessPointUrl="http://macdaddy:8080/juddiv3/services/custody-transfer?wsdl" ServiceKey="uddi:juddi.apache.org:services-custodytransfer"/>
+
+            <J3BindingTemplate EntityKey="uddi:juddi.apache.org:servicebindings-subscription-ws" AccessPointType="wsdlDeployment" AccessPointUrl="http://macdaddy:8080/juddiv3/services/subscription?wsdl" ServiceKey="uddi:juddi.apache.org:services-subscription"/>
+
+            <J3BindingTemplate EntityKey="uddi:juddi.apache.org:servicebindings-subscriptionlistener-ws" AccessPointType="wsdlDeployment" AccessPointUrl="http://macdaddy:8080/juddiv3/services/subscription-listener?wsdl" ServiceKey="uddi:juddi.apache.org:services-subscriptionlistener"/>
+
+            <J3BindingTemplate EntityKey="uddi:juddi.apache.org:servicebindings-publisher-ws" AccessPointType="wsdlDeployment" AccessPointUrl="http://macdaddy:8080/juddiv3/services/publisher?wsdl" ServiceKey="uddi:juddi.apache.org:services-publisher"/>
+
+            <J3BusinessCategoryBag Id="49" EntityKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessDescr Id="5" Descr="This is a UDDI v3 registry node as implemented by Apache jUDDI." LangCode="en" EntityKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessEntity EntityKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessName Id="6" LangCode="en" Name="An Apache jUDDI Node" EntityKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessService EntityKey="uddi:juddi.apache.org:services-inquiry" BusinessKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessService EntityKey="uddi:juddi.apache.org:services-publish" BusinessKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessService EntityKey="uddi:juddi.apache.org:services-security" BusinessKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessService EntityKey="uddi:juddi.apache.org:services-custodytransfer" BusinessKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessService EntityKey="uddi:juddi.apache.org:services-subscription" BusinessKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessService EntityKey="uddi:juddi.apache.org:services-subscriptionlistener" BusinessKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3BusinessService EntityKey="uddi:juddi.apache.org:services-publisher" BusinessKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3CategoryBag Id="3"/>
+
+            <J3CategoryBag Id="9"/>
+
+            <J3CategoryBag Id="15"/>
+
+            <J3CategoryBag Id="21"/>
+
+            <J3CategoryBag Id="27"/>
+
+            <J3CategoryBag Id="33"/>
+
+            <J3CategoryBag Id="39"/>
+
+            <J3CategoryBag Id="44"/>
+
+            <J3CategoryBag Id="49"/>
+
+            <J3CategoryBag Id="53"/>
+
+            <J3CategoryBag Id="57"/>
+
+            <J3CategoryBag Id="61"/>
+
+            <J3CategoryBag Id="65"/>
+
+            <J3CategoryBag Id="69"/>
+
+            <J3CategoryBag Id="74"/>
+
+            <J3CategoryBag Id="82"/>
+
+            <J3CategoryBag Id="90"/>
+
+            <J3CategoryBag Id="97"/>
+
+            <J3CategoryBag Id="103"/>
+
+            <J3CategoryBag Id="108"/>
+
+            <J3CategoryBag Id="114"/>
+
+            <J3CategoryBag Id="119"/>
+
+            <J3CategoryBag Id="126"/>
+
+            <J3CategoryBag Id="134"/>
+
+            <J3CategoryBag Id="141"/>
+
+            <J3CategoryBag Id="148"/>
+
+            <J3CategoryBag Id="153"/>
+
+            <J3CategoryBag Id="157"/>
+
+            <J3CategoryBag Id="161"/>
+
+            <J3CategoryBag Id="165"/>
+
+            <J3CategoryBag Id="169"/>
+
+            <J3CategoryBag Id="173"/>
+
+            <J3CategoryBag Id="177"/>
+
+            <J3CategoryBag Id="181"/>
+
+            <J3CategoryBag Id="185"/>
+
+            <J3CategoryBag Id="189"/>
+
+            <J3CategoryBag Id="193"/>
+
+            <J3CategoryBag Id="197"/>
+
+            <J3CategoryBag Id="201"/>
+
+            <J3CategoryBag Id="205"/>
+
+            <J3CategoryBag Id="210"/>
+
+            <J3CategoryBag Id="215"/>
+
+            <J3CategoryBag Id="219"/>
+
+            <J3CategoryBag Id="224"/>
+
+            <J3CategoryBag Id="228"/>
+
+            <J3CategoryBag Id="232"/>
+
+            <J3CategoryBag Id="236"/>
+
+            <J3CategoryBag Id="240"/>
+
+            <J3CategoryBag Id="244"/>
+
+            <J3CategoryBag Id="248"/>
+
+            <J3CategoryBag Id="252"/>
+
+            <J3CategoryBag Id="256"/>
+
+            <J3CategoryBag Id="260"/>
+
+            <J3CategoryBag Id="264"/>
+
+            <J3CategoryBag Id="268"/>
+
+            <J3CategoryBag Id="272"/>
+
+            <J3CategoryBag Id="276"/>
+
+            <J3CategoryBag Id="281"/>
+
+            <J3CategoryBag Id="289"/>
+
+            <J3CategoryBag Id="297"/>
+
+            <J3DiscoveryUrl Id="48" Url="http://macdaddy:8080/juddiv3" UseType="home" EntityKey="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3KeyedReference Id="261" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="260"/>
+
+            <J3KeyedReference Id="265" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="264"/>
+
+            <J3KeyedReference Id="269" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="268"/>
+
+            <J3KeyedReference Id="273" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="272"/>
+
+            <J3KeyedReference Id="277" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="276"/>
+
+            <J3KeyedReference Id="282" KeyName="uddi-org:types:wsdl" KeyValue="wsdlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="281"/>
+
+            <J3KeyedReference Id="283" KeyName="uddi-org:types:soap" KeyValue="soapSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="281"/>
+
+            <J3KeyedReference Id="284" KeyName="uddi-org:types:xml" KeyValue="xmlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="281"/>
+
+            <J3KeyedReference Id="285" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="281"/>
+
+            <J3KeyedReference Id="290" KeyName="uddi-org:types:wsdl" KeyValue="wsdlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="289"/>
+
+            <J3KeyedReference Id="291" KeyName="uddi-org:types:soap" KeyValue="soapSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="289"/>
+
+            <J3KeyedReference Id="292" KeyName="uddi-org:types:xml" KeyValue="xmlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="289"/>
+
+            <J3KeyedReference Id="293" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="289"/>
+
+            <J3KeyedReference Id="298" KeyName="uddi-org:types:wsdl" KeyValue="wsdlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="297"/>
+
+            <J3KeyedReference Id="299" KeyName="uddi-org:types:soap" KeyValue="soapSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="297"/>
+
+            <J3KeyedReference Id="300" KeyName="uddi-org:types:xml" KeyValue="xmlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="297"/>
+
+            <J3KeyedReference Id="301" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="297"/>
+
+            <J3KeyedReference Id="4" KeyName="uddi-org:types:keyGenerator" KeyValue="keyGenerator" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="3"/>
+
+            <J3KeyedReference Id="10" KeyName="uddi-org:types:wsdl" KeyValue="wsdlDeployment" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="9"/>
+
+            <J3KeyedReference Id="16" KeyName="uddi-org:types:wsdl" KeyValue="wsdlDeployment" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="15"/>
+
+            <J3KeyedReference Id="22" KeyName="uddi-org:types:wsdl" KeyValue="wsdlDeployment" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="21"/>
+
+            <J3KeyedReference Id="28" KeyName="uddi-org:types:wsdl" KeyValue="wsdlDeployment" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="27"/>
+
+            <J3KeyedReference Id="34" KeyName="uddi-org:types:wsdl" KeyValue="wsdlDeployment" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="33"/>
+
+            <J3KeyedReference Id="40" KeyName="uddi-org:types:wsdl" KeyValue="wsdlDeployment" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="39"/>
+
+            <J3KeyedReference Id="45" KeyName="uddi-org:types:wsdl" KeyValue="wsdlDeployment" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="44"/>
+
+            <J3KeyedReference Id="50" KeyValue="node" TmodelKeyRef="uddi:uddi.org:categorization:nodes" CategoryBagId="49"/>
+
+            <J3KeyedReference Id="54" KeyName="uddi-org:types:keyGenerator" KeyValue="keyGenerator" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="53"/>
+
+            <J3KeyedReference Id="58" KeyName="uddi-org:types:keyGenerator" KeyValue="keyGenerator" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="57"/>
+
+            <J3KeyedReference Id="62" KeyName="uddi-org:types:keyGenerator" KeyValue="keyGenerator" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="61"/>
+
+            <J3KeyedReference Id="66" KeyName="uddi-org:types:keyGenerator" KeyValue="keyGenerator" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="65"/>
+
+            <J3KeyedReference Id="70" KeyName="uddi-org:types:keyGenerator" KeyValue="keyGenerator" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="69"/>
+
+            <J3KeyedReference Id="75" KeyName="uddi-org:types:wsdl" KeyValue="wsdlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="74"/>
+
+            <J3KeyedReference Id="76" KeyName="uddi-org:types:soap" KeyValue="soapSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="74"/>
+
+            <J3KeyedReference Id="77" KeyName="uddi-org:types:xml" KeyValue="xmlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="74"/>
+
+            <J3KeyedReference Id="78" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="74"/>
+
+            <J3KeyedReference Id="83" KeyName="uddi-org:types:wsdl" KeyValue="wsdlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="82"/>
+
+            <J3KeyedReference Id="84" KeyName="uddi-org:types:soap" KeyValue="soapSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="82"/>
+
+            <J3KeyedReference Id="85" KeyName="uddi-org:types:xml" KeyValue="xmlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="82"/>
+
+            <J3KeyedReference Id="86" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="82"/>
+
+            <J3KeyedReference Id="91" KeyName="uddi-org:types:wsdl" KeyValue="wsdlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="90"/>
+
+            <J3KeyedReference Id="92" KeyName="uddi-org:types:soap" KeyValue="soapSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="90"/>
+
+            <J3KeyedReference Id="93" KeyName="uddi-org:types:xml" KeyValue="xmlSpec" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="90"/>
+
+            <J3KeyedReference Id="94" KeyName="uddi-org:types:specification" KeyValue="specification" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="90"/>
+
+            <J3KeyedReference Id="98" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="97"/>
+
+            <J3KeyedReference Id="99" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="97"/>
+
+            <J3KeyedReference Id="100" KeyName="uddi-org:types:cacheable" KeyValue="cacheable" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="97"/>
+
+            <J3KeyedReference Id="104" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="103"/>
+
+            <J3KeyedReference Id="105" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="103"/>
+
+            <J3KeyedReference Id="109" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="108"/>
+
+            <J3KeyedReference Id="110" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="108"/>
+
+            <J3KeyedReference Id="111" KeyName="uddi-org:types:uncacheable" KeyValue="uncacheable" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="108"/>
+
+            <J3KeyedReference Id="115" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="114"/>
+
+            <J3KeyedReference Id="116" KeyName="uddi-org:types:unchecked" KeyValue="unchecked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="114"/>
+
+            <J3KeyedReference Id="120" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="119"/>
+
+            <J3KeyedReference Id="121" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="119"/>
+
+            <J3KeyedReference Id="122" KeyName="uddi-org:types:uncacheable" KeyValue="uncacheable" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="119"/>
+
+            <J3KeyedReference Id="123" KeyName="entityKeyValues" KeyValue="businessKey" TmodelKeyRef="uddi:uddi.org:categorization:entitykeyvalues" CategoryBagId="119"/>
+
+            <J3KeyedReference Id="127" KeyName="uddi-org:types:identifier" KeyValue="identifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="126"/>
+
+            <J3KeyedReference Id="128" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="126"/>
+
+            <J3KeyedReference Id="129" KeyName="uddi-org:types:uncacheable" KeyValue="uncacheable" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="126"/>
+
+            <J3KeyedReference Id="130" KeyName="entityKeyValues" KeyValue="businessKey" TmodelKeyRef="uddi:uddi.org:categorization:entitykeyvalues" CategoryBagId="126"/>
+
+            <J3KeyedReference Id="131" KeyName="entityKeyValues" KeyValue="tModelKey" TmodelKeyRef="uddi:uddi.org:categorization:entitykeyvalues" CategoryBagId="126"/>
+
+            <J3KeyedReference Id="135" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="134"/>
+
+            <J3KeyedReference Id="136" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="134"/>
+
+            <J3KeyedReference Id="137" KeyName="uddi-org:types:uncacheable" KeyValue="uncacheable" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="134"/>
+
+            <J3KeyedReference Id="138" KeyName="entityKeyValues" KeyValue="bindingKey" TmodelKeyRef="uddi:uddi.org:categorization:entitykeyvalues" CategoryBagId="134"/>
+
+            <J3KeyedReference Id="142" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="141"/>
+
+            <J3KeyedReference Id="143" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="141"/>
+
+            <J3KeyedReference Id="144" KeyName="uddi-org:types:uncacheable" KeyValue="uncacheable" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="141"/>
+
+            <J3KeyedReference Id="145" KeyName="entityKeyValues" KeyValue="tModelKey" TmodelKeyRef="uddi:uddi.org:categorization:entitykeyvalues" CategoryBagId="141"/>
+
+            <J3KeyedReference Id="149" KeyName="uddi-org:types:categorization" KeyValue="categorization" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="148"/>
+
+            <J3KeyedReference Id="150" KeyName="uddi-org:types:checked" KeyValue="checked" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="148"/>
+
+            <J3KeyedReference Id="154" KeyName="uddi-org:types:protocol" KeyValue="protocol" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="153"/>
+
+            <J3KeyedReference Id="158" KeyName="uddi-org:types:protocol" KeyValue="protocol" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="157"/>
+
+            <J3KeyedReference Id="162" KeyName="uddi-org:types:transport" KeyValue="transport" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="161"/>
+
+            <J3KeyedReference Id="166" KeyName="uddi-org:types:transport" KeyValue="transport" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="165"/>
+
+            <J3KeyedReference Id="170" KeyName="uddi-org:types:transport" KeyValue="transport" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="169"/>
+
+            <J3KeyedReference Id="174" KeyName="uddi-org:types:transport" KeyValue="transport" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="173"/>
+
+            <J3KeyedReference Id="178" KeyName="uddi-org:types:transport" KeyValue="transport" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="177"/>
+
+            <J3KeyedReference Id="182" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="181"/>
+
+            <J3KeyedReference Id="186" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="185"/>
+
+            <J3KeyedReference Id="190" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="189"/>
+
+            <J3KeyedReference Id="194" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="193"/>
+
+            <J3KeyedReference Id="198" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="197"/>
+
+            <J3KeyedReference Id="202" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="201"/>
+
+            <J3KeyedReference Id="206" KeyName="uddi-org:types:sortOrder" KeyValue="sortOrder" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="205"/>
+
+            <J3KeyedReference Id="207" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="205"/>
+
+            <J3KeyedReference Id="211" KeyName="uddi-org:types:sortOrder" KeyValue="sortOrder" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="210"/>
+
+            <J3KeyedReference Id="212" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="210"/>
+
+            <J3KeyedReference Id="216" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="215"/>
+
+            <J3KeyedReference Id="220" KeyName="uddi-org:types:sortOrder" KeyValue="sortOrder" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="219"/>
+
+            <J3KeyedReference Id="221" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="219"/>
+
+            <J3KeyedReference Id="225" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="224"/>
+
+            <J3KeyedReference Id="229" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="228"/>
+
+            <J3KeyedReference Id="233" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="232"/>
+
+            <J3KeyedReference Id="237" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="236"/>
+
+            <J3KeyedReference Id="241" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="240"/>
+
+            <J3KeyedReference Id="245" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="244"/>
+
+            <J3KeyedReference Id="249" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="248"/>
+
+            <J3KeyedReference Id="253" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="252"/>
+
+            <J3KeyedReference Id="257" KeyName="uddi-org:types:findQualifier" KeyValue="findQualifier" TmodelKeyRef="uddi:uddi.org:categorization:types" CategoryBagId="256"/>
+
+            <J3OverviewDoc Id="1" OverviewUrl="       http://uddi.org/pubs/uddi_v3.htm#keyGen" OverviewUrlUseType="text" EntityKey="uddi:juddi.apache.org:keygenerator"/>
+
+            <J3OverviewDoc Id="51" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#keyGen" OverviewUrlUseType="text" EntityKey="uddi:uddi.org:keygenerator"/>
+
+            <J3OverviewDoc Id="55" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#categorizationKeyGen           " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:keygenerator"/>
+
+            <J3OverviewDoc Id="59" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#sortorderKeyGen           " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:sortorder:keygenerator"/>
+
+            <J3OverviewDoc Id="63" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#transportKeyGen           " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:transport:keygenerator"/>
+
+            <J3OverviewDoc Id="67" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#protocolKeyGen           " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:protocol:keygenerator"/>
+
+            <J3OverviewDoc Id="71" OverviewUrl="         http://uddi.org/wsdl/uddi_api_v3_binding.wsdl#UDDI_Inquiry_SoapBinding 			" OverviewUrlUseType="wsdlInterface" EntityKey="uddi:uddi.org:v3_inquiry"/>
+
+            <J3OverviewDoc Id="72" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#InqV3     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:v3_inquiry"/>
+
+            <J3OverviewDoc Id="79" OverviewUrl="         http://uddi.org/wsdl/uddi_api_v3_binding.wsdl#UDDI_Publication_SoapBinding 			" OverviewUrlUseType="wsdlInterface" EntityKey="uddi:uddi.org:v3_publication"/>
+
+            <J3OverviewDoc Id="80" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#PubV3     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:v3_publication"/>
+
+            <J3OverviewDoc Id="87" OverviewUrl="         http://uddi.org/wsdl/uddi_api_v3_binding.wsdl#UDDI_Security_SoapBinding 			" OverviewUrlUseType="wsdlInterface" EntityKey="uddi:uddi.org:v3_security"/>
+
+            <J3OverviewDoc Id="88" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#SecV3     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:v3_security"/>
+
+            <J3OverviewDoc Id="95" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#UDDITypes     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:types"/>
+
+            <J3OverviewDoc Id="101" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#GenKW     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:general_keywords"/>
+
+            <J3OverviewDoc Id="106" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#Nodes     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:nodes"/>
+
+            <J3OverviewDoc Id="112" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#Relationships     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:relationships"/>
+
+            <J3OverviewDoc Id="117" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#owningBusiness     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:owningbusiness"/>
+
+            <J3OverviewDoc Id="124" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#IsReplacedBy     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:identifier:isreplacedby"/>
+
+            <J3OverviewDoc Id="132" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#validatedBy     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:validatedby"/>
+
+            <J3OverviewDoc Id="139" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#DerivedFrom     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:derivedfrom"/>
+
+            <J3OverviewDoc Id="146" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#entityKeyValues           " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:categorization:entitykeyvalues"/>
+
+            <J3OverviewDoc Id="151" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#serverSSL3     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:protocol:serverauthenticatedssl3"/>
+
+            <J3OverviewDoc Id="155" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#mutualSSL3     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:protocol:mutualauthenticatedssl3"/>
+
+            <J3OverviewDoc Id="159" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#overHTTP     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:transport:http"/>
+
+            <J3OverviewDoc Id="163" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#overSMTP     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:transport:smtp"/>
+
+            <J3OverviewDoc Id="167" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#overFTP     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:transport:ftp"/>
+
+            <J3OverviewDoc Id="171" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#overFax     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:transport:fax"/>
+
+            <J3OverviewDoc Id="175" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#overPhone     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:transport:telephone"/>
+
+            <J3OverviewDoc Id="179" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#wildcard     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:approximatematch"/>
+
+            <J3OverviewDoc Id="183" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#exactmatch     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:exactmatch"/>
+
+            <J3OverviewDoc Id="187" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#caseinsens     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:caseinsensitivematch"/>
+
+            <J3OverviewDoc Id="191" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#casesens     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:casesensitivematch"/>
+
+            <J3OverviewDoc Id="195" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#diacritInsens     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:diacriticsinsensitivematch"/>
+
+            <J3OverviewDoc Id="199" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#diacritSens     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:diacriticssensitivematch"/>
+
+            <J3OverviewDoc Id="203" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#sortOrd     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:sortorder:binarysort"/>
+
+            <J3OverviewDoc Id="208" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#UCASort     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:sortorder:uts-10"/>
+
+            <J3OverviewDoc Id="213" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#caseInsensSort     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:caseinsensitivesort"/>
+
+            <J3OverviewDoc Id="217" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#caseSensSort     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:casesensitivesort"/>
+
+            <J3OverviewDoc Id="222" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#nameAsc     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:sortbynameasc"/>
+
+            <J3OverviewDoc Id="226" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#nameDesc     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:sortbynamedesc"/>
+
+            <J3OverviewDoc Id="230" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#dateAsc     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:sortbydateasc"/>
+
+            <J3OverviewDoc Id="234" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#dateDesc     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:sortbydatedesc"/>
+
+            <J3OverviewDoc Id="238" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#andAll     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:andallkeys"/>
+
+            <J3OverviewDoc Id="242" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#orAll     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:orallkeys"/>
+
+            <J3OverviewDoc Id="246" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#orLike     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:orlikekeys"/>
+
+            <J3OverviewDoc Id="250" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#combineCatBags     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:combinecategorybags"/>
+
+            <J3OverviewDoc Id="254" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#servSubset     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:servicesubset"/>
+
+            <J3OverviewDoc Id="258" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#bindSubset     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:bindingsubset"/>
+
+            <J3OverviewDoc Id="262" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#suppressProjSvcs     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:suppressProjectedServices"/>
+
+            <J3OverviewDoc Id="266" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#sign     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:findqualifier:signaturepresent"/>
+
+            <J3OverviewDoc Id="270" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#hostDir     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:specification:hostingredirector"/>
+
+            <J3OverviewDoc Id="274" OverviewUrl="         http://uddi.org/pubs/uddi_v3.htm#policyDesc     " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:specification:v3_policy"/>
+
+            <J3OverviewDoc Id="278" OverviewUrl="          http://uddi.org/wsdl/uddi_custody_v3_binding.wsdl       " OverviewUrlUseType="wsdlInterface" EntityKey="uddi:uddi.org:v3_ownership_transfer"/>
+
+            <J3OverviewDoc Id="279" OverviewUrl="          http://uddi.org/pubs/uddi_v3.htm#OwnershipTransfer       " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:v3_ownership_transfer"/>
+
+            <J3OverviewDoc Id="286" OverviewUrl="          http://uddi.org/wsdl/uddi_sub_v3_binding.wsdl       " OverviewUrlUseType="wsdlInterface" EntityKey="uddi:uddi.org:v3_subscription"/>
+
+            <J3OverviewDoc Id="287" OverviewUrl="          http://uddi.org/pubs/uddi_v3.htm#Sub       " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:v3_subscription"/>
+
+            <J3OverviewDoc Id="294" OverviewUrl="           http://uddi.org/wsdl/uddi_subr_v3_binding.wsdl       " OverviewUrlUseType="wsdlInterface" EntityKey="uddi:uddi.org:v3_subscriptionlistener"/>
+
+            <J3OverviewDoc Id="295" OverviewUrl="          http://uddi.org/pubs/uddi_v3.htm#Subscribe       " OverviewUrlUseType="text" EntityKey="uddi:uddi.org:v3_subscriptionlistener"/>
+
+            <J3Publisher AuthorizedName="root" IsAdmin="true" PublisherName="root publisher"/>
+
+            <J3Publisher AuthorizedName="uddi" IsAdmin="false" PublisherName="UDDI publisher"/>
+
+            <J3Publisher AuthorizedName="joepublisher" EmailAddress="jpublisher@business.com" IsAdmin="true" IsEnabled="True" MaxBindingsPerService="199" MaxBusinesses="100" MaxServicesPerBusiness="100" MaxTmodels="100" PublisherName="Joe Publisher"/>
+
+            <J3ServiceDescr Id="11" Descr="Web Service supporting UDDI Inquiry API" LangCode="en" EntityKey="uddi:juddi.apache.org:services-inquiry"/>
+
+            <J3ServiceDescr Id="17" Descr="Web Service supporting UDDI Publish API" LangCode="en" EntityKey="uddi:juddi.apache.org:services-publish"/>
+
+            <J3ServiceDescr Id="23" Descr="Web Service supporting UDDI Security API" LangCode="en" EntityKey="uddi:juddi.apache.org:services-security"/>
+
+            <J3ServiceDescr Id="29" Descr="Web Service supporting UDDI Custody and Ownership Transfer API" LangCode="en" EntityKey="uddi:juddi.apache.org:services-custodytransfer"/>
+
+            <J3ServiceDescr Id="35" Descr="Web Service supporting UDDI Subscription API" LangCode="en" EntityKey="uddi:juddi.apache.org:services-subscription"/>
+
+            <J3ServiceDescr Id="41" Descr="Web Service supporting UDDI Subscription Listener API" LangCode="en" EntityKey="uddi:juddi.apache.org:services-subscriptionlistener"/>
+
+            <J3ServiceDescr Id="46" Descr="Web Service supporting jUDDI specific API" LangCode="en" EntityKey="uddi:juddi.apache.org:services-publisher"/>
+
+            <J3ServiceName Id="12" LangCode="en" Name="UDDI Inquiry Service" EntityKey="uddi:juddi.apache.org:services-inquiry"/>
+
+            <J3ServiceName Id="18" LangCode="en" Name="UDDI Publish Service" EntityKey="uddi:juddi.apache.org:services-publish"/>
+
+            <J3ServiceName Id="24" LangCode="en" Name="UDDI Security Service" EntityKey="uddi:juddi.apache.org:services-security"/>
+
+            <J3ServiceName Id="30" LangCode="en" Name="UDDI Custody and Ownership Transfer Service" EntityKey="uddi:juddi.apache.org:services-custodytransfer"/>
+
+            <J3ServiceName Id="36" LangCode="en" Name="UDDI Subscription Service" EntityKey="uddi:juddi.apache.org:services-subscription"/>
+
+            <J3ServiceName Id="42" LangCode="en" Name="UDDI Subscription Listener Service" EntityKey="uddi:juddi.apache.org:services-subscriptionlistener"/>
+
+            <J3ServiceName Id="47" LangCode="en" Name="jUDDI Publisher Service" EntityKey="uddi:juddi.apache.org:services-publisher"/>
+
+            <J3Tmodel EntityKey="uddi:juddi.apache.org:keygenerator" Deleted="0" Name="uddi-org:keyGenerator"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:keygenerator" Deleted="0" Name="uddi-org:keyGenerator"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:keygenerator" Deleted="0" Name="uddi-org:categorization:keyGenerator 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:sortorder:keygenerator" Deleted="0" Name="uddi-org:sortorder:keyGenerator 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:transport:keygenerator" Deleted="0" Name="uddi-org:transport:keyGenerator 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:protocol:keygenerator" Deleted="0" Name="uddi-org: protocol:keyGenerator"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:v3_inquiry" Deleted="0" Name="uddi-org:inquiry_v3"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:v3_publication" Deleted="0" Name="uddi-org:publication_v3"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:v3_security" Deleted="0" Name="uddi-org:security_v3"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:types" Deleted="0" Name="uddi-org:types"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:general_keywords" Deleted="0" Name="uddi-org:general_keywords"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:nodes" Deleted="0" Name="uddi-org:nodes"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:relationships" Deleted="0" Name="uddi-org:relationships"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:owningbusiness" Deleted="0" Name="uddi-org:owningBusiness_v3"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:identifier:isreplacedby" Deleted="0" Name="uddi-org:isReplacedBy"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:validatedby" Deleted="0" Name="uddi-org:validatedBy"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:derivedfrom" Deleted="0" Name="uddi-org:derivedFrom"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:categorization:entitykeyvalues" Deleted="0" Name="uddi-org:entityKeyValues"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:protocol:serverauthenticatedssl3" Deleted="0" Name="uddi-org:serverAuthenticatedSSL3 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:protocol:mutualauthenticatedssl3" Deleted="0" Name="uddi-org:mutualAuthenticatedSSL3 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:transport:http" Deleted="0" Name="uddi-org:http"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:transport:smtp" Deleted="0" Name="uddi-org:smtp"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:transport:ftp" Deleted="0" Name="uddi-org:ftp"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:transport:fax" Deleted="0" Name="uddi-org:fax"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:transport:telephone" Deleted="0" Name="uddi-org:telephone"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:approximatematch" Deleted="0" Name="uddi-org:approximateMatch:SQL99 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:exactmatch" Deleted="0" Name="uddi-org:exactMatch"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:caseinsensitivematch" Deleted="0" Name="uddi-org:caseInsensitiveMatch 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:casesensitivematch" Deleted="0" Name="uddi-org:caseSensitiveMatch"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:diacriticsinsensitivematch" Deleted="0" Name="uddi-org:diacriticsInsensitiveMatch 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:diacriticssensitivematch" Deleted="0" Name="uddi-org:diacriticsSensitiveMatch 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:sortorder:binarysort" Deleted="0" Name="uddi-org:binarySort"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:sortorder:uts-10" Deleted="0" Name="uddi-org:UTS-10"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:caseinsensitivesort" Deleted="0" Name="uddi-org:caseInsensitiveSort"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:casesensitivesort" Deleted="0" Name="uddi-org:caseSensitiveSort"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:sortbynameasc" Deleted="0" Name="uddi-org:sortByNameAsc"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:sortbynamedesc" Deleted="0" Name="uddi-org:sortByNameDesc"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:sortbydateasc" Deleted="0" Name="uddi-org:sortByDateAsc"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:sortbydatedesc" Deleted="0" Name="uddi-org:sortByDateDesc"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:andallkeys" Deleted="0" Name="uddi-org:andAllKeys"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:orallkeys" Deleted="0" Name="uddi-org:orAllKeys"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:orlikekeys" Deleted="0" Name="uddi-org:orLikeKeys"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:combinecategorybags" Deleted="0" Name="uddi-org:combineCategoryBags"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:servicesubset" Deleted="0" Name="uddi-org:serviceSubset"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:bindingsubset" Deleted="0" Name="uddi-org:bindingSubset"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:suppressProjectedServices" Deleted="0" Name="uddi-org:suppressProjectedServices 		"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:findqualifier:signaturepresent" Deleted="0" Name="uddi-org:signaturePresent"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:specification:hostingredirector" Deleted="0" Name="uddi-org:hostingRedirector"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:specification:v3_policy" Deleted="0" Name="uddi-org:v3_policy"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:v3_ownership_transfer" Deleted="0" Name="uddi-org:ownership_transfer_v3"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:v3_subscription" Deleted="0" Name="uddi-org:subscription_v3"/>
+
+            <J3Tmodel EntityKey="uddi:uddi.org:v3_subscriptionlistener" Deleted="0" Name="uddi-org:subscriptionListener_v3"/>
+
+            <J3TmodelCategoryBag Id="3" EntityKey="uddi:juddi.apache.org:keygenerator"/>
+
+            <J3TmodelCategoryBag Id="53" EntityKey="uddi:uddi.org:keygenerator"/>
+
+            <J3TmodelCategoryBag Id="57" EntityKey="uddi:uddi.org:categorization:keygenerator"/>
+
+            <J3TmodelCategoryBag Id="61" EntityKey="uddi:uddi.org:sortorder:keygenerator"/>
+
+            <J3TmodelCategoryBag Id="65" EntityKey="uddi:uddi.org:transport:keygenerator"/>
+
+            <J3TmodelCategoryBag Id="69" EntityKey="uddi:uddi.org:protocol:keygenerator"/>
+
+            <J3TmodelCategoryBag Id="74" EntityKey="uddi:uddi.org:v3_inquiry"/>
+
+            <J3TmodelCategoryBag Id="82" EntityKey="uddi:uddi.org:v3_publication"/>
+
+            <J3TmodelCategoryBag Id="90" EntityKey="uddi:uddi.org:v3_security"/>
+
+            <J3TmodelCategoryBag Id="97" EntityKey="uddi:uddi.org:categorization:types"/>
+
+            <J3TmodelCategoryBag Id="103" EntityKey="uddi:uddi.org:categorization:general_keywords"/>
+
+            <J3TmodelCategoryBag Id="108" EntityKey="uddi:uddi.org:categorization:nodes"/>
+
+            <J3TmodelCategoryBag Id="114" EntityKey="uddi:uddi.org:relationships"/>
+
+            <J3TmodelCategoryBag Id="119" EntityKey="uddi:uddi.org:categorization:owningbusiness"/>
+
+            <J3TmodelCategoryBag Id="126" EntityKey="uddi:uddi.org:identifier:isreplacedby"/>
+
+            <J3TmodelCategoryBag Id="134" EntityKey="uddi:uddi.org:categorization:validatedby"/>
+
+            <J3TmodelCategoryBag Id="141" EntityKey="uddi:uddi.org:categorization:derivedfrom"/>
+
+            <J3TmodelCategoryBag Id="148" EntityKey="uddi:uddi.org:categorization:entitykeyvalues"/>
+
+            <J3TmodelCategoryBag Id="153" EntityKey="uddi:uddi.org:protocol:serverauthenticatedssl3"/>
+
+            <J3TmodelCategoryBag Id="157" EntityKey="uddi:uddi.org:protocol:mutualauthenticatedssl3"/>
+
+            <J3TmodelCategoryBag Id="161" EntityKey="uddi:uddi.org:transport:http"/>
+
+            <J3TmodelCategoryBag Id="165" EntityKey="uddi:uddi.org:transport:smtp"/>
+
+            <J3TmodelCategoryBag Id="169" EntityKey="uddi:uddi.org:transport:ftp"/>
+
+            <J3TmodelCategoryBag Id="173" EntityKey="uddi:uddi.org:transport:fax"/>
+
+            <J3TmodelCategoryBag Id="177" EntityKey="uddi:uddi.org:transport:telephone"/>
+
+            <J3TmodelCategoryBag Id="181" EntityKey="uddi:uddi.org:findqualifier:approximatematch"/>
+
+            <J3TmodelCategoryBag Id="185" EntityKey="uddi:uddi.org:findqualifier:exactmatch"/>
+
+            <J3TmodelCategoryBag Id="189" EntityKey="uddi:uddi.org:findqualifier:caseinsensitivematch"/>
+
+            <J3TmodelCategoryBag Id="193" EntityKey="uddi:uddi.org:findqualifier:casesensitivematch"/>
+
+            <J3TmodelCategoryBag Id="197" EntityKey="uddi:uddi.org:findqualifier:diacriticsinsensitivematch"/>
+
+            <J3TmodelCategoryBag Id="201" EntityKey="uddi:uddi.org:findqualifier:diacriticssensitivematch"/>
+
+            <J3TmodelCategoryBag Id="205" EntityKey="uddi:uddi.org:sortorder:binarysort"/>
+
+            <J3TmodelCategoryBag Id="210" EntityKey="uddi:uddi.org:sortorder:uts-10"/>
+
+            <J3TmodelCategoryBag Id="215" EntityKey="uddi:uddi.org:findqualifier:caseinsensitivesort"/>
+
+            <J3TmodelCategoryBag Id="219" EntityKey="uddi:uddi.org:findqualifier:casesensitivesort"/>
+
+            <J3TmodelCategoryBag Id="224" EntityKey="uddi:uddi.org:findqualifier:sortbynameasc"/>
+
+            <J3TmodelCategoryBag Id="228" EntityKey="uddi:uddi.org:findqualifier:sortbynamedesc"/>
+
+            <J3TmodelCategoryBag Id="232" EntityKey="uddi:uddi.org:findqualifier:sortbydateasc"/>
+
+            <J3TmodelCategoryBag Id="236" EntityKey="uddi:uddi.org:findqualifier:sortbydatedesc"/>
+
+            <J3TmodelCategoryBag Id="240" EntityKey="uddi:uddi.org:findqualifier:andallkeys"/>
+
+            <J3TmodelCategoryBag Id="244" EntityKey="uddi:uddi.org:findqualifier:orallkeys"/>
+
+            <J3TmodelCategoryBag Id="248" EntityKey="uddi:uddi.org:findqualifier:orlikekeys"/>
+
+            <J3TmodelCategoryBag Id="252" EntityKey="uddi:uddi.org:findqualifier:combinecategorybags"/>
+
+            <J3TmodelCategoryBag Id="256" EntityKey="uddi:uddi.org:findqualifier:servicesubset"/>
+
+            <J3TmodelCategoryBag Id="260" EntityKey="uddi:uddi.org:findqualifier:bindingsubset"/>
+
+            <J3TmodelCategoryBag Id="264" EntityKey="uddi:uddi.org:findqualifier:suppressProjectedServices"/>
+
+            <J3TmodelCategoryBag Id="268" EntityKey="uddi:uddi.org:findqualifier:signaturepresent"/>
+
+            <J3TmodelCategoryBag Id="272" EntityKey="uddi:uddi.org:specification:hostingredirector"/>
+
+            <J3TmodelCategoryBag Id="276" EntityKey="uddi:uddi.org:specification:v3_policy"/>
+
+            <J3TmodelCategoryBag Id="281" EntityKey="uddi:uddi.org:v3_ownership_transfer"/>
+
+            <J3TmodelCategoryBag Id="289" EntityKey="uddi:uddi.org:v3_subscription"/>
+
+            <J3TmodelCategoryBag Id="297" EntityKey="uddi:uddi.org:v3_subscriptionlistener"/>
+
+            <J3TmodelDescr Id="2" Descr="Root domain key generator" EntityKey="uddi:juddi.apache.org:keygenerator"/>
+
+            <J3TmodelDescr Id="52" Descr="UDDI domain key generator" EntityKey="uddi:uddi.org:keygenerator"/>
+
+            <J3TmodelDescr Id="56" Descr="Key Generator for UDDI Categorization tModels 		" EntityKey="uddi:uddi.org:categorization:keygenerator"/>
+
+            <J3TmodelDescr Id="60" Descr="Key Generator for UDDI Sort Order tModels 		" EntityKey="uddi:uddi.org:sortorder:keygenerator"/>
+
+            <J3TmodelDescr Id="64" Descr="Key Generator for UDDI Transport tModels " EntityKey="uddi:uddi.org:transport:keygenerator"/>
+
+            <J3TmodelDescr Id="68" Descr=" Key Generator for UDDI Protocol tModels " EntityKey="uddi:uddi.org:protocol:keygenerator"/>
+
+            <J3TmodelDescr Id="73" Descr="UDDI Inquiry API V3.0" EntityKey="uddi:uddi.org:v3_inquiry"/>
+
+            <J3TmodelDescr Id="81" Descr="UDDI Publication API V3.0" EntityKey="uddi:uddi.org:v3_publication"/>
+
+            <J3TmodelDescr Id="89" Descr="UDDI Security API V3.0" EntityKey="uddi:uddi.org:v3_security"/>
+
+            <J3TmodelDescr Id="96" Descr="UDDI Type Category System" EntityKey="uddi:uddi.org:categorization:types"/>
+
+            <J3TmodelDescr Id="102" Descr="Category system consisting of namespace       identifiers and the keywords associated with       the namespaces.   " EntityKey="uddi:uddi.org:categorization:general_keywords"/>
+
+            <J3TmodelDescr Id="107" Descr="Category system for identifying the nodes       of a registry.   " EntityKey="uddi:uddi.org:categorization:nodes"/>
+
+            <J3TmodelDescr Id="113" Descr="Basic types of business relationships   " EntityKey="uddi:uddi.org:relationships"/>
+
+            <J3TmodelDescr Id="118" Descr="Category system used to point to the       businessEntity       associated with the publisher of the tModel.   " EntityKey="uddi:uddi.org:categorization:owningbusiness"/>
+
+            <J3TmodelDescr Id="125" Descr="Identifier system used to point to the UDDI       entity,       using UDDI keys, that is the logical replacement       for the one in which isReplacedBy is used.   " EntityKey="uddi:uddi.org:identifier:isreplacedby"/>
+
+            <J3TmodelDescr Id="133" Descr="Category system used to point a value set or       category       group system tModel to associated value set Web service       implementations.   " EntityKey="uddi:uddi.org:categorization:validatedby"/>
+
+            <J3TmodelDescr Id="140" Descr="Category system for referring tModels to other       tModels for the purpose of reuse.   " EntityKey="uddi:uddi.org:categorization:derivedfrom"/>
+
+            <J3TmodelDescr Id="147" Descr="Category system used to declare that a value set       uses entity keys as valid values.      " EntityKey="uddi:uddi.org:categorization:entitykeyvalues"/>
+
+            <J3TmodelDescr Id="152" Descr="Secure Sockets Layer Version 3.0 with Server       Authentication" EntityKey="uddi:uddi.org:protocol:serverauthenticatedssl3"/>
+
+            <J3TmodelDescr Id="156" Descr="Secure Sockets Layer Version 3.0 with Mutual       Authentication" EntityKey="uddi:uddi.org:protocol:mutualauthenticatedssl3"/>
+
+            <J3TmodelDescr Id="160" Descr=" A Web service that uses HTTP transport" EntityKey="uddi:uddi.org:transport:http"/>
+
+            <J3TmodelDescr Id="164" Descr="E-mail based Web service" EntityKey="uddi:uddi.org:transport:smtp"/>
+
+            <J3TmodelDescr Id="168" Descr="File Transfer Protocol (FTP) based Web service 		" EntityKey="uddi:uddi.org:transport:ftp"/>
+
+            <J3TmodelDescr Id="172" Descr="Fax-based Web service" EntityKey="uddi:uddi.org:transport:fax"/>
+
+            <J3TmodelDescr Id="176" Descr="Telephone based service" EntityKey="uddi:uddi.org:transport:telephone"/>
+
+            <J3TmodelDescr Id="180" Descr="UDDI approximate matching find qualifier 		" EntityKey="uddi:uddi.org:findqualifier:approximatematch"/>
+
+            <J3TmodelDescr Id="184" Descr="UDDI exact name matching findQualifier   " EntityKey="uddi:uddi.org:findqualifier:exactmatch"/>
+
+            <J3TmodelDescr Id="188" Descr="UDDI case insensitive matching find qualifier 		" EntityKey="uddi:uddi.org:findqualifier:caseinsensitivematch"/>
+
+            <J3TmodelDescr Id="192" Descr="UDDI Case Sensitive Matching find qualifier 		" EntityKey="uddi:uddi.org:findqualifier:casesensitivematch"/>
+
+            <J3TmodelDescr Id="196" Descr="UDDI Diacritics Insensitive Matching find qualifier 		" EntityKey="uddi:uddi.org:findqualifier:diacriticsinsensitivematch"/>
+
+            <J3TmodelDescr Id="200" Descr="UDDI Diacritics Sensitive Matching find qualifier 		" EntityKey="uddi:uddi.org:findqualifier:diacriticssensitivematch"/>
+
+            <J3TmodelDescr Id="204" Descr="UDDI binary sort sortOrder qualifier   " EntityKey="uddi:uddi.org:sortorder:binarysort"/>
+
+            <J3TmodelDescr Id="209" Descr="UDDI Unicode Technical Standard #10 sort       collation sequence find qualifier   " EntityKey="uddi:uddi.org:sortorder:uts-10"/>
+
+            <J3TmodelDescr Id="214" Descr="UDDI sort qualifier used to sort results without       regard to case" EntityKey="uddi:uddi.org:findqualifier:caseinsensitivesort"/>
+
+            <J3TmodelDescr Id="218" Descr="UDDI sort qualifier used to sort results using       case sensitivity" EntityKey="uddi:uddi.org:findqualifier:casesensitivesort"/>
+
+            <J3TmodelDescr Id="223" Descr="UDDI sort qualifier used to sort results by name       in ascending order" EntityKey="uddi:uddi.org:findqualifier:sortbynameasc"/>
+
+            <J3TmodelDescr Id="227" Descr="UDDI sort qualifier used to sort results by       name in descending order" EntityKey="uddi:uddi.org:findqualifier:sortbynamedesc"/>
+
+            <J3TmodelDescr Id="231" Descr="UDDI sort qualifier used to sort results by date in       ascending order" EntityKey="uddi:uddi.org:findqualifier:sortbydateasc"/>
+
+            <J3TmodelDescr Id="235" Descr="UDDI sort qualifier used to sort results       by date in descending order" EntityKey="uddi:uddi.org:findqualifier:sortbydatedesc"/>
+
+            <J3TmodelDescr Id="239" Descr="UDDI find qualifier used to request that a       logical AND be performed on bag contents       prior to a search" EntityKey="uddi:uddi.org:findqualifier:andallkeys"/>
+
+            <J3TmodelDescr Id="243" Descr="UDDI find qualifier used to request that a       logical OR be performed on bag contents       prior to a search" EntityKey="uddi:uddi.org:findqualifier:orallkeys"/>
+
+            <J3TmodelDescr Id="247" Descr="UDDI find qualifier used to find entities       that reference one of the values from each       referenced value set" EntityKey="uddi:uddi.org:findqualifier:orlikekeys"/>
+
+            <J3TmodelDescr Id="251" Descr="UDDI find qualifier used to treat all of the       categoryBags within a businessEntity as if       they were one during inquiry" EntityKey="uddi:uddi.org:findqualifier:combinecategorybags"/>
+
+            <J3TmodelDescr Id="255" Descr="UDDI find qualifier used to use categoryBags       of businessService elements to satisfy the       find_business inquiry." EntityKey="uddi:uddi.org:findqualifier:servicesubset"/>
+
+            <J3TmodelDescr Id="259" Descr="UDDI find qualifier for specifying use of       categoryBags of bindingTempate elements to satisfy       the find_business or find_service inquiries.   " EntityKey="uddi:uddi.org:findqualifier:bindingsubset"/>
+
+            <J3TmodelDescr Id="263" Descr="UDDI find qualifier used to exclude service       projections from an inquiry function at all       levels." EntityKey="uddi:uddi.org:findqualifier:suppressProjectedServices"/>
+
+            <J3TmodelDescr Id="267" Descr="UDDI findQualifier used to return only entities       that have or are contained in entities that have       XML Digital Signatures." EntityKey="uddi:uddi.org:findqualifier:signaturepresent"/>
+
+            <J3TmodelDescr Id="271" Descr="UDDI Hosting Redirector service specification 		" EntityKey="uddi:uddi.org:specification:hostingredirector"/>
+
+            <J3TmodelDescr Id="275" Descr="UDDI Policy Description service specification 		" EntityKey="uddi:uddi.org:specification:v3_policy"/>
+
+            <J3TmodelDescr Id="280" Descr="UDDI Custody and Ownership Transfer API V3.0" EntityKey="uddi:uddi.org:v3_ownership_transfer"/>
+
+            <J3TmodelDescr Id="288" Descr="UDDI Subscription API V3.0" EntityKey="uddi:uddi.org:v3_subscription"/>
+
+            <J3TmodelDescr Id="296" Descr="UDDI Subscription Listener API V3.0" EntityKey="uddi:uddi.org:v3_subscriptionlistener"/>
+
+            <J3TmodelInstanceInfo Id="8" InstanceParms="                                    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;                   &lt;UDDIinstanceParmsContainer xmlns=&quot;urn:uddi-org:policy_v3_instanceParms&quot;&gt;                     &lt;defaultSortOrder&gt;                       uddi:uddi.org:sortorder:binarysort                     &lt;/defaultSortOrder&gt;                   &lt;/UDDIinstanceParmsContainer&gt;                                  " TmodelKey="uddi:uddi.org:v3_inquiry" EntityKey="uddi:juddi.apache.org:servicebindings-inquiry-ws"/>
+
+            <J3TmodelInstanceInfo Id="14" InstanceParms="                                    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;                   &lt;UDDIinstanceParmsContainer xmlns=&quot;urn:uddi-org:policy_v3_instanceParms&quot;&gt;                     &lt;authInfoUse&gt;required&lt;/authInfoUse&gt;                   &lt;/UDDIinstanceParmsContainer&gt;                                  " TmodelKey="uddi:uddi.org:v3_publication" EntityKey="uddi:juddi.apache.org:servicebindings-publish-ws"/>
+
+            <J3TmodelInstanceInfo Id="20" TmodelKey="uddi:uddi.org:v3_security" EntityKey="uddi:juddi.apache.org:servicebindings-security-ws"/>
+
+            <J3TmodelInstanceInfo Id="26" InstanceParms="                                  &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;                 &lt;UDDIinstanceParmsContainer                  xmlns=&quot;urn:uddi-org:policy_v3_instanceParms&quot;&gt;                   &lt;authInfoUse&gt;required&lt;/authInfoUse&gt;                 &lt;/UDDIinstanceParmsContainer&gt;                                  " TmodelKey="uddi:uddi.org:v3_ownership_transfer" EntityKey="uddi:juddi.apache.org:servicebindings-custodytransfer-ws"/>
+
+            <J3TmodelInstanceInfo Id="32" InstanceParms="                                  &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;                 &lt;UDDIinstanceParmsContainer                 xmlns=&quot;urn:uddi-org:policy_v3_instanceParms&quot;&gt;                 &lt;authInfoUse&gt;required&lt;/authInfoUse&gt;                 &lt;filterUsingFindAPI&gt;supported&lt;/filterUsingFindAPI&gt;                 &lt;/UDDIinstanceParmsContainer&gt;                                  " TmodelKey="uddi:uddi.org:v3_subscription" EntityKey="uddi:juddi.apache.org:servicebindings-subscription-ws"/>
+
+            <J3TmodelInstanceInfo Id="38" TmodelKey="uddi:uddi.org:v3_subscriptionlistener" EntityKey="uddi:juddi.apache.org:servicebindings-subscriptionlistener-ws"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:servicesubset" AuthorizedName="uddi" Created="2009-12-22 16.18.38.250000000" Modified="2009-12-22 16.18.38.250000000" ModifiedIncludingChildren="2009-12-22 16.18.38.250000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:bindingsubset" AuthorizedName="uddi" Created="2009-12-22 16.18.38.265000000" Modified="2009-12-22 16.18.38.265000000" ModifiedIncludingChildren="2009-12-22 16.18.38.265000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:suppressProjectedServices" AuthorizedName="uddi" Created="2009-12-22 16.18.38.265000000" Modified="2009-12-22 16.18.38.265000000" ModifiedIncludingChildren="2009-12-22 16.18.38.265000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:signaturepresent" AuthorizedName="uddi" Created="2009-12-22 16.18.38.281000000" Modified="2009-12-22 16.18.38.281000000" ModifiedIncludingChildren="2009-12-22 16.18.38.281000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:specification:hostingredirector" AuthorizedName="uddi" Created="2009-12-22 16.18.38.281000000" Modified="2009-12-22 16.18.38.281000000" ModifiedIncludingChildren="2009-12-22 16.18.38.281000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:specification:v3_policy" AuthorizedName="uddi" Created="2009-12-22 16.18.38.296000000" Modified="2009-12-22 16.18.38.296000000" ModifiedIncludingChildren="2009-12-22 16.18.38.296000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:v3_ownership_transfer" AuthorizedName="uddi" Created="2009-12-22 16.18.38.296000000" Modified="2009-12-22 16.18.38.296000000" ModifiedIncludingChildren="2009-12-22 16.18.38.296000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:v3_subscription" AuthorizedName="uddi" Created="2009-12-22 16.18.38.328000000" Modified="2009-12-22 16.18.38.328000000" ModifiedIncludingChildren="2009-12-22 16.18.38.328000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:v3_subscriptionlistener" AuthorizedName="uddi" Created="2009-12-22 16.18.38.343000000" Modified="2009-12-22 16.18.38.343000000" ModifiedIncludingChildren="2009-12-22 16.18.38.343000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:keygenerator" AuthorizedName="root" Created="2009-12-22 16.18.36.984000000" Modified="2009-12-22 16.18.36.984000000" ModifiedIncludingChildren="2009-12-22 16.18.36.984000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:businesses-asf" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:services-inquiry" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:servicebindings-inquiry-ws" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:services-publish" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:servicebindings-publish-ws" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:services-security" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:servicebindings-security-ws" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:services-custodytransfer" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:servicebindings-custodytransfer-ws" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:services-subscription" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:servicebindings-subscription-ws" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:services-subscriptionlistener" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:servicebindings-subscriptionlistener-ws" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:services-publisher" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:juddi.apache.org:servicebindings-publisher-ws" AuthorizedName="root" Created="2009-12-22 16.18.37.15000000" Modified="2009-12-22 16.18.37.15000000" ModifiedIncludingChildren="2009-12-22 16.18.37.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:keygenerator" AuthorizedName="uddi" Created="2009-12-22 16.18.37.828000000" Modified="2009-12-22 16.18.37.828000000" ModifiedIncludingChildren="2009-12-22 16.18.37.828000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:keygenerator" AuthorizedName="uddi" Created="2009-12-22 16.18.37.843000000" Modified="2009-12-22 16.18.37.843000000" ModifiedIncludingChildren="2009-12-22 16.18.37.843000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:sortorder:keygenerator" AuthorizedName="uddi" Created="2009-12-22 16.18.37.843000000" Modified="2009-12-22 16.18.37.843000000" ModifiedIncludingChildren="2009-12-22 16.18.37.843000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:transport:keygenerator" AuthorizedName="uddi" Created="2009-12-22 16.18.37.859000000" Modified="2009-12-22 16.18.37.859000000" ModifiedIncludingChildren="2009-12-22 16.18.37.859000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:protocol:keygenerator" AuthorizedName="uddi" Created="2009-12-22 16.18.37.875000000" Modified="2009-12-22 16.18.37.875000000" ModifiedIncludingChildren="2009-12-22 16.18.37.875000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:v3_inquiry" AuthorizedName="uddi" Created="2009-12-22 16.18.37.875000000" Modified="2009-12-22 16.18.37.875000000" ModifiedIncludingChildren="2009-12-22 16.18.37.875000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:v3_publication" AuthorizedName="uddi" Created="2009-12-22 16.18.37.890000000" Modified="2009-12-22 16.18.37.890000000" ModifiedIncludingChildren="2009-12-22 16.18.37.890000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:v3_security" AuthorizedName="uddi" Created="2009-12-22 16.18.37.906000000" Modified="2009-12-22 16.18.37.906000000" ModifiedIncludingChildren="2009-12-22 16.18.37.906000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:types" AuthorizedName="uddi" Created="2009-12-22 16.18.37.921000000" Modified="2009-12-22 16.18.37.921000000" ModifiedIncludingChildren="2009-12-22 16.18.37.921000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:general_keywords" AuthorizedName="uddi" Created="2009-12-22 16.18.37.937000000" Modified="2009-12-22 16.18.37.937000000" ModifiedIncludingChildren="2009-12-22 16.18.37.937000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:nodes" AuthorizedName="uddi" Created="2009-12-22 16.18.37.953000000" Modified="2009-12-22 16.18.37.953000000" ModifiedIncludingChildren="2009-12-22 16.18.37.953000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:relationships" AuthorizedName="uddi" Created="2009-12-22 16.18.37.953000000" Modified="2009-12-22 16.18.37.953000000" ModifiedIncludingChildren="2009-12-22 16.18.37.953000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:owningbusiness" AuthorizedName="uddi" Created="2009-12-22 16.18.37.968000000" Modified="2009-12-22 16.18.37.968000000" ModifiedIncludingChildren="2009-12-22 16.18.37.968000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:identifier:isreplacedby" AuthorizedName="uddi" Created="2009-12-22 16.18.37.984000000" Modified="2009-12-22 16.18.37.984000000" ModifiedIncludingChildren="2009-12-22 16.18.37.984000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:validatedby" AuthorizedName="uddi" Created="2009-12-22 16.18.38.0" Modified="2009-12-22 16.18.38.0" ModifiedIncludingChildren="2009-12-22 16.18.38.0" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:derivedfrom" AuthorizedName="uddi" Created="2009-12-22 16.18.38.15000000" Modified="2009-12-22 16.18.38.15000000" ModifiedIncludingChildren="2009-12-22 16.18.38.15000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:categorization:entitykeyvalues" AuthorizedName="uddi" Created="2009-12-22 16.18.38.31000000" Modified="2009-12-22 16.18.38.31000000" ModifiedIncludingChildren="2009-12-22 16.18.38.31000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:protocol:serverauthenticatedssl3" AuthorizedName="uddi" Created="2009-12-22 16.18.38.46000000" Modified="2009-12-22 16.18.38.46000000" ModifiedIncludingChildren="2009-12-22 16.18.38.46000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:protocol:mutualauthenticatedssl3" AuthorizedName="uddi" Created="2009-12-22 16.18.38.46000000" Modified="2009-12-22 16.18.38.46000000" ModifiedIncludingChildren="2009-12-22 16.18.38.46000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:transport:http" AuthorizedName="uddi" Created="2009-12-22 16.18.38.62000000" Modified="2009-12-22 16.18.38.62000000" ModifiedIncludingChildren="2009-12-22 16.18.38.62000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:transport:smtp" AuthorizedName="uddi" Created="2009-12-22 16.18.38.62000000" Modified="2009-12-22 16.18.38.62000000" ModifiedIncludingChildren="2009-12-22 16.18.38.62000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:transport:ftp" AuthorizedName="uddi" Created="2009-12-22 16.18.38.78000000" Modified="2009-12-22 16.18.38.78000000" ModifiedIncludingChildren="2009-12-22 16.18.38.78000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:transport:fax" AuthorizedName="uddi" Created="2009-12-22 16.18.38.78000000" Modified="2009-12-22 16.18.38.78000000" ModifiedIncludingChildren="2009-12-22 16.18.38.78000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:transport:telephone" AuthorizedName="uddi" Created="2009-12-22 16.18.38.93000000" Modified="2009-12-22 16.18.38.93000000" ModifiedIncludingChildren="2009-12-22 16.18.38.93000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:approximatematch" AuthorizedName="uddi" Created="2009-12-22 16.18.38.109000000" Modified="2009-12-22 16.18.38.109000000" ModifiedIncludingChildren="2009-12-22 16.18.38.109000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:exactmatch" AuthorizedName="uddi" Created="2009-12-22 16.18.38.109000000" Modified="2009-12-22 16.18.38.109000000" ModifiedIncludingChildren="2009-12-22 16.18.38.109000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:caseinsensitivematch" AuthorizedName="uddi" Created="2009-12-22 16.18.38.125000000" Modified="2009-12-22 16.18.38.125000000" ModifiedIncludingChildren="2009-12-22 16.18.38.125000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:casesensitivematch" AuthorizedName="uddi" Created="2009-12-22 16.18.38.125000000" Modified="2009-12-22 16.18.38.125000000" ModifiedIncludingChildren="2009-12-22 16.18.38.125000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:diacriticsinsensitivematch" AuthorizedName="uddi" Created="2009-12-22 16.18.38.140000000" Modified="2009-12-22 16.18.38.140000000" ModifiedIncludingChildren="2009-12-22 16.18.38.140000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:diacriticssensitivematch" AuthorizedName="uddi" Created="2009-12-22 16.18.38.140000000" Modified="2009-12-22 16.18.38.140000000" ModifiedIncludingChildren="2009-12-22 16.18.38.140000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:sortorder:binarysort" AuthorizedName="uddi" Created="2009-12-22 16.18.38.156000000" Modified="2009-12-22 16.18.38.156000000" ModifiedIncludingChildren="2009-12-22 16.18.38.156000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:sortorder:uts-10" AuthorizedName="uddi" Created="2009-12-22 16.18.38.156000000" Modified="2009-12-22 16.18.38.156000000" ModifiedIncludingChildren="2009-12-22 16.18.38.156000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:caseinsensitivesort" AuthorizedName="uddi" Created="2009-12-22 16.18.38.171000000" Modified="2009-12-22 16.18.38.171000000" ModifiedIncludingChildren="2009-12-22 16.18.38.171000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:casesensitivesort" AuthorizedName="uddi" Created="2009-12-22 16.18.38.171000000" Modified="2009-12-22 16.18.38.171000000" ModifiedIncludingChildren="2009-12-22 16.18.38.171000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:sortbynameasc" AuthorizedName="uddi" Created="2009-12-22 16.18.38.187000000" Modified="2009-12-22 16.18.38.187000000" ModifiedIncludingChildren="2009-12-22 16.18.38.187000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:sortbynamedesc" AuthorizedName="uddi" Created="2009-12-22 16.18.38.203000000" Modified="2009-12-22 16.18.38.203000000" ModifiedIncludingChildren="2009-12-22 16.18.38.203000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:sortbydateasc" AuthorizedName="uddi" Created="2009-12-22 16.18.38.203000000" Modified="2009-12-22 16.18.38.203000000" ModifiedIncludingChildren="2009-12-22 16.18.38.203000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:sortbydatedesc" AuthorizedName="uddi" Created="2009-12-22 16.18.38.218000000" Modified="2009-12-22 16.18.38.218000000" ModifiedIncludingChildren="2009-12-22 16.18.38.218000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:andallkeys" AuthorizedName="uddi" Created="2009-12-22 16.18.38.218000000" Modified="2009-12-22 16.18.38.218000000" ModifiedIncludingChildren="2009-12-22 16.18.38.218000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:orallkeys" AuthorizedName="uddi" Created="2009-12-22 16.18.38.234000000" Modified="2009-12-22 16.18.38.234000000" ModifiedIncludingChildren="2009-12-22 16.18.38.234000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:orlikekeys" AuthorizedName="uddi" Created="2009-12-22 16.18.38.234000000" Modified="2009-12-22 16.18.38.234000000" ModifiedIncludingChildren="2009-12-22 16.18.38.234000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <J3UddiEntity EntityKey="uddi:uddi.org:findqualifier:combinecategorybags" AuthorizedName="uddi" Created="2009-12-22 16.18.38.250000000" Modified="2009-12-22 16.18.38.250000000" ModifiedIncludingChildren="2009-12-22 16.18.38.250000000" NodeId="uddi:juddi.apache.org:businesses-asf"/>
+
+            <Log217 IdBatch="8" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:3:7" Enddate="11/10/2009 15:5:2" Logdate="11/10/2009 15:5:35" Depdate="11/10/2009 15:5:2" Replaydate="11/10/2009 15:5:2"/>
+
+            <Log217 IdBatch="5" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 14:28:3" Enddate="11/10/2009 14:28:47" Logdate="11/10/2009 14:28:47" Depdate="11/10/2009 14:28:47" Replaydate="11/10/2009 14:28:47"/>
+
+            <Log217 IdBatch="13" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:43:33" Enddate="11/13/2009 9:24:27" Logdate="11/13/2009 9:24:27" Depdate="11/13/2009 9:24:27" Replaydate="11/13/2009 9:24:27"/>
+
+            <Log217 IdBatch="11" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:14:7" Enddate="11/10/2009 15:39:28" Logdate="11/10/2009 15:39:28" Depdate="11/10/2009 15:39:28" Replaydate="11/10/2009 15:39:28"/>
+
+            <Log217 IdBatch="24" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 11:42:12" Enddate="11/16/2009 15:52:49" Logdate="11/16/2009 15:52:49" Depdate="11/16/2009 15:52:49" Replaydate="11/16/2009 15:52:49"/>
+
+            <Log217 IdBatch="16" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:24:51" Logdate="11/16/2009 9:24:51" Depdate="11/16/2009 9:24:51" Replaydate="11/16/2009 9:24:51"/>
+
+            <Log217 IdBatch="6" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 14:28:3" Enddate="11/10/2009 15:0:55" Logdate="11/10/2009 15:1:30" Depdate="11/10/2009 15:0:55" Replaydate="11/10/2009 15:0:55"/>
+
+            <Log217 IdBatch="10" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:10:42" Enddate="11/10/2009 15:14:7" Logdate="11/10/2009 15:14:40" Depdate="11/10/2009 15:14:7" Replaydate="11/10/2009 15:14:7"/>
+
+            <Log217 IdBatch="11" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:14:7" Enddate="11/10/2009 15:39:28" Logdate="11/10/2009 15:40:6" Depdate="11/10/2009 15:39:28" Replaydate="11/10/2009 15:39:28"/>
+
+            <Log217 IdBatch="12" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:39:28" Enddate="11/10/2009 15:43:33" Logdate="11/10/2009 15:44:9" Depdate="11/10/2009 15:43:33" Replaydate="11/10/2009 15:43:33"/>
+
+            <Log217 IdBatch="14" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 9:24:27" Enddate="11/13/2009 10:11:38" Logdate="11/13/2009 10:53:7" Depdate="11/13/2009 10:11:38" Replaydate="11/13/2009 10:11:38"/>
+
+            <Log217 IdBatch="16" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="1" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:24:51" Logdate="11/16/2009 9:32:5" Depdate="11/16/2009 9:24:51" Replaydate="11/16/2009 9:24:51"/>
+
+            <Log217 IdBatch="17" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:43:7" Logdate="11/16/2009 9:43:29" Depdate="11/16/2009 9:43:7" Replaydate="11/16/2009 9:43:7"/>
+
+            <Log217 IdBatch="24" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 11:42:12" Enddate="11/16/2009 15:52:49" Logdate="11/16/2009 16:33:52" Depdate="11/16/2009 15:52:49" Replaydate="11/16/2009 15:52:49"/>
+
+            <Log217 IdBatch="21" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:57:35" Logdate="11/16/2009 9:57:35" Depdate="11/16/2009 9:57:35" Replaydate="11/16/2009 9:57:35"/>
+
+            <Log217 IdBatch="22" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 9:57:35" Enddate="11/16/2009 11:42:12" Logdate="11/16/2009 11:42:34" Depdate="11/16/2009 11:42:12" Replaydate="11/16/2009 11:42:12"/>
+
+            <Log217 IdBatch="22" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 9:57:35" Enddate="11/16/2009 11:42:12" Logdate="11/16/2009 11:42:34" Depdate="11/16/2009 11:42:12" Replaydate="11/16/2009 11:42:12"/>
+
+            <Log217 IdBatch="25" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 15:52:49" Enddate="11/16/2009 16:36:40" Logdate="11/16/2009 16:36:40" Depdate="11/16/2009 16:36:40" Replaydate="11/16/2009 16:36:40"/>
+
+            <Log217 IdBatch="25" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 15:52:49" Enddate="11/16/2009 16:36:40" Logdate="11/16/2009 16:38:32" Depdate="11/16/2009 16:36:40" Replaydate="11/16/2009 16:36:40"/>
+
+            <Log217 IdBatch="9" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:5:2" Enddate="11/10/2009 15:10:42" Logdate="11/10/2009 15:10:42" Depdate="11/10/2009 15:10:42" Replaydate="11/10/2009 15:10:42"/>
+
+            <Log217 IdBatch="1" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="1/1/1900 7:0:0" Enddate="11/10/2009 14:7:47" Logdate="11/10/2009 14:7:47" Depdate="11/10/2009 14:7:47" Replaydate="11/10/2009 14:7:47"/>
+
+            <Log217 IdBatch="1" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="1" Startdate="1/1/1900 7:0:0" Enddate="11/10/2009 14:7:47" Logdate="11/10/2009 14:8:8" Depdate="11/10/2009 14:7:47" Replaydate="11/10/2009 14:7:47"/>
+
+            <Log217 IdBatch="7" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:0:55" Enddate="11/10/2009 15:3:7" Logdate="11/10/2009 15:3:7" Depdate="11/10/2009 15:3:7" Replaydate="11/10/2009 15:3:7"/>
+
+            <Log217 IdBatch="9" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:5:2" Enddate="11/10/2009 15:10:42" Logdate="11/10/2009 15:11:15" Depdate="11/10/2009 15:10:42" Replaydate="11/10/2009 15:10:42"/>
+
+            <Log217 IdBatch="8" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:3:7" Enddate="11/10/2009 15:5:2" Logdate="11/10/2009 15:5:2" Depdate="11/10/2009 15:5:2" Replaydate="11/10/2009 15:5:2"/>
+
+            <Log217 IdBatch="10" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:10:42" Enddate="11/10/2009 15:14:7" Logdate="11/10/2009 15:14:7" Depdate="11/10/2009 15:14:7" Replaydate="11/10/2009 15:14:7"/>
+
+            <Log217 IdBatch="18" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:46:37" Logdate="11/16/2009 9:46:37" Depdate="11/16/2009 9:46:37" Replaydate="11/16/2009 9:46:37"/>
+
+            <Log217 IdBatch="14" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 9:24:27" Enddate="11/13/2009 10:11:38" Logdate="11/13/2009 10:11:38" Depdate="11/13/2009 10:11:38" Replaydate="11/13/2009 10:11:38"/>
+
+            <Log217 IdBatch="12" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:39:28" Enddate="11/10/2009 15:43:33" Logdate="11/10/2009 15:43:33" Depdate="11/10/2009 15:43:33" Replaydate="11/10/2009 15:43:33"/>
+
+            <Log217 IdBatch="13" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:43:33" Enddate="11/13/2009 9:24:27" Logdate="11/13/2009 10:7:31" Depdate="11/13/2009 9:24:27" Replaydate="11/13/2009 9:24:27"/>
+
+            <Log217 IdBatch="27" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 17:19:22" Enddate="11/16/2009 18:37:32" Logdate="11/16/2009 18:37:32" Depdate="11/16/2009 18:37:32" Replaydate="11/16/2009 18:37:32"/>
+
+            <Log217 IdBatch="7" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 15:0:55" Enddate="11/10/2009 15:3:7" Logdate="11/10/2009 15:3:40" Depdate="11/10/2009 15:3:7" Replaydate="11/10/2009 15:3:7"/>
+
+            <Log217 IdBatch="2" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="1/1/1900 7:0:0" Enddate="11/10/2009 14:26:50" Logdate="11/10/2009 14:26:50" Depdate="11/10/2009 14:26:50" Replaydate="11/10/2009 14:26:50"/>
+
+            <Log217 IdBatch="2" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="1/1/1900 7:0:0" Enddate="11/10/2009 14:26:50" Logdate="11/10/2009 14:26:53" Depdate="11/10/2009 14:26:50" Replaydate="11/10/2009 14:26:50"/>
+
+            <Log217 IdBatch="19" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:49:4" Logdate="11/16/2009 9:49:56" Depdate="11/16/2009 9:49:4" Replaydate="11/16/2009 9:49:4"/>
+
+            <Log217 IdBatch="23" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 11:42:12" Enddate="11/16/2009 11:44:41" Logdate="11/16/2009 11:44:59" Depdate="11/16/2009 11:44:41" Replaydate="11/16/2009 11:44:41"/>
+
+            <Log217 IdBatch="4" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 14:27:30" Enddate="11/10/2009 14:28:3" Logdate="11/10/2009 14:28:3" Depdate="11/10/2009 14:28:3" Replaydate="11/10/2009 14:28:3"/>
+
+            <Log217 IdBatch="0" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="1/1/1900 7:0:0" Enddate="11/9/2009 9:48:46" Logdate="11/9/2009 9:48:46" Depdate="11/9/2009 9:48:46" Replaydate="11/9/2009 9:48:46"/>
+
+            <Log217 IdBatch="0" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="1" Startdate="1/1/1900 7:0:0" Enddate="11/9/2009 9:48:46" Logdate="11/9/2009 9:49:50" Depdate="11/9/2009 9:48:46" Replaydate="11/9/2009 9:48:46"/>
+
+            <Log217 IdBatch="3" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 14:26:50" Enddate="11/10/2009 14:27:30" Logdate="11/10/2009 14:27:30" Depdate="11/10/2009 14:27:30" Replaydate="11/10/2009 14:27:30"/>
+
+            <Log217 IdBatch="3" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 14:26:50" Enddate="11/10/2009 14:27:30" Logdate="11/10/2009 14:27:33" Depdate="11/10/2009 14:27:30" Replaydate="11/10/2009 14:27:30"/>
+
+            <Log217 IdBatch="15" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 10:11:38" Enddate="11/13/2009 17:9:4" Logdate="11/13/2009 17:9:4" Depdate="11/13/2009 17:9:4" Replaydate="11/13/2009 17:9:4"/>
+
+            <Log217 IdBatch="4" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 14:27:30" Enddate="11/10/2009 14:28:3" Logdate="11/10/2009 14:28:25" Depdate="11/10/2009 14:28:3" Replaydate="11/10/2009 14:28:3"/>
+
+            <Log217 IdBatch="5" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="1" Startdate="11/10/2009 14:28:3" Enddate="11/10/2009 14:28:47" Logdate="11/10/2009 14:30:0" Depdate="11/10/2009 14:28:47" Replaydate="11/10/2009 14:28:47"/>
+
+            <Log217 IdBatch="6" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/10/2009 14:28:3" Enddate="11/10/2009 15:0:55" Logdate="11/10/2009 15:0:55" Depdate="11/10/2009 15:0:55" Replaydate="11/10/2009 15:0:55"/>
+
+            <Log217 IdBatch="17" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:43:7" Logdate="11/16/2009 9:43:7" Depdate="11/16/2009 9:43:7" Replaydate="11/16/2009 9:43:7"/>
+
+            <Log217 IdBatch="15" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 10:11:38" Enddate="11/13/2009 17:9:4" Logdate="11/13/2009 17:21:46" Depdate="11/13/2009 17:9:4" Replaydate="11/13/2009 17:9:4"/>
+
+            <Log217 IdBatch="19" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:49:4" Logdate="11/16/2009 9:49:4" Depdate="11/16/2009 9:49:4" Replaydate="11/16/2009 9:49:4"/>
+
+            <Log217 IdBatch="18" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:46:37" Logdate="11/16/2009 9:47:19" Depdate="11/16/2009 9:46:37" Replaydate="11/16/2009 9:46:37"/>
+
+            <Log217 IdBatch="21" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:57:35" Logdate="11/16/2009 10:12:22" Depdate="11/16/2009 9:57:35" Replaydate="11/16/2009 9:57:35"/>
+
+            <Log217 IdBatch="26" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 16:36:40" Enddate="11/16/2009 17:19:22" Logdate="11/16/2009 17:19:22" Depdate="11/16/2009 17:19:22" Replaydate="11/16/2009 17:19:22"/>
+
+            <Log217 IdBatch="20" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:54:6" Logdate="11/16/2009 9:54:6" Depdate="11/16/2009 9:54:6" Replaydate="11/16/2009 9:54:6"/>
+
+            <Log217 IdBatch="20" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/13/2009 17:9:4" Enddate="11/16/2009 9:54:6" Logdate="11/16/2009 9:55:0" Depdate="11/16/2009 9:54:6" Replaydate="11/16/2009 9:54:6"/>
+
+            <Log217 IdBatch="22" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 9:57:35" Enddate="11/16/2009 11:42:12" Logdate="11/16/2009 11:42:12" Depdate="11/16/2009 11:42:12" Replaydate="11/16/2009 11:42:12"/>
+
+            <Log217 IdBatch="26" Transname="·¢ËÍ144a" Status="end" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 16:36:40" Enddate="11/16/2009 17:19:22" Logdate="11/16/2009 18:11:31" Depdate="11/16/2009 17:19:22" Replaydate="11/16/2009 17:19:22"/>
+
+            <Log217 IdBatch="23" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 11:42:12" Enddate="11/16/2009 11:44:41" Logdate="11/16/2009 11:44:41" Depdate="11/16/2009 11:44:41" Replaydate="11/16/2009 11:44:41"/>
+
+            <Log217 IdBatch="27" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 17:19:22" Enddate="11/16/2009 18:37:32" Logdate="11/16/2009 18:37:47" Depdate="11/16/2009 18:37:32" Replaydate="11/16/2009 18:37:32"/>
+
+            <Log217 IdBatch="28" Transname="·¢ËÍ144a" Status="start" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 17:19:22" Enddate="11/16/2009 18:39:45" Logdate="11/16/2009 18:39:45" Depdate="11/16/2009 18:39:45" Replaydate="11/16/2009 18:39:45"/>
+
+            <Log217 IdBatch="28" Transname="·¢ËÍ144a" Status="stop" LinesRead="0" LinesWritten="0" LinesUpdated="0" LinesInput="0" LinesOutput="0" Errors="0" Startdate="11/16/2009 17:19:22" Enddate="11/16/2009 18:39:45" Logdate="11/16/2009 18:47:24" Depdate="11/16/2009 18:39:45" Replaydate="11/16/2009 18:39:45"/>
+
+            <MqBroker BrokerId="1447" BrokerName="test144" IsPersistent="0" IsUsemirrq="0" MemMaxlimit="200mb" StoreLimite="500mb" StoreName="foo" TempLimite="200mb" ServerIp="172.16.17.144" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data1" PaDatasource="jdbc/oracle-ds-broker2" UseSsl="0" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="1207" BrokerName="wqy119" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="200mb" StoreLimite="500mb" StoreName="foo" TempLimite="200mb" ServerIp="172.16.17.119" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data2" PaDatasource="jdbc/oracle-ds-broker2" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="1" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="201" BrokerName="102" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="200mb" StoreLimite="5000mb" StoreName="foo" TempLimite="200mb" ServerIp="172.16.17.216" JmxPort="1097" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data1" PaDatasource="jdbc/oracle-ds-broker1" UseSsl="0" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="1" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="373" BrokerName="jjj_" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="200kb" StoreLimite="500kb" StoreName="foo" TempLimite="200kb" ServerIp="192.168.11.107" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="1" SslKs="920" SslKspassword="creatora" SslTs="921" SslDirectory="d:\keystore" SslTspassword="creatora" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="0" PersistentType="0" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="391" BrokerName="MQC(61636)" IsPersistent="0" IsUsemirrq="1" MemMaxlimit="200kb" StoreLimite="500kb" StoreName="foo" TempLimite="200kb" ServerIp="192.168.11.106" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="0" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="0" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="0" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="471" BrokerName="105" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.105" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="1" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="410" BrokerName="mqA(61616)" IsPersistent="0" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="200kb" ServerIp="192.168.11.106" JmxPort="1097" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data1" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="1" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="541" BrokerName="5test" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="200kb" ServerIp="192.168.11.5" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="/opt/MQServiceRuntime/mq" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="1" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="1" BrokerName="test" IsPersistent="0" IsUsemirrq="1" MemMaxlimit="200 mb" StoreLimite="500 mb" StoreName="foo" TempLimite="200 mb" ServerIp="192.168.11.102" JmxPort="1098" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="amq-cluster" NcUri="static://(tcp://localhost:61636)" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds-broker2" UseSsl="1" SslKs="11" SslKspassword="password" SslTs="12" SslDirectory="d:/keystoreserver" SslTspassword="password" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="0" PersistentType="0" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="443" BrokerName="test107" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="200mb" StoreLimite="500mb" StoreName="foo" TempLimite="200mb" ServerIp="192.168.11.107" JmxPort="1091" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data3" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="1" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="642" BrokerName="wqytest" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.126" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data5" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="0" UsePermission="1" UseLog="1" PersistentType="1" Maxfilelength="20kb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="801" BrokerName="test0814" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="200mb" StoreLimite="500mb" StoreName="foo" TempLimite="200mb" ServerIp="192.168.11.126" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="1" SslKs="922" SslKspassword="chinacreatora" SslTs="923" SslDirectory="E:\keystore" SslTspassword="chinacreatora" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="1" PersistentType="0" Maxfilelength="20kb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="1047" BrokerName="144" IsPersistent="0" IsUsemirrq="1" MemMaxlimit="100mb" StoreLimite="10240mb" StoreName="foo" TempLimite="100mb" ServerIp="192.168.11.144" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="1" Maxfilelength="20mb" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="13" BrokerName="localhost" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="200 mb" StoreLimite="500 mb" StoreName="foo" TempLimite="200 mb" ServerIp="192.168.11.102" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="1" NcName="default_nc" NcUri="multicast://default" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="0" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="384" BrokerName="MQB(61626)" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.106" JmxPort="1098" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data1" PaDatasource="bspf_datasource_jndiname" UseSsl="0" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="0" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="481" BrokerName="mqd(46)" IsPersistent="0" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.106" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="0" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data4" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="0" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="1" Maxfilelength="20mb" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="561" BrokerName="chennantest" IsPersistent="0" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.106" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="0" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data7" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="0" UseAuth="1" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="1" Maxfilelength="20mb" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="448" BrokerName="testtter" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.107" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" NcUri="multicast://default" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="1" SslKs="726" SslKspassword="password" SslTs="727" SslDirectory="d:\keystore" SslTspassword="password" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="1" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="381" BrokerName="auto" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="200kb" StoreLimite="500kb" StoreName="foo" TempLimite="200kb" ServerIp="192.168.11.102" JmxPort="1098" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds-broker2" UseSsl="0" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="1" UseLog="0" PersistentType="0" Maxfilelength="20m" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="403" BrokerName="107" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.107" JmxPort="1092" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data1" PaDatasource="my102orcl" UseSsl="0" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="1" UseLog="1" PersistentType="0" Maxfilelength="20mb" Synconwrite="0" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="729" BrokerName="news" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="20mb" StoreLimite="50mb" StoreName="foo" TempLimite="20mb" ServerIp="192.168.11.107" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data8" PaDatasource="jdbc/oracle-ds" UseSsl="1" SslKs="735" SslKspassword="creatora" SslTs="736" SslDirectory="d:\keystore3" SslTspassword="creatorb" IsUsejmx="1" UseAuth="1" Needsupdate="1" UsePermission="0" UseLog="0" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="1067" BrokerName="144New" IsPersistent="1" IsUsemirrq="1" MemMaxlimit="512mb" StoreLimite="5000mb" StoreName="foo" TempLimite="2000mb" ServerIp="172.16.17.217" JmxPort="1099" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="1" UseLog="1" PersistentType="1" Maxfilelength="30mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqBroker BrokerId="1147" BrokerName="my144" IsPersistent="0" IsUsemirrq="1" MemMaxlimit="200mb" StoreLimite="500mb" StoreName="foo" TempLimite="200mb" ServerIp="172.16.17.144" JmxPort="1096" JmxCreatecon="1" JmxCrembserver="1" UseCluster="0" NcName="default_nc" Datadirectory="d:\mq\data" PaDatasource="jdbc/oracle-ds" UseSsl="0" IsUsejmx="1" UseAuth="0" Needsupdate="1" UsePermission="0" UseLog="1" PersistentType="1" Maxfilelength="20mb" Synconwrite="1" Conduitsubscriptions="0"/>
+
+            <MqConnectors BrokerId="201" ConnectorId="343" ConnectorUri="tcp://172.16.17.216:61615" ConnectorName="tcp" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="471" ConnectorId="474" ConnectorUri="tcp://localhost:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="801" ConnectorId="929" ConnectorUri="ssl://192.168.11.126:61617" ConnectorName="ssl" ConProtocol="ssl"/>
+
+            <MqConnectors BrokerId="1447" ConnectorId="1450" ConnectorUri="tcp://172.16.17.144:61619" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="1" ConnectorId="141" ConnectorUri="tcp://192.168.11.102:61616" ConnectorName="tcp" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="410" ConnectorId="413" ConnectorUri="tcp://localhost:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="541" ConnectorId="546" ConnectorUri="tcp://192.168.11.5:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="801" ConnectorId="928" ConnectorUri="tcp://192.168.11.126:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="1047" ConnectorId="1052" ConnectorUri="tcp://192.168.11.144:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="443" ConnectorId="447" ConnectorUri="tcp://192.168.11.107:61626" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="384" ConnectorId="389" ConnectorUri="tcp://localhost:61626" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="391" ConnectorId="396" ConnectorUri="tcp://localhost:61636" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="481" ConnectorId="486" ConnectorUri="tcp://localhost:61646" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="561" ConnectorId="566" ConnectorUri="tcp://localhost:61619" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="801" ConnectorId="931" ConnectorUri="stomp://localhost:61613" ConnectorName="stomp" ConProtocol="stomp"/>
+
+            <MqConnectors BrokerId="448" ConnectorId="581" ConnectorUri="tcp://192.168.11.107:61615" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="642" ConnectorId="661" ConnectorUri="tcp://localhost:61616" ConnectorName="tcp" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="403" ConnectorId="406" ConnectorUri="tcp://localhost:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="448" ConnectorId="728" ConnectorUri="ssl://localhost:61617" ConnectorName="ssl" ConProtocol="ssl"/>
+
+            <MqConnectors BrokerId="729" ConnectorId="732" ConnectorUri="tcp://localhost:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="729" ConnectorId="733" ConnectorUri="http://localhost:61615" ConnectorName="http" ConProtocol="http"/>
+
+            <MqConnectors BrokerId="729" ConnectorId="734" ConnectorUri="ssl://localhost:61617" ConnectorName="ssl" ConProtocol="ssl"/>
+
+            <MqConnectors BrokerId="1067" ConnectorId="1070" ConnectorUri="tcp://172.16.17.217:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="1147" ConnectorId="1150" ConnectorUri="tcp://172.16.17.144:61616" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConnectors BrokerId="1207" ConnectorId="1210" ConnectorUri="tcp://172.16.17.119:61656" ConnectorName="openwire" ConProtocol="tcp"/>
+
+            <MqConParams NodeId="361" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="361" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="361" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="361" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="361" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="361" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="361" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="361" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="361" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="361" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="361" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="361" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="361" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="361" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="361" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="361" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="361" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="361" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="361" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="361" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="361" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="361" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="361" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="361" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="623" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="623" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="623" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="623" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="623" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="623" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="623" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="623" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="623" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="623" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="623" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="623" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="623" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="623" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="623" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="623" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="623" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="623" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="623" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="623" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="623" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="623" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="623" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="623" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="641" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="641" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="641" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="641" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="641" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="641" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="641" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="641" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="641" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="641" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="641" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="641" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="641" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="641" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="641" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="641" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="641" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="641" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="641" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="641" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="641" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="641" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="641" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="641" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="601" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="601" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="601" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="601" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="601" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="601" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="601" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="601" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="601" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="601" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="601" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="601" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="601" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="601" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="601" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="601" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="601" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="601" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="601" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="601" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="601" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="601" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="601" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="601" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="621" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="621" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="621" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="621" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="621" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="621" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="621" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="621" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="621" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="621" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="621" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="621" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="621" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="621" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="621" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="621" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="621" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="621" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="621" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="621" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="621" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="621" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="621" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="621" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="581" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="581" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="581" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="581" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="581" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="581" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="581" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="581" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="581" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="581" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="581" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="581" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="581" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="581" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="581" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="581" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="581" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="581" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="581" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="581" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="581" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="581" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="581" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="581" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="701" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="701" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="701" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="701" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="701" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="701" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="701" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="701" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="701" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="701" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="701" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="701" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="701" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="701" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="701" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="701" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="701" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="701" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="701" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="701" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="701" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="701" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="701" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="701" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="501" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="501" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="501" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="501" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="501" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="501" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="501" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="501" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="501" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="501" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="501" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="501" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="501" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="501" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="501" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="501" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="501" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="501" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="501" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="501" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="501" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="501" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="501" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="501" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="561" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="561" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="561" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="561" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="561" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="561" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="561" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="561" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="561" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="561" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="561" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="561" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="561" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="561" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="561" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="561" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="561" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="561" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="561" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="561" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="561" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="561" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="561" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="561" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="622" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="622" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="622" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="622" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="622" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="622" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="622" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="622" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="622" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="622" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="622" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="622" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="622" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="622" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="622" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="622" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="622" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="622" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="622" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="622" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="622" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="622" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="622" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="622" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="661" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="661" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="661" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="661" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="661" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="661" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="661" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="661" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="661" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="661" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="661" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="661" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="661" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="661" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="661" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="661" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="661" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="661" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="661" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="661" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="661" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="661" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="661" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="661" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqConParams NodeId="681" Name="useConnectionPool" Value="false"/>
+
+            <MqConParams NodeId="681" Name="watchTopicAdvisories" Value="true"/>
+
+            <MqConParams NodeId="681" Name="optimizedMessageDispatch" Value="true"/>
+
+            <MqConParams NodeId="681" Name="sendTimeout" Value="0"/>
+
+            <MqConParams NodeId="681" Name="closeTimeout" Value="15000"/>
+
+            <MqConParams NodeId="681" Name="dispatchAsync" Value="true"/>
+
+            <MqConParams NodeId="681" Name="useAsyncSend" Value="false"/>
+
+            <MqConParams NodeId="681" Name="alwaysSyncSend" Value="false"/>
+
+            <MqConParams NodeId="681" Name="useCompression" Value="false"/>
+
+            <MqConParams NodeId="681" Name="useRetroactiveConsumer" Value="false"/>
+
+            <MqConParams NodeId="681" Name="objectMessageSerializationDefered" Value="false"/>
+
+            <MqConParams NodeId="681" Name="disableTimeStampsByDefault" Value="false"/>
+
+            <MqConParams NodeId="681" Name="optimizeAcknowledge" Value="false"/>
+
+            <MqConParams NodeId="681" Name="producerWindowSize" Value="0"/>
+
+            <MqConParams NodeId="681" Name="copyMessageOnSend" Value="true"/>
+
+            <MqConParams NodeId="681" Name="statsEnabled" Value="false"/>
+
+            <MqConParams NodeId="681" Name="alwaysSessionAsync" Value="true"/>
+
+            <MqConParams NodeId="681" Name="queuePrefetch" Value="1000"/>
+
+            <MqConParams NodeId="681" Name="maximumPendingMessageLimit" Value="0"/>
+
+            <MqConParams NodeId="681" Name="durableTopicPrefetch" Value="100"/>
+
+            <MqConParams NodeId="681" Name="queueBrowserPrefetch" Value="500"/>
+
+            <MqConParams NodeId="681" Name="topicPrefetch" Value="32766"/>
+
+            <MqConParams NodeId="681" Name="optimizeDurableTopicPrefetch" Value="1000"/>
+
+            <MqConParams NodeId="681" Name="inputStreamPrefetch" Value="100"/>
+
+            <MqGroup BrokerId="1447" GroupId="1449" GroupName="admin"/>
+
+            <MqGroup BrokerId="1147" GroupId="1407" GroupName="testgroup"/>
+
+            <MqGroup BrokerId="1207" GroupId="1209" GroupName="admin"/>
+
+            <MqGroup BrokerId="201" GroupId="342" GroupName="user"/>
+
+            <MqGroup BrokerId="201" GroupId="345" GroupName="write"/>
+
+            <MqGroup BrokerId="201" GroupId="346" GroupName="xadmin"/>
+
+            <MqGroup BrokerId="373" GroupId="375" GroupName="admin"/>
+
+            <MqGroup BrokerId="391" GroupId="393" GroupName="admin"/>
+
+            <MqGroup BrokerId="541" GroupId="543" GroupName="admin"/>
+
+            <MqGroup BrokerId="410" GroupId="412" GroupName="admin"/>
+
+            <MqGroup BrokerId="471" GroupId="473" GroupName="admin"/>
+
+            <MqGroup BrokerId="448" GroupId="691" GroupName="test"/>
+
+            <MqGroup BrokerId="801" GroupId="899" GroupName="zuzhang"/>
+
+            <MqGroup BrokerId="443" GroupId="445" GroupName="admin"/>
+
+            <MqGroup BrokerId="642" GroupId="644" GroupName="admin"/>
+
+            <MqGroup BrokerId="1" GroupId="390" GroupName="admin"/>
+
+            <MqGroup BrokerId="642" GroupId="692" GroupName="ugroup1"/>
+
+            <MqGroup BrokerId="801" GroupId="803" GroupName="admin"/>
+
+            <MqGroup BrokerId="1047" GroupId="1049" GroupName="admin"/>
+
+            <MqGroup BrokerId="384" GroupId="386" GroupName="admin"/>
+
+            <MqGroup BrokerId="410" GroupId="442" GroupName="ioio"/>
+
+            <MqGroup BrokerId="443" GroupId="477" GroupName="user"/>
+
+            <MqGroup BrokerId="443" GroupId="479" GroupName="erveryonebody"/>
+
+            <MqGroup BrokerId="481" GroupId="483" GroupName="admin"/>
+
+            <MqGroup BrokerId="561" GroupId="563" GroupName="admin"/>
+
+            <MqGroup BrokerId="801" GroupId="914" GroupName="bshj"/>
+
+            <MqGroup BrokerId="373" GroupId="376" GroupName="sdf"/>
+
+            <MqGroup BrokerId="201" GroupId="344" GroupName="read"/>
+
+            <MqGroup BrokerId="201" GroupId="321" GroupName="admin"/>
+
+            <MqGroup BrokerId="381" GroupId="383" GroupName="admin"/>
+
+            <MqGroup BrokerId="403" GroupId="405" GroupName="admin"/>
+
+            <MqGroup BrokerId="448" GroupId="450" GroupName="admin"/>
+
+            <MqGroup BrokerId="642" GroupId="685" GroupName="ugroup01"/>
+
+            <MqGroup BrokerId="642" GroupId="687" GroupName="ugroup02"/>
+
+            <MqGroup BrokerId="642" GroupId="688" GroupName="ugroup03"/>
+
+            <MqGroup BrokerId="642" GroupId="690" GroupName="ugroup05"/>
+
+            <MqGroup BrokerId="1067" GroupId="1069" GroupName="admin"/>
+
+            <MqGroup BrokerId="729" GroupId="731" GroupName="admin"/>
+
+            <MqGroup BrokerId="1147" GroupId="1149" GroupName="admin"/>
+
+            <MqHugemessageSchedule TaskId="1320" ScheduleId="98988203-063c-11df-af18-1f5cdb5e8ab3" FilePath="F:\bigdata/dominspector.rar" FileSize="2339722" SegmentSize="1048576" Finished="1" RegDate="2010-1-21 11.47.30.349964000" Isbroke="0" Useparrel="1" Tasktype="1" MachineUuid="00-23-54-CF-D1-D7-etl" BussinessId="aaa."/>
+
+            <MqHugemessageSchedule TaskId="1321" ScheduleId="adc71b4e-063e-11df-a525-658363bffc21" FilePath="F:\bigdata/WindowsXP-KB936929-SP3-x86-CHS.exe" FileSize="351354408" SegmentSize="1048576" Finished="1" RegDate="2010-1-21 11.50.35.347919000" Isbroke="0" Useparrel="1" Tasktype="1" MachineUuid="00-23-54-CF-D1-D7-etl" BussinessId="aaa."/>
+
+            <MqMemConf ConfigId="1128" BrokerId="201" ObjectType="0" ObjectName="&gt;" MemLimit="20mb" Producerflowcontrol="1"/>
+
+            <MqMemConf ConfigId="1267" BrokerId="1067" ObjectType="0" ObjectName="144a" MemLimit="30mb" DeadPrefix="dlq" Producerflowcontrol="1"/>
+
+            <MqMemConf ConfigId="1427" BrokerId="1147" ObjectType="1" ObjectName="mylove" MemLimit="1kb" DeadPrefix="vv.v" Producerflowcontrol="0"/>
+
+            <MqMemConf ConfigId="1393" BrokerId="1147" ObjectType="0" ObjectName="dead" MemLimit="10kb" DeadPrefix="dead.de." Producerflowcontrol="1"/>
+
+            <MqMirrorTable MirrorName="point102_topic" MirrorId="1287" BrokerId="201" Remark="test" MirrorPrefix="Mirror.Topic" Copymessage="1"/>
+
+            <MqMirrorTable MirrorName="my" MirrorId="1431" BrokerId="1147" MirrorPrefix="Mirror.queue." Copymessage="0"/>
+
+            <MqMirrorTable MirrorName="test" MirrorId="1432" BrokerId="1147" MirrorPrefix="rrr.ee." Copymessage="0"/>
+
+            <MqMirrorTable MirrorName="point102" MirrorId="1288" BrokerId="201" Remark="point102" MirrorPrefix="Mirror.Topic." Copymessage="1"/>
+
+            <MqMirrorTable MirrorName="test" MirrorId="2" BrokerId="1" Remark="0" MirrorPrefix="Mirror.Topic" Copymessage="1"/>
+
+            <MqMonTable MonitorId="1227" MqMonitorIp="172.16.17.144" MqMonitorPort="11999" MqJmxmonPort="1099" MqTcpPort="61616" MqUser="system" MqPassword="manager" MonitorName="my144"/>
+
+            <MqNode NodeId="744" NodeFactoryId="743" NodeName="point102" DestType="1" Destination="point102" Isvalidate="1" Ispersistent="1" Priority="4" Expiration="0"/>
+
+            <MqNode NodeId="761" NodeFactoryId="743" NodeName="aaa" DestType="0" Destination="aaa" Isvalidate="1" Ispersistent="1" Priority="4" Expiration="0"/>
+
+            <MqNodeFactory NodeFactoryId="743" NodeFactoryName="point102" ServerUrl="tcp://172.16.17.216:61615" UseAuth="0" UseSsl="0" UseFailover="1" Reconnectdelay="10" Maxreconnectdelay="30000" Useexponentialbackoff="1" Backoffmutipler="2" Maxreconnecttimes="5" Randomize="1" ConCollisionavoidancepercent="15" ConMaximumredeliveries="6" ConInitialredeliverydelay="1000" ConUsecollisionavoidance="0" ConUseexponentialbackoff="0" ConBackoffmultiplier="5"/>
+
+            <MqNodeFactory NodeFactoryId="762" NodeFactoryName="fff" ServerUrl="tcp://localhost:61615" UseAuth="0" UseSsl="0" UseFailover="1" Reconnectdelay="10" Maxreconnectdelay="30000" Useexponentialbackoff="1" Backoffmutipler="2" Maxreconnecttimes="5" Randomize="1" ConCollisionavoidancepercent="15" ConMaximumredeliveries="6" ConInitialredeliverydelay="1000" ConUsecollisionavoidance="0" ConUseexponentialbackoff="0" ConBackoffmultiplier="5"/>
+
+            <MqPermissions ResourceType="topic" ResName="&gt;" ResOp="read" GroupType="group" GroupName="admin" BrokerId="403" Author="admin" AuthDate="7/16/2009 16:44:25"/>
+
+            <MqPermissions ResourceType="topic" ResName="&gt;" ResOp="admin" GroupType="group" GroupName="admin" BrokerId="403" Author="admin" AuthDate="7/16/2009 16:44:25"/>
+
+            <MqPermissions ResourceType="queue" ResName="&gt;" ResOp="write" GroupType="group" GroupName="admin" BrokerId="448" Author="admin" AuthDate="7/20/2009 14:53:37"/>
+
+            <MqPermissions ResourceType="queue" ResName="&gt;" ResOp="read" GroupType="group" GroupName="admin" BrokerId="448" Author="admin" AuthDate="7/20/2009 14:53:37"/>
+
+            <MqPermissions ResourceType="queue" ResName="&gt;" ResOp="admin" GroupType="group" GroupName="admin" BrokerId="448" Author="admin" AuthDate="7/20/2009 14:53:37"/>
+
+            <MqPermissions ResourceType="topic" ResName="&gt;" ResOp="write" GroupType="group" GroupName="admin" BrokerId="448" Author="admin" AuthDate="7/20/2009 14:53:37"/>
+
+            <MqPermissions ResourceType="topic" ResName="&gt;" ResOp="read" GroupType="group" GroupName="admin" BrokerId="448" Author="admin" AuthDate="7/20/2009 14:53:37"/>
+
+            <MqPermissions ResourceType="topic" ResName="&gt;" ResOp="admin" GroupType="group" GroupName="admin" BrokerId="448" Author="admin" AuthDate="7/20/2009 14:53:37"/>
+
+            <MqPermissions ResourceType="queue" ResName="queue.test.&gt;" ResOp="write" GroupType="group" GroupName="ugroup01" BrokerId="642" Author="admin" AuthDate="8/5/2009 15:29:17"/>
+
+            <MqPermissions ResourceType="queue" ResName="queue.test.&gt;" ResOp="read" GroupType="group" GroupName="ugroup01" BrokerId="642" Author="admin" AuthDate="8/5/2009 15:29:48"/>
+
+            <MqPermissions ResourceType="queue" ResName="queue.test.&gt;" ResOp="admin" GroupType="group" GroupName="ugroup01" BrokerId="642" Author="admin" AuthDate="8/5/2009 15:29:49"/>
+
+            <MqPermissions ResourceType="queue" ResName="queue.test.&gt;" ResOp="admin" GroupType="group" GroupName="ugroup1" BrokerId="642" Author="admin" AuthDate="8/5/2009 16:7:40"/>
+
+            <MqPermissions ResourceType="topic" ResName="mdd" ResOp="read" GroupType="group" GroupName="ugroup1" BrokerId="642" Author="admin" AuthDate="8/6/2009 14:4:54"/>
+
+            <MqPermissions ResourceType="topic" ResName="mdd" ResOp="write" GroupType="group" GroupName="ugroup1" BrokerId="642" Author="admin" AuthDate="8/6/2009 14:4:54"/>
+
+            
+            <Tableinfo TableName="mq_node" TableIdName="node_id" TableIdIncrement="1" TableIdValue="761" TableIdGenerator="SEQ_MQ_NODE" TableIdType="sequence"/>
+
+</dataset>
+
+

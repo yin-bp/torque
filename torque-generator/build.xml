@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+
+<!-- $Id: build.xml,v 1.0.7 2009/01/05 12:29:55 $ -->
+
+<project name="Creator DBInit" default="dbzip" basedir=".">
+	<description>
+		      Creator DBInit build file
+	</description>
+	<tstamp prefix="start" />
+
+	<tstamp>
+		<format property="compile.timestamp" pattern="yyyy-MM-dd HH.mm.ss" />
+	</tstamp>
+
+	<typedef resource="org/tigris/subversion/svnant/svnantlib.xml" classpath="svnant.jar" />
+	<typedef resource="net/sf/antcontrib/antlib.xml" classpath="ant-contrib-1.0b3.jar" />
+
+	<!-- set global properties for this build -->
+	<property file="build.properties" />
+	<target name="init" description="create timestamp and directories">
+		<echo>Init...</echo>
+
+		<tstamp />
+		<delete dir="classes" />
+		
+
+		<delete dir="distrib" />
+		<mkdir dir="classes" />
+		
+		<mkdir dir="distrib" />
+		<mkdir dir="distrib/lib" />
+	</target>
+
+	
+
+	<!--
+		       ==========================
+		        Distribution jar package
+		       ==========================
+		  -->
+	<target name="distrib" depends="init,jar-torque,jar-launcher,copy-resource,copy-depends-liberary" description="copy jar file to distribution directory">
+		<echo>Construct the distribution package...</echo>
+	</target>
+
+	
+	<target name="compile-torque" description="compile torque source ">
+		<echo>compile  torque source  ...</echo>
+		<javac destdir="classes" target="1.5" source="1.5" deprecation="true" debug="${debug}" optimize="${optimize}" memorymaximumsize="256M" fork="true" verbose="yes">
+			<src path="src/main/java" />
+			<src path="src-dbtransfer" />
+			<classpath id="cp-cim-model">
+
+				<fileset dir="lib/" includes="**/*.jar *.zip" />
+				
+			</classpath>
+		</javac>
+	</target>
+	<target name="jar-torque" depends="compile-torque" description="generate the cim-model library cim-model.jar">
+		<echo>Generate the cim-model library cim-model.jar ...</echo>
+		<jar jarfile="${distrib}/lib/torque.jar" basedir="classes" includes="**/*">
+			<manifest>
+
+				<attribute name="Implementation-Version" value="${impl.version}" />
+				<attribute name="Specification-Version" value="${revision}" />
+				<attribute name="Implementation-Vendor" value="${impl.vendor}" />
+				<attribute name="Implementation-ProductID" value="${impl.productID}" />
+				<attribute name="Compile-Timestamp" value="${compile.timestamp}" />
+				<attribute name="Compile-User" value="${username}" />
+				
+			</manifest>
+		</jar>
+		<delete dir="classes" />
+		
+	</target>
+	
+	<target name="compile-launcher" description="compile torque source ">
+			<echo>compile  torque source  ...</echo>
+		<mkdir dir="classes"/>
+			<javac destdir="classes" target="1.5" source="1.5" deprecation="true" debug="${debug}" optimize="${optimize}" memorymaximumsize="256M" fork="true" verbose="yes">
+				<src path="src-launcher" />
+				<classpath id="cp-cim-model">
+
+					<fileset dir="lib/" includes="**/*.jar *.zip" />
+					
+				</classpath>
+			</javac>
+		</target>
+		<target name="jar-launcher" depends="compile-launcher" description="generate the cim-model library cim-model.jar">
+			<echo>Generate the cim-model library launcher.jar ...</echo>
+			
+			<jar jarfile="${distrib}/launcher.jar" basedir="classes" includes="**/*">
+				<manifest>
+
+					<attribute name="Implementation-Version" value="${impl.version}" />
+					<attribute name="Specification-Version" value="${revision}" />
+					<attribute name="Implementation-Vendor" value="${impl.vendor}" />
+					<attribute name="Implementation-ProductID" value="${impl.productID}" />
+					<attribute name="Compile-Timestamp" value="${compile.timestamp}" />
+					<attribute name="Compile-User" value="${username}" />
+					<attribute name="Main-Class" value="org.frameworkset.persistent.db.Launcher" />
+				</manifest>
+			</jar>
+			<delete dir="classes" />
+			
+		</target>
+
+	<target name="copy-resource" description="copy resource files">
+		<echo>copy resource files ...</echo>
+		
+		<copy todir="distrib/resources">
+			<fileset dir="src/main/resources" includes="**/*" />
+		</copy>
+		
+		<copy todir="distrib/templates">
+					<fileset dir="templates" includes="**/*" />
+		</copy>
+		
+		<copy todir="distrib/schema">
+				<fileset dir="schema" includes="*.xml" />
+			
+	    </copy>
+		
+		<copy todir="distrib/schema/index">
+						<fileset dir="schema/index" includes="*.xml" />
+					
+		</copy>
+		
+		<copy todir="distrib/schema/patch">
+								<fileset dir="schema/patch" includes="*.xml" />
+		</copy>
+		
+		<copy todir="distrib/schema/data">
+						<fileset dir="schema/data" includes="*.xml" />
+		</copy>
+		
+		<copy todir="distrib/">
+						<fileset dir="." includes="startup.bat" />
+		</copy>
+		
+		<copy todir="distrib/">
+						<fileset dir="." includes="patch.bat" />
+		</copy>
+	</target>
+	
+	<target name="copy-depends-liberary" description="copy depends liberarys">
+		<echo>copy depends liberarys ...</echo>
+		<copy todir="${distrib}/lib">
+			<fileset dir="lib" includes="**/*" />
+		</copy>
+
+	</target>
+	<target name="complete" depends="distrib" description="complete build project">
+		<delete dir="classes" />
+		
+
+	</target>
+
+	<target name="dbzip" depends="complete" description="dbzip build project">
+		<jar jarfile="${distrib}/dbinit.zip" 
+				basedir="${distrib}" includes="**/*" excludes="**/Thumbs.db" />
+
+	</target>
+	
+	<target name="dbzip-system" depends="init,jar-torque,jar-launcher,copy-system-resource,copy-depends-liberary" description="dbzip build project">
+		<jar jarfile="${distrib}/dbinit-system.zip" 
+				basedir="${distrib}" includes="**/*" excludes="**/Thumbs.db" />
+				
+				<delete dir="classes" />
+	</target>
+	
+	<target name="copy-system-resource" description="copy system resource files">
+		<echo>copy system resource files ...</echo>
+		
+		<copy todir="distrib/resources">
+			<fileset dir="src/main/resources" includes="**/*" />
+		</copy>
+		
+		<copy todir="distrib/templates">
+					<fileset dir="templates" includes="**/*" />
+		</copy>
+		
+		<copy todir="distrib/schema">
+				<fileset dir="schema">
+					<include name="**/cms.xml" />
+					<include name="**/sys.xml" />
+					<include name="**/tableinfo.xml" />
+					<include name="**/test.xml" />
+				</fileset>
+	    </copy>
+		
+		<copy todir="distrib/schema">
+				<fileset dir="schema-assemble/system">
+					<include name="**/assemble.xml" />
+				</fileset>
+	    </copy>
+		
+		<copy todir="distrib/schema/index">
+					<fileset dir="schema/index" includes="*.xml" />			
+		</copy>
+		
+		<copy todir="distrib/schema/patch">
+		
+								<fileset dir="schema/patch" includes="*.xml" />
+		</copy>
+		
+		<copy todir="distrib/schema/data">
+		<fileset dir="schema/data">
+					<include name="**/cmc-init.xml" />
+					<include name="**/mysql-sequence.xml" />
+					<include name="**/sys-init.xml" />
+					<include name="**/cms-init.xml" />
+					<include name="**/cms-init-1.xml" />
+				</fileset>
+						
+		</copy>
+		
+		<copy todir="distrib/">
+						<fileset dir="." includes="startup.bat" />
+		</copy>
+		
+		<copy todir="distrib/">
+						<fileset dir="." includes="patch.bat" />
+		</copy>
+	</target>
+
+	<target name="dbzip-smc" depends="init,jar-torque,jar-launcher,copy-smc-resource,copy-depends-liberary" description="dbzip build project">
+		<jar jarfile="${distrib}/dbinit-smc.zip" 
+				basedir="${distrib}" includes="**/*" excludes="**/Thumbs.db" />
+				
+				<delete dir="classes" />
+	</target>
+	
+	<target name="copy-smc-resource" description="copy system resource files">
+		<echo>copy system resource files ...</echo>
+		
+		<copy todir="distrib/resources">
+			<fileset dir="src/main/resources" includes="**/*" />
+		</copy>
+		
+		<copy todir="distrib/templates">
+					<fileset dir="templates" includes="**/*" />
+		</copy>
+		
+		<copy todir="distrib/schema">
+				<fileset dir="schema">
+					<include name="**/cms.xml" />
+					<include name="**/sys.xml" />
+					<include name="**/tableinfo.xml" />
+					<include name="**/smc.xml" />
+					<include name="**/test.xml" />
+				</fileset>
+	    </copy>
+		
+		<copy todir="distrib/schema">
+				<fileset dir="schema-assemble/smc">
+					<include name="**/assemble.xml" />
+				</fileset>
+	    </copy>
+		
+		<copy todir="distrib/schema/index">
+					<fileset dir="schema/index" includes="*.xml" />			
+		</copy>
+		
+		<copy todir="distrib/schema/patch">
+		
+								<fileset dir="schema/patch" includes="*.xml" />
+		</copy>
+		
+		<copy todir="distrib/schema/data">
+		<fileset dir="schema/data">
+					<include name="**/cmc-init.xml" />
+					<include name="**/mysql-sequence.xml" />
+					<include name="**/sys-init.xml" />
+					<include name="**/smc-init.xml" />
+				</fileset>
+						
+		</copy>
+		
+		<copy todir="distrib/">
+						<fileset dir="." includes="startup.bat" />
+		</copy>
+		
+		<copy todir="distrib/">
+						<fileset dir="." includes="patch.bat" />
+		</copy>
+	</target>
+
+</project>

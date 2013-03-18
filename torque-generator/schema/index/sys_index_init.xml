@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manager-config>
+	<description>
+<![CDATA[
+	sys 约束的初始化,包括mysql和oracle
+ ]]>
+	</description>
+
+	<property name="all_datas">
+		<list>
+		<property name="drop_index">
+				<map>
+					<property name="mysql">
+
+						<list>
+						
+						    
+							 
+							
+							 
+						
+							
+							 
+							 
+							 
+							 
+							 
+							 
+							
+							 
+							
+						</list>
+					</property>
+					
+					<property name="default">
+
+						<list>
+							
+							 
+							
+							 
+							
+							
+							
+							 
+							
+							 
+							 <property  action="drop"><![CDATA[
+							  DROP INDEX idx_tableinfo 
+							 ]]></property>
+							 
+							
+						</list>
+					</property>
+					
+				</map>
+			</property>
+		
+		
+		
+		
+			<property name="create_index">
+				<map>
+					<property name="default">
+
+						<list>
+							 <property  action="create"><![CDATA[
+                create index org_parent_ididx on td_sm_organization (parent_id)
+							 ]]></property>
+							
+						</list>
+					</property>
+				</map>
+			</property>
+			
+			
+			<property name="create_index_for_oracle">
+				<map>
+					<property name="oracle">
+
+						<list>
+						
+						    
+							 
+						
+							 
+							 
+							<property  action="create"><![CDATA[
+create unique index idx_tableinfo on tableinfo (upper(trim(table_name)))
+							 ]]></property>
+							 
+							 <property  action="create"><![CDATA[
+                create index org_parent_ididx on td_sm_organization (parent_id)
+							 ]]></property>
+
+							
+						</list>
+					</property>
+				</map>
+			</property>
+		</list>
+	</property>
+</manager-config>

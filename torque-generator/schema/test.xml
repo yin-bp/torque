@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manager-config>
+	<description>
+<![CDATA[
+	新增broker时，添加默认的用户，用户组，用户和用户组关系，用户组权限数据库脚本
+ ]]>
+	</description>
+	
+		
+			<property name="test_mq_rule">
+		<![CDATA[insert into mq_rules_tpl
+									  (RULE_TPL_ID,
+									   RULES,
+									   RULES_NAME,
+									   MODIFIABLE,
+									   TPL_AUTH,
+									   TPL_DESC,
+									   RUTE_IMAGE,
+									   IMPORTCLASS,
+									   ORDERBY,
+									   TPL_TYPE)
+									values
+									  (13,
+									   'from("cmq:my.queue").splitter().xpath("//foo/bar").convertBodyTo(String.class).to("file://some/directory");',
+									   '分离器(SplitterXPath模式)',
+									   1,
+									   'admin',
+									   'EIP模式中的分离器模式允许将消息分割成一个一个小块的消息分别处理。
+
+功能说明：
+Camel分离器将消息拆分成许多块，默认返回最后一个块被分离的消息。Camel支持编写自己的聚合消息的策略。
+
+事例说明：
+errorHandler(deadLetterChannel("mock:error"));
+from("seda:a").split(body(String.class).tokenize("\n")).to("seda:b");
+例子展示了一个消息从队列a发出，通过分割符号回车将一个整体消息分成一块一块，发到了队列b，在使用分离器功能前，使用了死信通道功能，将异常信息发送到error队列中。
+在分离器中还可以支持XPath，XQuery，SQL或者一种脚本语言来执行分离表达式。事例如下：
+from("cmq:my.queue").split(xpath("//foo/bar")).convertBodyTo(String.class).to("file://some/directory");
+在分离器中也可以分离数据流，事例如下：
+from("direct:streaming").splitter(body().tokenize(",")).streaming().to("cmq:my.parts");
+基本使用
+from("cmq:start").resequencer(header("seqnum")).stream().to("activemq:result");
+设置容量和超时时间大小
+from("cmq:start").resequencer(header("seqnum")).stream().capacity(5000).timeout(4000L).to("cmq:result");
+在分离器中在并行分离模式中也可以定制ThreadPoolExecutor，例子如下。
+XPathBuilder xPathBuilder = new XPathBuilder("//foo/bar");
+ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(8, 16, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue());
+from("cmq:my.queue").split(xPathBuilder, true, threadPoolExecutor).to("cmq:my.parts");
+分离器中使用pojo来分离消息，我们可以使用method表达式来调用一个Bean来获得分离的部分，这个Bean必须返回一个iterable，例如：java.util.Collection, java.util.Iterator or an array.
+事例如下：
+from("direct:body") // here we use a POJO bean mySplitterBean to do the split of the payload .splitter().method("mySplitterBean", "splitBody")
+.to("mock:result");
+from("direct:message") // here we use a POJO bean mySplitterBean to do the split of the message  // with a certain header value
+.splitter().method("mySplitterBean", "splitMessage").to("mock:result");
+Bean编写如下：
+public class MySplitterBean {
+
+    /**
+     * The split body method returns something that is iteratable such as a java.util.List.
+     *
+     * @param body the payload of the incoming message
+     * @return a list containing each part splitted
+     */
+    public List splitBody(String body) {
+        // since this is based on an unit test you can of couse
+        // use different logic for splitting as Camel have out
+        // of the box support for splitting a String based on comma
+        // but this is for show and tell, since this is java code
+        // you have the full power how you like to split your messages
+        List answer = new ArrayList();
+        String[] parts = body.split(",");
+        for (String part : parts) {
+            answer.add(part);
+        }
+        return answer;
+    }
+
+    /**
+     * The split message method returns something that is iteratable such as a java.util.List.
+     *
+     * @param header the header of the incoming message with the name user
+     * @param body the payload of the incoming message
+     * @return a list containing each part splitted
+     */
+    public List<Message> splitMessage(@Header(value = "user") String header, @Body String body) {
+        // we can leverage the Parameter Binding Annotations
+        // http://camel.apache.org/parameter-binding-annotations.html
+        // to access the message header and body at same time,
+        // then create the message that we want, splitter will
+        // take care rest of them.
+        // *NOTE* this feature requires Camel version >= 1.6.1
+        List<Message> answer = new ArrayList<Message>();
+        String[] parts = header.split(",");
+        for (String part : parts) {
+            DefaultMessage message = new DefaultMessage();
+            message.setHeader("user", part);
+            message.setBody(body);
+            answer.add(message);
+        }
+        return answer;
+    }
+}
+分离、整合 请求/应答 例子
+在分离器中可以将分离的消息分别处理，整合并且返回一个组合响应到原始的调用者。以下是演示事例
+// this routes starts from the direct:start endpoint
+            // the body is then splitted based on @ separator
+            // the splitter in Camel supports InOut as well and for that we need
+            // to be able to aggregate what response we need to send back, so we provide our
+            // own strategy with the class MyOrderStrategy.
+            from("direct:start")
+            .splitter(body().tokenize("@"), new MyOrderStrategy())
+                // each splitted message is then send to this bean where we can process it
+                .to("bean:MyOrderService?method=handleOrder")
+                // this is important to end the splitter route as we do not want to do more routing
+                // on each splitted message
+            .end()
+            // after we have splitted and handled each message we want to send a single combined
+            // response back to the original caller, so we let this bean build it for us
+            // this bean will receive the result of the aggregate strategy: MyOrderStrategy
+            .to("bean:MyOrderService?method=buildCombinedResponse");
+OrderService bean如下
+public static class MyOrderService {
+
+    private static int counter;
+
+    /**
+     * We just handle the order by returning a id line for the order
+     */
+    public String handleOrder(String line) {
+        LOG.debug("HandleOrder: " + line);
+        return "(id=" + ++counter + ",item=" + line + ")";
+    }
+
+    /**
+     * We use the same bean for building the combined response to send
+     * back to the original caller
+     */
+    public String buildCombinedResponse(String line) {
+        LOG.debug("BuildCombinedResponse: " + line);
+        return "Response[" + line + "]";
+    }
+}
+以下是整合消息方式
+/**
+ * This is our own order aggregation strategy where we can control
+ * how each splitted message should be combined. As we do not want to
+ * loos any message we copy from the new to the old to preserve the
+ * order lines as long we process them
+ */
+public static class MyOrderStrategy implements AggregationStrategy {
+
+    public Exchange aggregate(Exchange oldExchange, Exchange newExchange) {
+        // put order together in old exchange by adding the order from new exchange
+
+        if (oldExchange == null) {
+            // the first time we aggregate we only have the new exchange,
+            // so we just return it
+            return newExchange;
+        }
+
+        // copy from OUT as we use InOut pattern
+        String orders = oldExchange.getOut().getBody(String.class);
+        String newLine = newExchange.getOut().getBody(String.class);
+
+        LOG.debug("Aggregate old orders: " + orders);
+        LOG.debug("Aggregate new order: " + newLine);
+
+        // put orders together separating by semi colon
+        orders = orders + ";" + newLine;
+        // put combined order back on old to preserve it
+        oldExchange.getOut().setBody(orders);
+
+        // return old as this is the one that has all the orders gathered until now
+        return oldExchange;
+    }
+}
+上述例子的打印消息，假设在direct:start存在一个消息，消息的body包含数据A@B@C，经过处理后
+HandleOrder: A
+HandleOrder: B
+Aggregate old orders: (id=1,item=A)
+Aggregate new order: (id=2,item=B)
+HandleOrder: C
+Aggregate old orders: (id=1,item=A);(id=2,item=B)
+Aggregate new order: (id=3,item=C)
+BuildCombinedResponse: (id=1,item=A);(id=2,item=B);(id=3,item=C)
+Response to caller: Response[(id=1,item=A);(id=2,item=B);(id=3,item=C)] ',
+									   '1245935964796_Splitter.gif',
+									   ' ',
+									   null,
+									   0)
+		]]>
+		</property>
+		
+		
+		
+	
+
+
+
+
+	
+</manager-config>

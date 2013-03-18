@@ -1,0 +1,136 @@
+ALTER TABLE TD_WF_PROCESSTYPE 
+        DROP FOREIGN KEY TD_WF_PROCESSTYPE_FK_1;
+    
+ALTER TABLE TD_WF_PROCESSTYPE 
+        DROP FOREIGN KEY TD_WF_PROCESSTYPE_FK_2;
+    
+ALTER TABLE TD_WF_BUSINESSTYPE 
+        DROP FOREIGN KEY TD_WF_BUSINESSTYPE_FK_1;
+    
+
+# -----------------------------------------------------------------------
+# TD_WF_PROCESSTYPE
+# -----------------------------------------------------------------------
+drop table if exists TD_WF_PROCESSTYPE;
+
+CREATE TABLE TD_WF_PROCESSTYPE
+(
+    PROCESS_TYPE VARCHAR(100),
+    PROCESS_KEY VARCHAR(255),
+    PRIMARY KEY(PROCESS_TYPE,PROCESS_KEY));
+
+
+# -----------------------------------------------------------------------
+# TD_WF_BUSINESSTYPE
+# -----------------------------------------------------------------------
+drop table if exists TD_WF_BUSINESSTYPE;
+
+CREATE TABLE TD_WF_BUSINESSTYPE
+(
+    BUSINESS_ID VARCHAR(100) NOT NULL,
+    BUSINESS_CODE VARCHAR(100),
+    BUSINESS_NAME VARCHAR(100),
+    PARENT_ID VARCHAR(100),
+    USE_FLAG VARCHAR(10),
+    REMARK VARCHAR(100),
+    PRIMARY KEY(BUSINESS_ID));
+
+
+# -----------------------------------------------------------------------
+# TASK_INFO
+# -----------------------------------------------------------------------
+drop table if exists TASK_INFO;
+
+CREATE TABLE TASK_INFO
+(
+    ID VARCHAR(100) NOT NULL,
+    PROCESS_INSTANCE_ID VARCHAR(100),
+    TASK_ID DECIMAL,
+    DEAL_TIME TIMESTAMP,
+    DEAL_USER VARCHAR(100),
+    IS_PASS VARCHAR(10),
+    DEAL_OPINION VARCHAR(2000),
+    TASK_NAME VARCHAR(100),
+    PRIMARY KEY(ID));
+
+
+# -----------------------------------------------------------------------
+# TD_WF_ACTIVITI_NODE_CANDIDATE
+# -----------------------------------------------------------------------
+drop table if exists TD_WF_ACTIVITI_NODE_CANDIDATE;
+
+CREATE TABLE TD_WF_ACTIVITI_NODE_CANDIDATE
+(
+    ID VARCHAR(100) NOT NULL,
+    NODE_ID VARCHAR(100),
+    CANDIDATE_GROUPS_ID VARCHAR(100),
+    CANDIDATE_GROUPS_NAME VARCHAR(100),
+    CANDIDATE_USERS_ID VARCHAR(100),
+    CANDIDATE_USERS_NAME VARCHAR(100),
+    CANDIDATE_ORGS_ID VARCHAR(100),
+    CANDIDATE_ORGS_NAME VARCHAR(100),
+    CANDIDATE_JOBS_ID VARCHAR(100),
+    CANDIDATE_JOBS_NAME VARCHAR(100),
+    CANDIDATE_ROLES_ID VARCHAR(100),
+    CANDIDATE_ROLES_NAME VARCHAR(100),
+    business_id VARCHAR(100),
+    business_type VARCHAR(100),
+    CREATE_DATE TIMESTAMP,
+    CREATE_PERSON_ID VARCHAR(100),
+    CREATE_PERSON_NAME VARCHAR(100),
+    IS_VALID DECIMAL(1),
+    IS_EDIT_CANDIDATE DECIMAL(1),
+    PRIMARY KEY(ID));
+
+
+# -----------------------------------------------------------------------
+# TD_WF_ACTIVITI_NODE_INFO
+# -----------------------------------------------------------------------
+drop table if exists TD_WF_ACTIVITI_NODE_INFO;
+
+CREATE TABLE TD_WF_ACTIVITI_NODE_INFO
+(
+    ID VARCHAR(100) NOT NULL,
+    PROCESS_KEY VARCHAR(100),
+    NODE_KEY VARCHAR(100),
+    NODE_NAME VARCHAR(100),
+    business_id VARCHAR(100),
+    ORDER_NUM DECIMAL(4),
+    PRIMARY KEY(ID));
+
+
+# -----------------------------------------------------------------------
+# TD_WF_NODEVARIABLE
+# -----------------------------------------------------------------------
+drop table if exists TD_WF_NODEVARIABLE;
+
+CREATE TABLE TD_WF_NODEVARIABLE
+(
+    ID VARCHAR(100) NOT NULL,
+    NODE_ID VARCHAR(100),
+    BUSINESS_ID VARCHAR(100),
+    PARAM_NAME VARCHAR(100),
+    PARAM_VALUE VARCHAR(100),
+    PARAM_TYPE VARCHAR(100),
+    BUSINESS_TYPE VARCHAR(100),
+    IS_EDIT_PARAM DECIMAL,
+    PRIMARY KEY(ID));
+
+ALTER TABLE TD_WF_PROCESSTYPE
+    ADD CONSTRAINT TD_WF_PROCESSTYPE_FK_1
+    FOREIGN KEY (PROCESS_TYPE)
+    REFERENCES TD_WF_BUSINESSTYPE (BUSINESS_ID)
+;
+
+ALTER TABLE TD_WF_PROCESSTYPE
+    ADD CONSTRAINT TD_WF_PROCESSTYPE_FK_2
+    FOREIGN KEY (PROCESS_KEY)
+    REFERENCES ACT_RE_PROCDEF (KEY_)
+;
+
+ALTER TABLE TD_WF_BUSINESSTYPE
+    ADD CONSTRAINT TD_WF_BUSINESSTYPE_FK_1
+    FOREIGN KEY (BUSINESS_ID)
+    REFERENCES TD_WF_BUSINESSTYPE (PARENT_ID)
+;
+

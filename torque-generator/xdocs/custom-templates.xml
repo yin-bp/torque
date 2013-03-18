@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+
+<document>
+ <properties>
+  	<title>Creating and Using Custom Generator Add-ons</title>
+    <author email="monroe@dukece.com">Greg Monroe</author>
+ </properties>
+
+ <body>
+  <section name="Table of Contents">
+    <p>
+      <ol>
+        <li>
+          <a href="#Overview of Customization">Overview of Customization</a>
+        </li>
+        <li>
+          <a href="#Setting up to use/create Overrides">
+            Setting up to use/create Overrides
+          </a>
+        </li>
+        <li>
+          <a href="#Installing an existing add-on">
+            Installing an existing add-on
+          </a>
+        </li>
+        <li>
+          <a href="#Creating an add-on or local customization">
+            Creating an add-on or local customization
+          </a>
+        </li>
+<!--        <li>
+          <a href="#Packaging an Add-on for General Distribution">
+            Packaging an Add-on for General Distribution
+          </a>
+        </li> -->
+      </ol>
+    </p>
+  </section>
+
+  <section name="Overview of Customization">
+    <p>
+    The Torque Generator component as distributed (the "distro") is designed to 
+    support a large number of database servers in stable generic way.  For most
+    users, the distro is perfectly fine.  However, there are some users who want
+    the generator to behave differently.  Some examples of these are:
+    </p>
+    <ul>
+    <li>
+    Making the Torque generated SQL include DB server type and/or version
+    specific items.  E.g., MySQL Table types or MS SQL Version 7 SQL syntax.
+      <br />
+    </li>
+    <li>
+	Making the generated Java classes include application specific code in
+	addition to the core Torque code.<br />   
+    </li>
+    <li>
+    Using the generator to maintain other configuration files that are effected
+    by changes to the DB schema, e.g. custom DTDs, betwixt map files.<br />
+    </li>
+    </ul>
+    <p>
+    Torque has always supported customizing its generator thru creating
+    complete template file replacement directorys/jar and/or a custom Java
+    class generator jar.  However, starting with version 3.3, the Torque 
+    build scripts (Maven 1.0 and Ant, Maven 2.0 is coming), support an
+    "override" method that is intended to allow specific templates and classes
+    to be customized, rather than a complete replacement.
+    </p>
+    <p>
+    The override method supports two main objectives.  First, to make it 
+    easier to maintain local modifications as versions change. Rather
+    than having to merge two complete template sets, the override 
+    method clearly identifies the subset that needs to be checked/merged.
+    Second, support user contributed add-ons that may not be part of the 
+    core Torque purpose but are generally usefull.  For example, there is 
+    an XML import/export tool based on the Apache Commons Betwixt package 
+    that is packaged as an add-on.  
+    </p>  
+    <p>
+    This document shows how to set up your Torque project to use overrides,
+    general information on how to install packaged add-ons, and how to get
+    started in creating custom templates.
+    <!--
+    Provide guidelines on how to package a general add-on for submission to
+    -->
+    </p>
+  </section>
+
+  <section name="Setting up to use/create Overrides">
+    <p>
+    The first step is to create a directory in your project that will contain
+    any override files.  This can be anywhere under your main project directory.
+    Some suggestions are to create a <i>toque-local-lib</i> directory under the 
+    project root if you are just using add-ons or under your <i>src</i> 
+    directory if you are planning to create your own.
+    </p>
+    <p>
+    Next, you need to set the torque.override.dir property to this new directory
+    in your Torque build properties.  For Maven users, this is done in the 
+    project.properties file.  For Ant users, this is done in the 
+    build.properties file.  In the appropriate file, add a 
+    torque.override.dir property that points to your override directory.  For
+    example to point to a top level torque-local-lib use:
+    </p>
+    <ul>
+    <pre>
+    # Define the Override directory location
+    torque.override.dir = ${basedir}/toque-local-lib
+    </pre>
+    </ul>
+    <p>
+    If you are going to be creating override templates, create a
+    <i>templates</i> directory under the the override directory.
+    </p>
+    <p>
+    Once you have finished these steps, the Torque generator build scripts will
+    now use the following to find its templates and classes:
+    </p>
+    <ul>
+    <li>
+    For individual template files, the ${torque.override.dir}/template directory
+    is searched first.<br />
+    </li>
+    <li>
+    Next, all *override.jar files in the ${torque.override.dir} directory are
+    searched for templates and class files.<br />
+    </li>
+    <li>
+    Finally, the distribution files are searched for Templates and jars.<br />
+    </li>
+    </ul>
+  </section>
+
+  <section name="Installing an existing add-on">
+
+    <p>
+    To install a single existing add-on, simply place any *override.jar files 
+    in the torque.override.dir location.  Then follow any special configuration
+    setup the contributor has specified.
+    </p>
+    <p>
+    If you want to modify the templates in the add-on, simply un-jar the 
+    templates into the ${torque.override.dir}/templates directory and modify
+    them there.
+    </p>
+    <p>
+    If you need to install more than one add-on, the add-ons might have modified
+    the same file.  You will have to check the jars (or compare contributor 
+    instructions) for any conflicts.  If there are none, there is not problem 
+    using both add-ons.  If there are conflicts, you will have to resolve/merge 
+    the differences in these files and use the modified version.
+    </p>
+
+  </section>
+  
+  <section name="Creating an add-on or local customization">
+    <p>
+    If you want to modify the generated sql files or java classes, 
+    first look at the overview 
+    <a href="how-templates-work.html">"How Templates Work"</a> if you are not
+    familiar with the way Torque uses velocity templates.
+    After doing that, proceed as follows:
+    </p>
+    <p>
+    First, create a <i>templates</i> directory under the torque.override.dir.
+    Then create the directory structure required to locate the template file(s)
+    you are planning to modify.  E.g., for the mysql table.vm template file, 
+    create a directory structure like: <i>sql\base\mysql</i> and then put the 
+    table.vm file in this directory.
+    </p>
+    <p>
+    Now you can modify the template file(s) to meet your needs.  The Ant and
+    Maven 1 generators will look in the {torque.override.dir}/template directory
+    first for templates, so you do not need to remove the modified templates
+    from the Torque distribution.
+    </p>
+  </section>
+
+  <!-- The procedure needs more discussion -->
+  <!--
+  <section name="Packaging an Add-on for General Distribution">
+  <p>
+  So you've gotten all your mods done, offered them as a core Torque 
+  enhancement, but they were outside the scope/too DB specific, etc.
+  Now you want to share it with the world as a separate Torque add-on.
+  What should you do?
+  </p>
+  <p>
+  You need to package your templates and possibly any changes to the model
+  classes into separate jar files.  The names of these jars must end in
+  <i>override.jar</i>.  A good convention is to call them something like: 
+  &lt;purpose&gt;-template-override.jar, eg. 
+  betwixt-template-override.jar
+  </p>
+  <p>
+  Optionally, if you created model class override jar, create a src jar for 
+  these classes.
+  </p>
+  <p>
+  Next you need to create a &lt;purpose&gt;-readme.html (or txt) file, with 
+  the applicable following information:
+  </p>
+    <table>
+      <tr>
+      <td width="30%">Title:</td><td>Torque add-in extraordinaire.</td>
+      </tr>
+      <tr>
+      <td>Author:</td><td>Ima Helpen &lt;iHelpen@foobar.com&gt;></td>
+      </tr>
+      <tr>
+      <td>Date:</td><td>9 Aug 2006</td>
+      </tr>
+      <tr><td>Torque-Version:</td><td>3.3</td>
+      </tr>
+      <tr>
+      <td>Goal/Target Effected:</td><td>datadtd</td>
+      </tr>
+      <tr><td colspan="2">
+        <p>
+        License:
+        </p>
+        <p>
+        Your preferred license.. (Torque's is the Apache License of course 8) ).
+        </p>
+      </td></tr>
+      <tr><td colspan="2">
+        <p>
+        Description:    
+        </p>
+        <p>
+        This modifies the ... task in the Torque Generator so that it will ...
+        </p>
+      </td></tr>
+      <tr><td colspan="2">
+        <p>
+        Installation:
+        </p>
+        <p>
+        Follow the How-To instructions on setting up for add-on overrides, then
+        unzip this into the override directory.
+        </p>
+      </td></tr>
+      <tr><td colspan="2">
+        <p>
+        Usage Notes:
+        </p>
+        <p>
+        Set these new properties to what you want...
+        </p>
+      </td></tr>
+      <tr><td colspan="2">
+        <p>
+        New Properties:
+        </p>
+        <table>
+          <tr>
+          <td width="20%">Property</td><td width="20%">Default</td><td width="60%">Description</td>
+          </tr>  
+          <tr>
+          <td width="20%">torque.myAddon.option1</td><td width="20%">none</td><td width="60%">If set, ...</td>
+          </tr>  
+        </table>
+      </td></tr>
+      </table>
+  <p>
+  Finally, all the jar and readme files should be tar.gz-ed and/or zipped into a
+  single distribution file.
+  </p>
+  <p>
+  You can either submit this via Jira for possible inclusion on the 
+  Torque site, or you can announce it on the Torque-users mailing
+  list.
+  </p>  
+  </section>
+  
+  -->
+ </body>
+</document>

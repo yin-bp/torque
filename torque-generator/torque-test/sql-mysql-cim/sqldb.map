@@ -1,0 +1,3 @@
+#Sqlfile -> Database map
+#Fri Jan 29 18:07:56 CST 2010
+mysqloutputFile-cim.sql=cimdb
