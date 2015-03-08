@@ -49,6 +49,10 @@ public class SchemaType extends Enum
     public static final SchemaType DECIMAL = new SchemaType("DECIMAL");
     public static final SchemaType CHAR = new SchemaType("CHAR");
     public static final SchemaType VARCHAR = new SchemaType("VARCHAR");
+    /**
+     * oracle特殊的字段类型，其他数据库等同于VARCHAR
+     */
+    public static final SchemaType NVARCHAR = new SchemaType("NVARCHAR");
     public static final SchemaType LONGVARCHAR = new SchemaType("LONGVARCHAR");
     public static final SchemaType DATE = new SchemaType("DATE");
     public static final SchemaType TIME = new SchemaType("TIME");

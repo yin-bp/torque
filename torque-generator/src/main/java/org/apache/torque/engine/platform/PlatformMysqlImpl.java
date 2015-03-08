@@ -146,4 +146,28 @@ public class PlatformMysqlImpl extends PlatformDefaultImpl
 	        else
 	            return columnName;
 	    }
+
+	@Override
+	public String getNullString(Domain domain,boolean notNull) {
+		if (TypeMap.isTextType(domain.getType()))
+		{
+			// TODO: Properly SQL-escape the text.
+			boolean istimestamp = domain.getType()
+					.equals(SchemaType.TIMESTAMP) ;
+			if(!istimestamp)
+			{
+				return (notNull ? "NOT NULL" : "");				
+			}
+			else
+			{
+				return (notNull ? "NOT NULL  DEFAULT CURRENT_TIMESTAMP" : "NULL DEFAULT NULL");
+				
+			}
+			
+		}
+		else
+		{
+			return (notNull ? "NOT NULL" : "");
+		}
+	}
 }

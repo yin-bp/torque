@@ -61,7 +61,7 @@ public interface Platform
      * @return The RDBMS-specific SQL fragment for <code>NULL</code>
      * or <code>NOT NULL</code>.
      */
-    String getNullString(boolean notNull);
+    String getNullString(Domain domain,boolean notNull);
 
     /**
      * @return The RDBMS-specific SQL fragment for autoincrement.

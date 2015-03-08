@@ -64,6 +64,7 @@ public class PlatformDefaultImpl implements Platform
             SchemaType type = (SchemaType) iter.next();
             schemaDomainMap.put(type, new Domain(type));
         }
+        setSchemaDomainMapping(new Domain(SchemaType.NVARCHAR, "VARCHAR"));
         schemaDomainMap.put(SchemaType.BOOLEANCHAR,
                 new Domain(SchemaType.BOOLEANCHAR, "CHAR"));
         schemaDomainMap.put(SchemaType.BOOLEANINT,
@@ -104,7 +105,7 @@ public class PlatformDefaultImpl implements Platform
      * disallowed.
      * @see Platform#getNullString(boolean)
      */
-    public String getNullString(boolean notNull)
+    public String getNullString(Domain domain,boolean notNull)
     {
         // TODO: Check whether this is true for all DBs.  Also verify
         // the old Sybase templates.

@@ -227,6 +227,7 @@ public class TypeMap
 
             jdbcToJavaObjectMap.put(SchemaType.CHAR, CHAR_OBJECT_TYPE);
             jdbcToJavaObjectMap.put(SchemaType.VARCHAR, VARCHAR_OBJECT_TYPE);
+            jdbcToJavaObjectMap.put(SchemaType.NVARCHAR, VARCHAR_OBJECT_TYPE);
             jdbcToJavaObjectMap.put(SchemaType.LONGVARCHAR, LONGVARCHAR_OBJECT_TYPE);
             jdbcToJavaObjectMap.put(SchemaType.CLOB, CLOB_OBJECT_TYPE);
             jdbcToJavaObjectMap.put(SchemaType.NUMERIC, NUMERIC_OBJECT_TYPE);
@@ -254,6 +255,7 @@ public class TypeMap
 
             jdbcToJavaNativeMap.put(SchemaType.CHAR, CHAR_NATIVE_TYPE);
             jdbcToJavaNativeMap.put(SchemaType.VARCHAR, VARCHAR_NATIVE_TYPE);
+            jdbcToJavaNativeMap.put(SchemaType.NVARCHAR, VARCHAR_NATIVE_TYPE);
             jdbcToJavaNativeMap.put(SchemaType.LONGVARCHAR, LONGVARCHAR_NATIVE_TYPE);
             jdbcToJavaNativeMap.put(SchemaType.CLOB, CLOB_NATIVE_TYPE);
             jdbcToJavaNativeMap.put(SchemaType.NUMERIC, NUMERIC_NATIVE_TYPE);
@@ -295,6 +297,7 @@ public class TypeMap
 
             jdbcToVillageMethodMap.put(SchemaType.CHAR, CHAR_VILLAGE_METHOD);
             jdbcToVillageMethodMap.put(SchemaType.VARCHAR, VARCHAR_VILLAGE_METHOD);
+            jdbcToVillageMethodMap.put(SchemaType.NVARCHAR, VARCHAR_VILLAGE_METHOD);
             jdbcToVillageMethodMap.put(SchemaType.LONGVARCHAR, LONGVARCHAR_VILLAGE_METHOD);
             jdbcToVillageMethodMap.put(SchemaType.CLOB, CLOB_VILLAGE_METHOD);
             jdbcToVillageMethodMap.put(SchemaType.NUMERIC, NUMERIC_VILLAGE_METHOD);
@@ -342,6 +345,7 @@ public class TypeMap
 
             jdbcToPPMethodMap.put(SchemaType.CHAR, CHAR_PP_METHOD);
             jdbcToPPMethodMap.put(SchemaType.VARCHAR, VARCHAR_PP_METHOD);
+            jdbcToPPMethodMap.put(SchemaType.NVARCHAR, VARCHAR_PP_METHOD);
             jdbcToPPMethodMap.put(SchemaType.LONGVARCHAR, LONGVARCHAR_PP_METHOD);
             jdbcToPPMethodMap.put(SchemaType.NUMERIC, NUMERIC_PP_METHOD);
             jdbcToPPMethodMap.put(SchemaType.DECIMAL, DECIMAL_PP_METHOD);
@@ -379,6 +383,7 @@ public class TypeMap
 
             jdbcToTorqueTypeMap.put(new Integer(Types.CHAR), SchemaType.CHAR);
             jdbcToTorqueTypeMap.put(new Integer(Types.VARCHAR), SchemaType.VARCHAR);
+            jdbcToTorqueTypeMap.put(new Integer(Types.NVARCHAR), SchemaType.NVARCHAR);
             jdbcToTorqueTypeMap.put(new Integer(Types.LONGVARCHAR), SchemaType.LONGVARCHAR);
             jdbcToTorqueTypeMap.put(new Integer(Types.CLOB), SchemaType.CLOB);
             jdbcToTorqueTypeMap.put(new Integer(Types.NUMERIC), SchemaType.NUMERIC);
@@ -557,10 +562,11 @@ public class TypeMap
         {
             initialize();
         }
+       
         SchemaType st = (SchemaType) jdbcToTorqueTypeMap.get(sqlType);
         if (st == null)
         {
-            st = SchemaType.VARCHAR;
+            st = SchemaType.NVARCHAR;
             log.warn("SchemaType for JdbcType '" + sqlType
                     + "' is not defined: Defaulting to '" + st + '\'');
         }

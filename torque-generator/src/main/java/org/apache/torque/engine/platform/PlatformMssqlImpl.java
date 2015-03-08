@@ -72,7 +72,7 @@ public class PlatformMssqlImpl extends PlatformDefaultImpl
      * allowed (as recomended by Microsoft).
      * @see Platform#getNullString(boolean)
      */
-    public String getNullString(boolean notNull)
+    public String getNullString(Domain domain,boolean notNull)
     {
         return (notNull ? "NOT NULL" : "NULL");
     }

@@ -475,7 +475,7 @@ public class Column
     public String getNotNullString()
     {
         return getTable().getDatabase().getPlatform()
-                .getNullString(this.isNotNull());
+                .getNullString(this.domain,this.isNotNull());
     }
 
     /**

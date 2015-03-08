@@ -56,6 +56,7 @@ public class PlatformOracleImpl extends PlatformDefaultImpl
         setSchemaDomainMapping(new Domain(SchemaType.DECIMAL, "NUMBER"));
         setSchemaDomainMapping(new Domain(SchemaType.NUMERIC, "NUMBER"));
         setSchemaDomainMapping(new Domain(SchemaType.VARCHAR, "VARCHAR2"));
+        setSchemaDomainMapping(new Domain(SchemaType.NVARCHAR, "NVARCHAR2"));
         setSchemaDomainMapping(new Domain(SchemaType.LONGVARCHAR, "CLOB"));
         setSchemaDomainMapping(new Domain(SchemaType.TIME, "DATE"));
         setSchemaDomainMapping(new Domain(SchemaType.TIMESTAMP, "TIMESTAMP"));

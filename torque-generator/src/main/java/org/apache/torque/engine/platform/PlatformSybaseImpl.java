@@ -67,7 +67,7 @@ public class PlatformSybaseImpl extends PlatformDefaultImpl
     /**
      * @see Platform#getNullString(boolean)
      */    
-    public String getNullString(boolean notNull)
+    public String getNullString(Domain domain,boolean notNull)
     {
         return (notNull ? "NOT NULL" : "NULL");
     }
