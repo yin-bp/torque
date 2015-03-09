@@ -544,6 +544,14 @@ public class TorqueJDBCTransformTask extends Task
                     if(defValue != null  && size<defValue.length())
                         defValue = defValue.trim(); 
                 }
+                else if(sqlType == java.sql.Types.DATE || sqlType == java.sql.Types.TIMESTAMP)
+                {
+                    
+                    if(defValue != null )
+                        defValue = defValue.trim(); 
+                }
+                
+                
                     
 //                if(defValue!=null && defValue.contains("20m"))
 //                    System.out.println(defValue);

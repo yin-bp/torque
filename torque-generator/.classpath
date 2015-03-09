@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry excluding="**/*.java" kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java"/>
+	<classpathentry kind="src" path="src-dbtransfer"/>
+	<classpathentry kind="src" path="src-launcher"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/derby/derby.jar"/>
+	<classpathentry kind="lib" path="lib/derby/derbyclient.jar"/>
+	<classpathentry kind="lib" path="lib/derby/derbynet.jar"/>
+	<classpathentry kind="lib" path="lib/derby/derbyrun.jar"/>
+	<classpathentry kind="lib" path="lib/derby/derbytools.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/commons-modeler.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/concurrent-1.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/frameworkset-pool.jar" sourcepath="/bboss-persistent"/>
+	<classpathentry kind="lib" path="lib/poolman/frameworkset-util.jar" sourcepath="/bboss-util"/>
+	<classpathentry kind="lib" path="lib/poolman/geronimo-jta_1.0.1B_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/jakarta-oro-2.0.8.jar" sourcepath="D:/workspace/jakarta-oro-2.0.8"/>
+	<classpathentry kind="lib" path="lib/poolman/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/xjavadoc-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-aop.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-camel.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-jms.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-mina.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-rmi.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-schedule.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-tlq.jar"/>
+	<classpathentry kind="lib" path="lib/bboss-ws.jar"/>
+	<classpathentry kind="lib" path="lib/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/commons-lang-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/ant-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/ant-launcher-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/avalon-framework-4.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/junit-4.6.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/logkit-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/servlet-api-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/texen-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/velocity-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/village-3.3.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/xercesImpl-2.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/mvnpro/xml-apis-1.0.b2.jar"/>
+	<classpathentry kind="lib" path="lib/mysql/mysql-connector-java-3.1.14-bin.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
