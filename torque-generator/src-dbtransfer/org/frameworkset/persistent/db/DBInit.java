@@ -294,17 +294,17 @@ public class DBInit {
 //			System.out.println(f.getAbsolutePath() + ":"+f.exists());
 			if(f.exists())
 			{
-				System.out.println("是否要删除临时文件目录："+ f.getAbsolutePath() + "(Y/N)");
-				try {
-					char bb   = (char)System.in.read();
-					if(bb == 'y' || bb == 'Y')
+				System.out.println("删除临时文件目录："+ f.getAbsolutePath());
+//				try {
+//					char bb   = (char)System.in.read();
+//					if(bb == 'y' || bb == 'Y')
 						FileUtil.deleteFile(f.getAbsolutePath());
 					
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				return;
+//				} catch (IOException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//				return;
 			}
 		}
 		
