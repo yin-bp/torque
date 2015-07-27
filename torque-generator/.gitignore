@@ -1,7 +1,1 @@
-/distrib
-/build-system.bat.bak
-/dbzip-system.log
-/derby.log
-/startup.log
-/velocity.log
-/1.log
+/target/
