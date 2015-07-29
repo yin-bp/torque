@@ -314,14 +314,15 @@ public class TorqueJDBCTransformTask extends Task
                     {
                         column.setAttribute("javaName", name);
                     }
-
-                    column.setAttribute("type", TypeMap.getTorqueType(type).getName());
+                    String typeName = TypeMap.getTorqueType(type).getName();
+                    column.setAttribute("type", typeName);
 
                     if (size > 0 && (type.intValue() == Types.CHAR
                             || type.intValue() == Types.VARCHAR
+                            || type.intValue() == Types.NVARCHAR
                             || type.intValue() == Types.LONGVARCHAR
                             || type.intValue() == Types.DECIMAL
-                            || type.intValue() == Types.NUMERIC))
+                            || type.intValue() == Types.NUMERIC || (typeName!=null && typeName.equals("NVARCHAR"))))
                     {
                         column.setAttribute("size", String.valueOf(size));
                     }
