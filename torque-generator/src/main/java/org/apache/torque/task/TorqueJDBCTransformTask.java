@@ -324,7 +324,14 @@ public class TorqueJDBCTransformTask extends Task
                             || type.intValue() == Types.DECIMAL
                             || type.intValue() == Types.NUMERIC || (typeName!=null && typeName.equals("NVARCHAR"))))
                     {
-                        column.setAttribute("size", String.valueOf(size));
+                    	if(typeName!=null && typeName.equals("NVARCHAR"))
+                    	{
+                    		column.setAttribute("size", String.valueOf(size/2));
+                    	}
+                    	else
+                    	{
+                    		column.setAttribute("size", String.valueOf(size));
+                    	}
                     }
 
                     if (scale > 0 && (type.intValue() == Types.DECIMAL
