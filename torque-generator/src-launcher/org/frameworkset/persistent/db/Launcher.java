@@ -33,7 +33,7 @@ import java.util.List;
  * Copyright (c) 2008
  * </p>
  * 
- * @Date 2010-3-25 ÉÏÎç09:23:40
+ * @Date 2010-3-25 ä¸Šåˆ09:23:40
  * @author biaoping.yin
  * @version 1.0
  */
@@ -71,7 +71,7 @@ public class Launcher
     }
 
     /**
-     * ×°ÔØËùÓĞµÄ²å¼ş
+     * è£…è½½æ‰€æœ‰çš„æ’ä»¶
      * 
      * @param deploydir
      * @throws MalformedURLException
@@ -91,7 +91,7 @@ public class Launcher
 
         List<URL> allpublicjars = new ArrayList<URL>();
         System.out.println(lib.getAbsolutePath());
-        // µİ¹é»ñÈ¡ËùÓĞµÄjarÎÄ¼ş
+        // é€’å½’è·å–æ‰€æœ‰çš„jaræ–‡ä»¶
         loadSubdirJars(lib, allpublicjars);
         
       
@@ -102,12 +102,12 @@ public class Launcher
         alljars.addAll(allpublicjars);
 
         
-        //¼ÓÔØ×ÊÔ´ÎÄ¼ş
+        //åŠ è½½èµ„æºæ–‡ä»¶
         alljars.add(resourcesFile.toURI().toURL());
         
         
         
-        // ×°ÔØjar°ü
+        // è£…è½½jaråŒ…
         URL classpathEntries[] = (URL[]) alljars.toArray(new URL[alljars.size()]);
         ClassLoader cl = new URLClassLoader(classpathEntries);
         Thread.currentThread().setContextClassLoader(cl);

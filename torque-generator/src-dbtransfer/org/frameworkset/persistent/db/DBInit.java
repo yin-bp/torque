@@ -173,7 +173,7 @@ public class DBInit {
 		task.execute();
 	}
 
-	// ³õÊ¼»¯Êı¾İ
+	// åˆå§‹åŒ–æ•°æ®
 	@Test
 	public void insertDataToDB(String dbname_,boolean ispatch) throws SQLException {
 
@@ -294,7 +294,7 @@ public class DBInit {
 //			System.out.println(f.getAbsolutePath() + ":"+f.exists());
 			if(f.exists())
 			{
-				System.out.println("É¾³ıÁÙÊ±ÎÄ¼şÄ¿Â¼£º"+ f.getAbsolutePath());
+				System.out.println("åˆ é™¤ä¸´æ—¶æ–‡ä»¶ç›®å½•ï¼š"+ f.getAbsolutePath());
 //				try {
 //					char bb   = (char)System.in.read();
 //					if(bb == 'y' || bb == 'Y')
@@ -422,7 +422,7 @@ public class DBInit {
 	// }
 	// }
 	public static void main(String args[]) throws SQLException {
-//		String sql = "<clob>¹¦ÄÜËµÃ÷oÀëÆ÷½«ÏûÏ¢²ğ·Ö³ÉĞí¶à¿é£¬Ä¬ÈÏ·µ»Ø×îºóÒ»¸ö¿é±»·ÖÀëµÄÏûÏ¢¡£</clob>,";
+//		String sql = "<clob>åŠŸèƒ½è¯´æ˜oç¦»å™¨å°†æ¶ˆæ¯æ‹†åˆ†æˆè®¸å¤šå—ï¼Œé»˜è®¤è¿”å›æœ€åä¸€ä¸ªå—è¢«åˆ†ç¦»çš„æ¶ˆæ¯ã€‚</clob>,";
 //		
 //		String[][] vars = com.frameworkset.util.VariableHandler.parser2ndSubstitution(sql, "<clob>", "</clob>", "?"); 
 //		

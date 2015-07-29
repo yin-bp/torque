@@ -694,7 +694,7 @@ public class SQLToAppData
             {
                 next();
             }
-            //FIXED 已经处理
+            //FIXED 宸茬粡澶勭悊
             if(this.token.getStr().toUpperCase().equals("ALTER"))
                
             {

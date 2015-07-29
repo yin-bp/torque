@@ -50,7 +50,7 @@ public class SchemaType extends Enum
     public static final SchemaType CHAR = new SchemaType("CHAR");
     public static final SchemaType VARCHAR = new SchemaType("VARCHAR");
     /**
-     * oracle特殊的字段类型，其他数据库等同于VARCHAR
+     * oracle鐗规畩鐨勫瓧娈电被鍨嬶紝鍏朵粬鏁版嵁搴撶瓑鍚屼簬VARCHAR
      */
     public static final SchemaType NVARCHAR = new SchemaType("NVARCHAR");
     public static final SchemaType LONGVARCHAR = new SchemaType("LONGVARCHAR");

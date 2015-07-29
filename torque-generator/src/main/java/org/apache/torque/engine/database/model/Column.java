@@ -1141,7 +1141,7 @@ public class Column
         if (getPlatform().hasSize(getDomain().getSqlType()))
         {
             
-            //FIXED 调整外键字段的尺寸大小和其对应的主表字段的尺寸保持一致，否则在derby上将无法建立表的主外键关系
+            //FIXED 
             
             ForeignKey fk = this.getTable().getForeignKey(this.getName());
             if(fk != null)

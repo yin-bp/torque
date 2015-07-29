@@ -20,7 +20,7 @@ public class OracleToMysql {
 	
 
 	/**
-     * ��һ�� ����mysql���ݿ�Ľű�xml�ļ�
+     * 第一步 导出mysql数据库的脚本xml文件
 	 * @throws Exception 
      */
     @Test
@@ -37,7 +37,7 @@ public class OracleToMysql {
         t.execute();
         
         
-      //FIXME ����ص�Ψһ����û�е���
+      //FIXME 表相关的唯一索引没有导出
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"
@@ -53,7 +53,7 @@ public class OracleToMysql {
     
     
     /**
-     * ��һ�� ����mysql���ݿ�Ľű�xml�ļ�
+     * 第一步 导出mysql数据库的脚本xml文件
 	 * @throws Exception 
      */
     @Test
@@ -72,7 +72,7 @@ public class OracleToMysql {
         t.execute();
         
         
-      //FIXME ����ص�Ψһ����û�е���
+      //FIXME 表相关的唯一索引没有导出
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"
@@ -86,7 +86,7 @@ public class OracleToMysql {
          */
     }
     /**
-     * ��һ�� ����mysql���ݿ�Ľű�xml�ļ�
+     * 第一步 导出mysql数据库的脚本xml文件
 	 * @throws Exception 
      */
     @Test
@@ -103,7 +103,7 @@ public class OracleToMysql {
         t.execute();
         
         
-      //FIXME ����ص�Ψһ����û�е���
+      //FIXME 表相关的唯一索引没有导出
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"
@@ -118,7 +118,7 @@ public class OracleToMysql {
     }
     
     /**
-     * ��һ�� ����mysql���ݿ�Ľű�xml�ļ�
+     * 第一步 导出mysql数据库的脚本xml文件
 	 * @throws Exception 
      */
     @Test
@@ -135,7 +135,7 @@ public class OracleToMysql {
         t.execute();
         
         
-      //FIXME ����ص�Ψһ����û�е���
+      //FIXME 表相关的唯一索引没有导出
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"
@@ -153,7 +153,7 @@ public class OracleToMysql {
     
     
     /**
-     * �ڶ��� �������ݿ���ű��ķ���
+     * 第二步 创建数据库表脚本的方法
      * 
      * @throws Exception
      */
@@ -202,7 +202,7 @@ public class OracleToMysql {
     }
     
     /**
-     * �ڶ��� �������ݿ���ű��ķ���
+     * 第二步 创建数据库表脚本的方法
      * 
      * @throws Exception
      */
@@ -251,7 +251,7 @@ public class OracleToMysql {
     }
     
     /**
-     * �ڶ��� �������ݿ���ű��ķ���
+     * 第二步 创建数据库表脚本的方法
      * 
      * @throws Exception
      */
@@ -301,7 +301,7 @@ public class OracleToMysql {
     }
     
     /**
-     * �ڶ��� �������ݿ���ű��ķ���
+     * 第二步 创建数据库表脚本的方法
      * 
      * @throws Exception
      */
@@ -352,7 +352,7 @@ public class OracleToMysql {
     
     
     /**
-     * �ڶ��� �������ݿ���ű��ķ���
+     * 第二步 创建数据库表脚本的方法
      * 
      * @throws Exception
      */
@@ -402,7 +402,7 @@ public class OracleToMysql {
     
     
     /**
-     * �ڶ��� �������ݿ���ű��ķ��� for oralce
+     * 第二步 创建数据库表脚本的方法 for oralce
      * 
      * @throws Exception
      */
@@ -496,7 +496,7 @@ public class OracleToMysql {
     }
     
     /**
-     * ����������derby���ݿ���ִ�����ݿ⽨���ű�
+     * 第三步，在derby数据库上执行数据库建表脚本
      */
     @Test
     public void testExecuteSqlInMysql()
@@ -542,7 +542,7 @@ public class OracleToMysql {
     
     
     /**
-     * ����������derby���ݿ���ִ�����ݿ⽨���ű�
+     * 第三步，在derby数据库上执行数据库建表脚本
      */
     @Test
     public void testExecuteCMSSqlInMysql()
@@ -625,7 +625,7 @@ public class OracleToMysql {
     
     
     /**
-     * ����������derby���ݿ���ִ�����ݿ⽨���ű�
+     * 第三步，在derby数据库上执行数据库建表脚本
      */
     @Test
     public void testExecuteSMCSqlInMysql()
@@ -668,7 +668,7 @@ public class OracleToMysql {
     }
     
     /**
-     * ����������derby���ݿ���ִ�����ݿ⽨���ű�
+     * 第三步，在derby数据库上执行数据库建表脚本
      */
     @Test
     public void testExecuteCIMSqlInMysql()
@@ -713,7 +713,7 @@ public class OracleToMysql {
     }
     
     /**
-     * ����������derby���ݿ���ִ�����ݿ⽨���ű�
+     * 第三步，在derby数据库上执行数据库建表脚本
      */
     @Test
     public void testExecuteSYSSqlInMysql()
@@ -756,7 +756,7 @@ public class OracleToMysql {
     }
     
     /**
-     * �������ݿ�Ľű�
+     * 创建数据库的脚本
      */
     @Test
     public void testMysqltoderby()
@@ -805,7 +805,7 @@ public class OracleToMysql {
         
     }
     
-   //��ʼ������
+   //初始化数据
     @Test
     public   void insertDB() throws SQLException{
 		DBUtil dbUtil = new DBUtil();

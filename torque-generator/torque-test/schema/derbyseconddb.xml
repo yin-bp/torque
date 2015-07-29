@@ -2141,8 +2141,8 @@
         <column name="DATA_TYPEID_FIELD" size="50" type="VARCHAR"/>
         <column name="DATA_DBNAME" size="50" type="VARCHAR"/>
         <column name="DATA_PARENTID_FIELD" size="50" type="VARCHAR"/>
-        <column default="Ãû³Æ" name="DATA_NAME_CN" size="100" type="VARCHAR"/>
-        <column default="ÕæÊµÖµ" name="DATA_VALUE_CN" size="100" type="VARCHAR"/>
+        <column default="åç§°" name="DATA_NAME_CN" size="100" type="VARCHAR"/>
+        <column default="çœŸå®žå€¼" name="DATA_VALUE_CN" size="100" type="VARCHAR"/>
         <column name="KEY_GENERAL_TYPE" size="2" type="DECIMAL"/>
         <column name="NAME_GENERAL_TYPE" size="100" type="VARCHAR"/>
         <column name="KEY_GENERAL_INFO" size="100" type="VARCHAR"/>

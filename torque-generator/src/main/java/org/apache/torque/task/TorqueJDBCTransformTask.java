@@ -94,11 +94,11 @@ public class TorqueJDBCTransformTask extends Task
     private XMLSerializer xmlSerializer;
     
     /**
-     * ĞèÒªµ¼³öµÄ±í£¬Èç¹ûÎª¿Õµ¼³öËùÓĞµÄ±í
+     * éœ€è¦å¯¼å‡ºçš„è¡¨ï¼Œå¦‚æœä¸ºç©ºå¯¼å‡ºæ‰€æœ‰çš„è¡¨
      */
     private String[] includeTables;
     /**
-     * ĞèÒªÅÅ³ıµÄ±í£¬Èç¹ûÎª¿Õ£¬µ¼³öËùÓĞµÄ±í
+     * éœ€è¦æ’é™¤çš„è¡¨ï¼Œå¦‚æœä¸ºç©ºï¼Œå¯¼å‡ºæ‰€æœ‰çš„è¡¨
      */
     private String[] execludeTables;
     
@@ -368,17 +368,17 @@ public class TorqueJDBCTransformTask extends Task
                             defValue = defValue .trim();
                         }
                         
-//                        if (defValue.startsWith("¡®") && defValue.endsWith("¡¯"))
+//                        if (defValue.startsWith("â€˜") && defValue.endsWith("â€™"))
 //                        {
 //                            defValue = defValue.substring(1, defValue.length() - 1);
 //                        }
 //                        
-//                        if (defValue.startsWith("'") && defValue.endsWith("¡¯"))
+//                        if (defValue.startsWith("'") && defValue.endsWith("â€™"))
 //                        {
 //                            defValue = defValue.substring(1, defValue.length() - 1);
 //                        }
 //                        
-//                        if (defValue.startsWith("¡®") && defValue.endsWith("'"))
+//                        if (defValue.startsWith("â€˜") && defValue.endsWith("'"))
 //                        {
 //                            defValue = defValue.substring(1, defValue.length() - 1);
 //                        }
@@ -476,7 +476,7 @@ public class TorqueJDBCTransformTask extends Task
                 if(this.exclude(name) || !this.include(name))
                     continue;
                 /**
-                 * ¹ıÂËoracleÌØÊâ¸ñÊ½µÄ±íÃûBIN$....
+                 * è¿‡æ»¤oracleç‰¹æ®Šæ ¼å¼çš„è¡¨åBIN$....
                  */
                 if(name.contains("$"))
                     continue;

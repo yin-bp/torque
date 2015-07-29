@@ -397,7 +397,7 @@ public class Database
     
     private void doOrder()
     {
-        //Ò»´Î·ÖÀà
+        //ä¸€æ¬¡åˆ†ç±»
         for(int i = 0; tableList != null && i < this.tableList.size(); i ++)
         {
             Table table = (Table)this.tableList.get(i);
@@ -412,7 +412,7 @@ public class Database
             }
             
         }
-        //¶ş´Î·ÖÀà
+        //äºŒæ¬¡åˆ†ç±»
         for(int i = 0; hasforeigntracks != null && i < hasforeigntracks.size(); i ++)
         {
             Table table = (Table)this.hasforeigntracks.get(i);
@@ -430,19 +430,19 @@ public class Database
         
         
         
-        //Èı´Î·ÖÀà,¶Ô ÓĞÍâ¼üÓĞÒıÓÃ±í¼¯ºÏ  ½øĞĞÔÙ´ÎÔÚhasrefforeigntracksÄÚ½øĞĞÅÅĞò       
+        //ä¸‰æ¬¡åˆ†ç±»,å¯¹ æœ‰å¤–é”®æœ‰å¼•ç”¨è¡¨é›†åˆ  è¿›è¡Œå†æ¬¡åœ¨hasrefforeigntrackså†…è¿›è¡Œæ’åº       
         /**
-         * BÖĞµÄ±í¶ÔÓ¦µÄB¼¯ºÏÖĞµÄÓ¦ÓÃ±í£¬ĞèÒªÔÙ´ÎÅÅĞò
+         * Bä¸­çš„è¡¨å¯¹åº”çš„Bé›†åˆä¸­çš„åº”ç”¨è¡¨ï¼Œéœ€è¦å†æ¬¡æ’åº
          */        
 
         List<Table> tablerefinc = new ArrayList<Table>(); 
         List<Table> tablerefinb = new ArrayList<Table>();
         /**
-         * ÅÅĞò¹æÔò£º
+         * æ’åºè§„åˆ™ï¼š
          * 0----------------------------------------------------------------------------hasrefforeigntracks.size()
-         * ÒıÓÃ±íÔÚCÖĞ                    ÒıÓÃ±íÔÚBÖĞ                    
+         * å¼•ç”¨è¡¨åœ¨Cä¸­                    å¼•ç”¨è¡¨åœ¨Bä¸­                    
          * 
-         * ËµÃ÷:B---ÓĞÍâ¼üÓĞÒıÓÃ±í¼¯ºÏ£¨hasrefforeigntracks£© C----ÓĞÍâ¼üÎŞÒıÓÃ±í½áºÏ(norefforeigntracks)
+         * è¯´æ˜:B---æœ‰å¤–é”®æœ‰å¼•ç”¨è¡¨é›†åˆï¼ˆhasrefforeigntracksï¼‰ C----æœ‰å¤–é”®æ— å¼•ç”¨è¡¨ç»“åˆ(norefforeigntracks)
          * 
          */
         for(int i = 0; hasrefforeigntracks != null && i < hasrefforeigntracks.size(); i ++)
@@ -476,12 +476,12 @@ public class Database
         tablerefinc.clear();
         
         /**
-         *  4+n´Î·ÖÀà, tablerefinb
-         * ÅÅĞò¹æÔò£º
+         *  4+næ¬¡åˆ†ç±», tablerefinb
+         * æ’åºè§„åˆ™ï¼š
          * 0----------------------------------------------------------------------------hasrefforeigntracks.size()
-         * ÒıÓÃ±íÔÚCÖĞ                    ÒıÓÃ±íÔÚBÖĞ                    
+         * å¼•ç”¨è¡¨åœ¨Cä¸­                    å¼•ç”¨è¡¨åœ¨Bä¸­                    
          * 
-         * ËµÃ÷:B---ÒıÓÃ±íB£¨tablerefinb£© C----ÒıÓÃ±íC(tablerefinc)
+         * è¯´æ˜:B---å¼•ç”¨è¡¨Bï¼ˆtablerefinbï¼‰ C----å¼•ç”¨è¡¨C(tablerefinc)
          * 
          */
         while(tablerefinb.size() > 0)        {
@@ -531,14 +531,14 @@ public class Database
         
         
         /******
-         * ÅÅĞò¹æÔò£º
+         * æ’åºè§„åˆ™ï¼š
          * 0-------------------------------------------------------tableList.size()
-         *                 ÓĞÍâ¼ü±í                                                                          ÎŞÍâ¼ü±í(A)          -------µÚÒ»´ÎÅÅĞò 
-         * ÓĞÍâ¼üÎŞÒıÓÃ±í½áºÏ(C)      ÓĞÍâ¼üÓĞÒıÓÃ±í¼¯ºÏ(B)                          -------µÚ¶ş´ÎÅÅĞò  
-         *                        ÒıÓÃ±íÔÚ CÖĞ          ÒıÓÃ±íÔÚBÖĞ                                                                -------µÚÈı´ÎÅÅĞò
-         *                                   4+n´Î²ğ·Ö                                                                              -------4+n´ÎÅÅĞò
+         *                 æœ‰å¤–é”®è¡¨                                                                          æ— å¤–é”®è¡¨(A)          -------ç¬¬ä¸€æ¬¡æ’åº 
+         * æœ‰å¤–é”®æ— å¼•ç”¨è¡¨ç»“åˆ(C)      æœ‰å¤–é”®æœ‰å¼•ç”¨è¡¨é›†åˆ(B)                          -------ç¬¬äºŒæ¬¡æ’åº  
+         *                        å¼•ç”¨è¡¨åœ¨ Cä¸­          å¼•ç”¨è¡¨åœ¨Bä¸­                                                                -------ç¬¬ä¸‰æ¬¡æ’åº
+         *                                   4+næ¬¡æ‹†åˆ†                                                                              -------4+næ¬¡æ’åº
          */
-        //»ã×Ü½á¹û¼¯
+        //æ±‡æ€»ç»“æœé›†
         this.tableList.clear();
         
         
@@ -574,29 +574,29 @@ public class Database
     }
     
     /***************
-     * Ò»¼¶·ÖÀà£ºÎŞÍâ¼ü±í¼¯ºÏ£¬Íâ¼ü±í¼¯ºÏ
+     * ä¸€çº§åˆ†ç±»ï¼šæ— å¤–é”®è¡¨é›†åˆï¼Œå¤–é”®è¡¨é›†åˆ
      **************/
     /**
-     * ÎŞÍâ¼ü±í¼¯ºÏ
+     * æ— å¤–é”®è¡¨é›†åˆ
      */
     private List<Table> tracks = new ArrayList<Table>();
     /**
-     * ÓĞÍâ¼ü±í¼¯ºÏ
+     * æœ‰å¤–é”®è¡¨é›†åˆ
      */
     private List<Table> hasforeigntracks = new ArrayList<Table>();
     
     /********************************
-     * ¶ş¼¶·ÖÀà£¬ÓĞÍâ¼ü±í¼¯ºÏÏ¸·Ö
+     * äºŒçº§åˆ†ç±»ï¼Œæœ‰å¤–é”®è¡¨é›†åˆç»†åˆ†
      ********************************/
     
     /**
-     * ÓĞÍâ¼üÎŞÒıÓÃ±í¼¯ºÏ
+     * æœ‰å¤–é”®æ— å¼•ç”¨è¡¨é›†åˆ
      */
     private List<Table> norefforeigntracks = new ArrayList<Table>();
     
     
     /**
-     * ÓĞÍâ¼üÓĞÒıÓÃ±í¼¯ºÏ
+     * æœ‰å¤–é”®æœ‰å¼•ç”¨è¡¨é›†åˆ
      */
     private List<Table> hasrefforeigntracks = new ArrayList<Table>();
     
@@ -721,7 +721,7 @@ public class Database
                 }
             }
         }
-        //¸ù¾İ±íÓë±íÖ®¼äµÄÒıÓÃ¹ØÏµ¶ÔËùÓĞ±í½øĞĞÅÅĞò£¬ÒıÓÃ±í¿¿Ç°-->ÒıÓÃÆäËû±íÓÖ±»ÒıÓÃ±í--->×Ô¼ºÒıÓÃ×Ô¼º±í--->±»ÒıÓÃ±í
+        //æ ¹æ®è¡¨ä¸è¡¨ä¹‹é—´çš„å¼•ç”¨å…³ç³»å¯¹æ‰€æœ‰è¡¨è¿›è¡Œæ’åºï¼Œå¼•ç”¨è¡¨é å‰-->å¼•ç”¨å…¶ä»–è¡¨åˆè¢«å¼•ç”¨è¡¨--->è‡ªå·±å¼•ç”¨è‡ªå·±è¡¨--->è¢«å¼•ç”¨è¡¨
         reorderTablesByReferences();
     }
 

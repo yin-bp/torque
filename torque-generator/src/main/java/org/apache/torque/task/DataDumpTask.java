@@ -57,7 +57,7 @@ import org.apache.velocity.runtime.resource.loader.FileResourceLoader;
  * <p>Description: </p>
  * <p>bboss workgroup</p>
  * <p>Copyright (c) 2008</p>
- * @Date 2010-2-3 ÏÂÎç05:28:35
+ * @Date 2010-2-3 ä¸‹åˆ05:28:35
  * @author biaoping.yin
  * @version 1.0
  */
@@ -337,7 +337,7 @@ public class DataDumpTask extends TexenTask
         Writer writer = new BufferedWriter(new java.io.FileWriter(new File(path)));
         writer.write("<?xml version=\"1.0\" encoding=\"GBK\"?>\r\n"
                     + "<dataset name=\"" + database.getName() + "\">\r\n");
-        //±í¼ÇÂ¼Êı¾İÊä³ö
+        //è¡¨è®°å½•æ•°æ®è¾“å‡º
         
         
         writer.write("</dataset>");

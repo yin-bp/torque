@@ -45,7 +45,7 @@
 	
 	<target name="compile-torque" description="compile torque source ">
 		<echo>compile  torque source  ...</echo>
-		<javac destdir="classes" target="1.5" source="1.5" deprecation="true" debug="${debug}" optimize="${optimize}" memorymaximumsize="256M" fork="true" verbose="yes">
+		<javac  encoding="UTF-8" destdir="classes" target="1.5" source="1.5" deprecation="true" debug="${debug}" optimize="${optimize}" memorymaximumsize="256M" fork="true" verbose="yes">
 			<src path="src/main/java" />
 			<src path="src-dbtransfer" />
 			<classpath id="cp-cim-model">
@@ -76,7 +76,7 @@
 	<target name="compile-launcher" description="compile torque source ">
 			<echo>compile  torque source  ...</echo>
 		<mkdir dir="classes"/>
-			<javac destdir="classes" target="1.5" source="1.5" deprecation="true" debug="${debug}" optimize="${optimize}" memorymaximumsize="256M" fork="true" verbose="yes">
+			<javac  encoding="UTF-8" destdir="classes" target="1.5" source="1.5" deprecation="true" debug="${debug}" optimize="${optimize}" memorymaximumsize="256M" fork="true" verbose="yes">
 				<src path="src-launcher" />
 				<classpath id="cp-cim-model">
 

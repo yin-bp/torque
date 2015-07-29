@@ -23,14 +23,14 @@ import org.junit.Test;
  * <p>Description: </p>
  * <p>bboss workgroup</p>
  * <p>Copyright (c) 2008</p>
- * @Date 2010-1-26 ÏÂÎç06:29:21
+ * @Date 2010-1-26 ä¸‹åˆ06:29:21
  * @author biaoping.yin
  * @version 1.0
  */
 public class TorqueJDBCTransformTaskTest
 {
     /**
-     * µ¼³öÊı¾İ¿â
+     * å¯¼å‡ºæ•°æ®åº“
      */
     @Test
     public void testDerby()
@@ -41,7 +41,7 @@ public class TorqueJDBCTransformTaskTest
         t.setDbUrl("jdbc:derby:F:/opensource/db/derby/databases/seconddb");
         t.setOutputFile("torque-test/schema/derbyseconddb.xml");
 //        t.setDbSchema("AMQ");
-      //FIXME ±íÏà¹ØµÄÎ¨Ò»Ë÷ÒıÃ»ÓĞµ¼³ö
+      //FIXME è¡¨ç›¸å…³çš„å”¯ä¸€ç´¢å¼•æ²¡æœ‰å¯¼å‡º
         t.execute();
       
         /**
@@ -70,7 +70,7 @@ public class TorqueJDBCTransformTaskTest
         t.setIncludeTables(new String[]{});
         t.execute();
         
-      //FIXME ±íÏà¹ØµÄÎ¨Ò»Ë÷ÒıÃ»ÓĞµ¼³ö
+      //FIXME è¡¨ç›¸å…³çš„å”¯ä¸€ç´¢å¼•æ²¡æœ‰å¯¼å‡º
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"
@@ -96,7 +96,7 @@ public class TorqueJDBCTransformTaskTest
 //        t.setDbSchema("AMQ");
         t.execute();
         
-      //FIXME ±íÏà¹ØµÄÎ¨Ò»Ë÷ÒıÃ»ÓĞµ¼³ö
+      //FIXME è¡¨ç›¸å…³çš„å”¯ä¸€ç´¢å¼•æ²¡æœ‰å¯¼å‡º
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"

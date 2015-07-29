@@ -257,7 +257,7 @@ public class SQLScanner
             }
             else if (SPECIAL.indexOf(c) >= 0)
             {
-                //FIXED  已经处理
+                //FIXED  宸茬粡澶勭悊
                 if(begindefault)
                 {
                     if(c != '\'' )

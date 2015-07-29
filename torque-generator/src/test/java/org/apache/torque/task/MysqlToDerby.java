@@ -27,14 +27,14 @@ import org.junit.Test;
  * <p>Description: </p>
  * <p>bboss workgroup</p>
  * <p>Copyright (c) 2008</p>
- * @Date 2010-5-21 ÏÂÎç02:30:49
+ * @Date 2010-5-21 ä¸‹åˆ02:30:49
  * @author biaoping.yin
  * @version 1.0
  */
 public class MysqlToDerby
 {
     /**
-     * µÚÒ»²½ µ¼³ömysqlÊı¾İ¿âµÄ½Å±¾xmlÎÄ¼ş
+     * ç¬¬ä¸€æ­¥ å¯¼å‡ºmysqlæ•°æ®åº“çš„è„šæœ¬xmlæ–‡ä»¶
      */
     @Test
     public void testmysql()
@@ -49,7 +49,7 @@ public class MysqlToDerby
 //        t.setDbSchema("AMQ");
         t.execute();
         
-      //FIXME ±íÏà¹ØµÄÎ¨Ò»Ë÷ÒıÃ»ÓĞµ¼³ö
+      //FIXME è¡¨ç›¸å…³çš„å”¯ä¸€ç´¢å¼•æ²¡æœ‰å¯¼å‡º
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"
@@ -77,7 +77,7 @@ public class MysqlToDerby
 //        t.setDbSchema("AMQ");
         t.execute();
         
-      //FIXME ±íÏà¹ØµÄÎ¨Ò»Ë÷ÒıÃ»ÓĞµ¼³ö
+      //FIXME è¡¨ç›¸å…³çš„å”¯ä¸€ç´¢å¼•æ²¡æœ‰å¯¼å‡º
         /**
          * <torque-jdbc-transform
       dbDriver="${torque.database.driver}"
@@ -92,7 +92,7 @@ public class MysqlToDerby
     }
     
     /**
-     * µÚ¶ş²½ ´´½¨Êı¾İ¿â±í½Å±¾µÄ·½·¨
+     * ç¬¬äºŒæ­¥ åˆ›å»ºæ•°æ®åº“è¡¨è„šæœ¬çš„æ–¹æ³•
      * 
      * @throws Exception
      */
@@ -139,7 +139,7 @@ public class MysqlToDerby
     }
     
     /**
-     * µÚÈı²½£¬ÔÚderbyÊı¾İ¿âÉÏÖ´ĞĞÊı¾İ¿â½¨±í½Å±¾
+     * ç¬¬ä¸‰æ­¥ï¼Œåœ¨derbyæ•°æ®åº“ä¸Šæ‰§è¡Œæ•°æ®åº“å»ºè¡¨è„šæœ¬
      */
     @Test
     public void testExecuteSqlInDerby()
@@ -182,7 +182,7 @@ public class MysqlToDerby
     }
     
     /**
-     * ´´½¨Êı¾İ¿âµÄ½Å±¾
+     * åˆ›å»ºæ•°æ®åº“çš„è„šæœ¬
      */
     @Test
     public void testMysqltoderby()

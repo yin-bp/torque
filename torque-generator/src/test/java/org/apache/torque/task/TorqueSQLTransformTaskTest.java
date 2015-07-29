@@ -24,7 +24,7 @@ import org.junit.Test;
  * <p>Description: </p>
  * <p>bboss workgroup</p>
  * <p>Copyright (c) 2008</p>
- * @Date 2010-1-28 ÉÏÎç09:46:07
+ * @Date 2010-1-28 ä¸Šåˆ09:46:07
  * @author biaoping.yin
  * @version 1.0
  */
@@ -61,7 +61,7 @@ public class TorqueSQLTransformTaskTest
         task.setInputFile("D:/workspace/torque/torque4/torque-generator/torque-test/sql/data-model.sql");
         task.setOutputFile("D:/workspace/torque/torque4/torque-generator/torque-test/sql/data-model.xml");
         task.execute();
-      //FIXME ±íÏà¹ØµÄÎ¨Ò»Ë÷ÒıÃ»ÓĞµ¼³ö£¬ËùÒÔÃ»ÓĞ½øĞĞ´¦Àí
+      //FIXME è¡¨ç›¸å…³çš„å”¯ä¸€ç´¢å¼•æ²¡æœ‰å¯¼å‡ºï¼Œæ‰€ä»¥æ²¡æœ‰è¿›è¡Œå¤„ç†
         /**
          *
          */
