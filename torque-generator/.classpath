@@ -42,5 +42,6 @@
 	<classpathentry kind="lib" path="lib/poolman/proxool-0.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/poolman/proxool-cglib.jar"/>
 	<classpathentry kind="lib" path="lib/poolman/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="build/bboss-rt.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

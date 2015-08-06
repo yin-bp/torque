@@ -38,7 +38,7 @@
 		        Distribution jar package
 		       ==========================
 		  -->
-	<target name="distrib" depends="init,jar-torque,jar-launcher,copy-resource,copy-depends-liberary" description="copy jar file to distribution directory">
+	<target name="distrib" depends="init,jar-torque,copy-resource,copy-depends-liberary" description="copy jar file to distribution directory">
 		<echo>Construct the distribution package...</echo>
 	</target>
 
@@ -51,6 +51,7 @@
 			<classpath id="cp-cim-model">
 
 				<fileset dir="lib/" includes="**/*.jar *.zip" />
+				<fileset dir="build/" includes="**/*.jar *.zip" />
 				
 			</classpath>
 		</javac>
@@ -73,39 +74,14 @@
 		
 	</target>
 	
-	<target name="compile-launcher" description="compile torque source ">
-			<echo>compile  torque source  ...</echo>
-		<mkdir dir="classes"/>
-			<javac  encoding="UTF-8" destdir="classes" target="1.5" source="1.5" deprecation="true" debug="${debug}" optimize="${optimize}" memorymaximumsize="256M" fork="true" verbose="yes">
-				<src path="src-launcher" />
-				<classpath id="cp-cim-model">
-
-					<fileset dir="lib/" includes="**/*.jar *.zip" />
-					
-				</classpath>
-			</javac>
-		</target>
-		<target name="jar-launcher" depends="compile-launcher" description="generate the cim-model library cim-model.jar">
-			<echo>Generate the cim-model library launcher.jar ...</echo>
-			
-			<jar jarfile="${distrib}/launcher.jar" basedir="classes" includes="**/*">
-				<manifest>
-
-					<attribute name="Implementation-Version" value="${impl.version}" />
-					<attribute name="Specification-Version" value="${revision}" />
-					<attribute name="Implementation-Vendor" value="${impl.vendor}" />
-					<attribute name="Implementation-ProductID" value="${impl.productID}" />
-					<attribute name="Compile-Timestamp" value="${compile.timestamp}" />
-					<attribute name="Compile-User" value="${username}" />
-					<attribute name="Main-Class" value="org.frameworkset.persistent.db.Launcher" />
-				</manifest>
-			</jar>
-			<delete dir="classes" />
-			
-		</target>
+	 
 
 	<target name="copy-resource" description="copy resource files">
 		<echo>copy resource files ...</echo>
+		
+		<copy todir="distrib/">
+					<fileset dir="build" includes="**/*" />
+				</copy>
 		
 		<copy todir="distrib/resources">
 			<fileset dir="src/main/resources" includes="**/*" />
@@ -133,13 +109,7 @@
 						<fileset dir="schema/data" includes="*.xml" />
 		</copy>
 		
-		<copy todir="distrib/">
-						<fileset dir="." includes="startup.bat" />
-		</copy>
 		
-		<copy todir="distrib/">
-						<fileset dir="." includes="patch.bat" />
-		</copy>
 	</target>
 	
 	<target name="copy-depends-liberary" description="copy depends liberarys">
@@ -161,7 +131,7 @@
 
 	</target>
 	
-	<target name="dbzip-system" depends="init,jar-torque,jar-launcher,copy-system-resource,copy-depends-liberary" description="dbzip build project">
+	<target name="dbzip-system" depends="init,jar-torque, copy-system-resource,copy-depends-liberary" description="dbzip build project">
 		<jar jarfile="${distrib}/dbinit-system.zip" 
 				basedir="${distrib}" includes="**/*" excludes="**/Thumbs.db" />
 				
@@ -170,7 +140,9 @@
 	
 	<target name="copy-system-resource" description="copy system resource files">
 		<echo>copy system resource files ...</echo>
-		
+		<copy todir="distrib/">
+						<fileset dir="build" includes="**/*" />
+					</copy>
 		<copy todir="distrib/resources">
 			<fileset dir="src/main/resources" includes="**/*" />
 		</copy>
@@ -214,16 +186,10 @@
 						
 		</copy>
 		
-		<copy todir="distrib/">
-						<fileset dir="." includes="startup.bat" />
-		</copy>
-		
-		<copy todir="distrib/">
-						<fileset dir="." includes="patch.bat" />
-		</copy>
+	
 	</target>
 
-	<target name="dbzip-smc" depends="init,jar-torque,jar-launcher,copy-smc-resource,copy-depends-liberary" description="dbzip build project">
+	<target name="dbzip-smc" depends="init,jar-torque, copy-smc-resource,copy-depends-liberary" description="dbzip build project">
 		<jar jarfile="${distrib}/dbinit-smc.zip" 
 				basedir="${distrib}" includes="**/*" excludes="**/Thumbs.db" />
 				
@@ -232,7 +198,9 @@
 	
 	<target name="copy-smc-resource" description="copy system resource files">
 		<echo>copy system resource files ...</echo>
-		
+		<copy todir="distrib/">
+						<fileset dir="build" includes="**/*" />
+					</copy>
 		<copy todir="distrib/resources">
 			<fileset dir="src/main/resources" includes="**/*" />
 		</copy>
@@ -276,13 +244,7 @@
 						
 		</copy>
 		
-		<copy todir="distrib/">
-						<fileset dir="." includes="startup.bat" />
-		</copy>
 		
-		<copy todir="distrib/">
-						<fileset dir="." includes="patch.bat" />
-		</copy>
 	</target>
 
 </project>

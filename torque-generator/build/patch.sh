@@ -1,0 +1,1 @@
+java -jar bboss-rt.jar true > startup.log
