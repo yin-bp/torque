@@ -57,6 +57,39 @@ public class DBToXML {
 	         */
 	    }
 	 
+	 
+	 @Test
+	    public void testmysql()
+	    {
+	        TorqueJDBCTransformTask t = new TorqueJDBCTransformTask();
+	        t.setDbDriver("com.mysql.jdbc.Driver");
+	        t.setDbUrl("jdbc:mysql://localhost:3306/ecportal");
+	        t.setOutputFile("torque-test/schema/ecportal.xml");
+	        t.setDbPassword("123456");
+	        t.setDbUser("root");   
+	        t.setDbSchema("root".toUpperCase());
+//	        t.setIncludeTables(new String[]{"TD_WF_USER_SUBSCRIBE","td_wf_app","td_wf_node_changeinfo","td_wf_entrust_task"});
+	        t.setIncludeTables(new String[]{"tf_sys_menu",
+							        		"tf_sys_role","tf_sys_user",
+							        		"tf_sys_role_menu","tf_sys_user_menu",
+							        		"tf_sys_user_role"});
+//	        t.setDbSchema("AMQ");
+	        t.execute();
+	        
+	      //FIXME
+	        /**
+	         * <torque-jdbc-transform
+	      dbDriver="${torque.database.driver}"
+	      dbPassword="${torque.database.password}"
+	      dbSchema="${torque.database.schema}"
+	      dbUrl="${torque.database.url}"
+	      dbUser="${torque.database.user}"
+	      outputFile="${torque.schema.dir}/schema.xml"
+	      sameJavaName="${torque.sameJavaName}"
+	    />
+	         */
+	    }
+	 
 	 public void testInitData()
 	 {
 		 
