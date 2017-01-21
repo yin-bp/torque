@@ -26,10 +26,10 @@
 	<classpathentry kind="lib" path="lib/mvnpro/xml-apis-1.0.b2.jar"/>
 	<classpathentry kind="lib" path="lib/poolman/java-uuid-generator-3.1.2.jar"/>
 	<classpathentry kind="lib" path="lib/poolman/commons-lang-2.6.jar"/>
-	<classpathentry kind="lib" path="lib/poolman/bboss-core-5.0.1.jar" sourcepath="/bboss-core"/>
-	<classpathentry kind="lib" path="lib/poolman/bboss-persistent-5.0.1.jar"/>
-	<classpathentry kind="lib" path="lib/poolman/bboss-util-5.0.1.jar"/>
-	<classpathentry kind="lib" path="build/bboss-rt-5.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/mysql/mysql-connector-java-5.1.39.jar"/>
+	<classpathentry kind="lib" path="build/bboss-rt-5.0.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/bboss-core-5.0.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/bboss-persistent-5.0.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/poolman/bboss-util-5.0.2.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
