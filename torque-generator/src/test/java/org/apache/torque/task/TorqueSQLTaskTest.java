@@ -16,10 +16,10 @@
 
 package org.apache.torque.task;
 
-import java.io.File;
-
 import org.apache.tools.ant.Project;
 import org.junit.Test;
+
+import java.io.File;
 
 /**
  * <p>Title: TestTorqueSQLTask.java</p> 
@@ -102,6 +102,78 @@ public class TorqueSQLTaskTest
         task.setXmlFile("torque-test/schema/oracleoutputFile.xml");
         task.execute();
         
+    }
+
+    @Test
+    public void testStatusTable() throws Exception
+    {
+        TorqueSQLTask task = new TorqueSQLTask();
+        /**
+         * <torque-sql
+         contextProperties="${torque.contextProperties}"
+         controlTemplate="${torque.template.sql}"
+         idTableXMLFile="${torque.idTableXMLFile}"
+         outputDirectory="${torque.sql.dir}"
+         outputFile="report.${torque.project}.sql.generation"
+         sqldbmap="${torque.sql.dir}/sqldb.map"
+         targetDatabase="${torque.database}"
+         useClasspath="${torque.useClasspath}">
+         <fileset dir="${torque.schema.dir}"
+         includes="${torque.schema.sql.includes}"
+         excludes="${torque.schema.sql.excludes}"
+         />
+         </torque-sql>
+         */
+//        task.setContextProperties("D:\\workspace\\torque\\torque4\\torque-generator\\src\\conf\\build.properties");
+        Project project = new Project();
+        project.setSystemProperties();
+        task.setProject(project);
+        task.setControlTemplate("sql/base/Control.vm");
+        task.setUseClasspath(false);
+//        task.setIdTableXMLFile("D:\\workspace\\torque\\torque4\\torque-generator/src/schema/id-table-schema.xml");
+        task.setOutputDirectory(new File("torque-test/dbstatus-oracle"));
+        task.setOutputFile("test.sql.generation");
+        task.setTargetDatabase("oracle");
+        task.setTemplatePath("templates");
+        task.setXmlFile("torque-test/schema/dbstatus.xml");
+        task.execute();
+
+    }
+
+    @Test
+    public void testStatusMysqlTable() throws Exception
+    {
+        TorqueSQLTask task = new TorqueSQLTask();
+        /**
+         * <torque-sql
+         contextProperties="${torque.contextProperties}"
+         controlTemplate="${torque.template.sql}"
+         idTableXMLFile="${torque.idTableXMLFile}"
+         outputDirectory="${torque.sql.dir}"
+         outputFile="report.${torque.project}.sql.generation"
+         sqldbmap="${torque.sql.dir}/sqldb.map"
+         targetDatabase="${torque.database}"
+         useClasspath="${torque.useClasspath}">
+         <fileset dir="${torque.schema.dir}"
+         includes="${torque.schema.sql.includes}"
+         excludes="${torque.schema.sql.excludes}"
+         />
+         </torque-sql>
+         */
+//        task.setContextProperties("D:\\workspace\\torque\\torque4\\torque-generator\\src\\conf\\build.properties");
+        Project project = new Project();
+        project.setSystemProperties();
+        task.setProject(project);
+        task.setControlTemplate("sql/base/Control.vm");
+        task.setUseClasspath(false);
+//        task.setIdTableXMLFile("D:\\workspace\\torque\\torque4\\torque-generator/src/schema/id-table-schema.xml");
+        task.setOutputDirectory(new File("torque-test/dbstatus-mysql"));
+        task.setOutputFile("test.sql.generation");
+        task.setTargetDatabase("mysql");
+        task.setTemplatePath("templates");
+        task.setXmlFile("torque-test/schema/dbstatus.xml");
+        task.execute();
+
     }
     
     @Test
