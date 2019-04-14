@@ -1,9 +1,8 @@
 package org.frameworkset.persistent.db;
 
-import java.io.File;
-import java.sql.SQLException;
-import java.util.List;
-
+import com.frameworkset.common.poolman.DBUtil;
+import com.frameworkset.common.poolman.PreparedDBUtil;
+import com.frameworkset.util.FileUtil;
 import org.apache.tools.ant.Project;
 import org.apache.torque.task.TorqueJDBCTransformTask;
 import org.apache.torque.task.TorqueSQLExec;
@@ -12,11 +11,10 @@ import org.apache.torque.task.TorqueSQLTask;
 import org.frameworkset.spi.ApplicationContext;
 import org.frameworkset.spi.assemble.Pro;
 import org.frameworkset.spi.assemble.ProMap;
-import org.junit.Test;
 
-import com.frameworkset.common.poolman.DBUtil;
-import com.frameworkset.common.poolman.PreparedDBUtil;
-import com.frameworkset.util.FileUtil;
+import java.io.File;
+import java.sql.SQLException;
+import java.util.List;
 
 public class DBInit {
 
@@ -173,7 +171,7 @@ public class DBInit {
 	}
 
 	// 初始化数据
-	@Test
+
 	public void insertDataToDB(String dbname_,boolean ispatch) throws SQLException {
 
 		String[] propertys = null;
