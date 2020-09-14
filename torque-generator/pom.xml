@@ -39,7 +39,7 @@
     <dependency>
       <artifactId>ant</artifactId>
       <groupId>org.apache.ant</groupId>
-      <version>1.7.0</version>
+      <version>1.9.15</version>
     </dependency>
     <dependency>
       <artifactId>commons-collections</artifactId>
