@@ -20,13 +20,13 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
-    compile 'org.slf4j:slf4j-api:1.7.25'
+    api 'org.slf4j:slf4j-api:1.7.25'
 
     // Declare the dependency for your favourite test framework you want to use in your tests.
     // TestNG is also supported by the Gradle Test task. Just change the
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
 }
 */
 
@@ -56,32 +56,35 @@ sourceSets {
 }
 
 dependencies {
-	testCompile 'junit:junit:4.12'
+	testImplementation 'junit:junit:4.12'
 	//采用log4j2记录日志
 
-	compile(
+	api(
 			[group: 'com.bbossgroups', name: 'bboss-persistent', version: "${bboss_version}", transitive: true],
 	)
-	compile 'mysql:mysql-connector-java:5.1.40'
-	compile (
+	api 'mysql:mysql-connector-java:5.1.40'
+	api (
 			fileTree(dir: 'lib', include: '**/*.jar')
 	)
-	runtime(
+	runtimeOnly(
 			[group: 'com.bbossgroups', name: 'bboss-rt', version: "${bboss_version}", transitive: false],
 	)
-	compile 'org.apache.ant:ant:1.7.0'
-	compile 'org.apache.velocity:velocity:1.5'
-	compile 'org.apache.texen:texen:1.0'
-	compile 'org.apache.torque:village:3.3'
-	compile 'xerces:xercesImpl:2.6.2'
-	compile 'xml-apis:xml-apis:2.0.2'
+	api 'org.apache.ant:ant:1.7.0'
+	api 'org.apache.velocity:velocity:1.5'
+	api 'org.apache.texen:texen:1.0'
+	api 'org.apache.torque:village:3.3'
+	api 'xerces:xercesImpl:2.6.2'
+	api 'xml-apis:xml-apis:2.0.2'
 }
 
 task copyJarFiles(type: Sync,dependsOn:'jar'){
 
 
 
-	from configurations.compile
+	from configurations.api{
+		canBeResolved=true
+
+	}
 	from jar.outputs
 	exclude { details -> details.file.name.startsWith('bboss-rt')  }
 	into 'build/dist/lib'
@@ -89,7 +92,13 @@ task copyJarFiles(type: Sync,dependsOn:'jar'){
 }
 
 task copyRTJarFiles(type: Copy,dependsOn:'copyJarFiles'){
-	from configurations.runtime - configurations.compile
+	from configurations.runtimeOnly{
+		canBeResolved=true
+
+	} - configurations.api{
+		canBeResolved=true
+
+	}
 	into 'build/dist'
 	include { details -> details.file.name.startsWith('bboss-rt')  }
 	rename ("bboss-rt-${bboss_version}.jar", "${project.name}-boot-${bboss_version}.jar")
