@@ -67,7 +67,7 @@ dependencies {
 			fileTree(dir: 'lib', include: '**/*.jar')
 	)
 	runtimeOnly(
-			[group: 'com.bbossgroups', name: 'bboss-rt', version: "${bboss_version}", transitive: false],
+			[group: 'com.bbossgroups', name: 'bboss-bootstrap-rt', version: "${bboss_version}", transitive: true],
 	)
 	api 'org.apache.ant:ant:1.7.0'
 	api 'org.apache.velocity:velocity:1.5'
