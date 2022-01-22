@@ -60,7 +60,7 @@ public class OracleToMysql {
     public void testgenCIMschemafromoracle() throws Exception
     {
         TorqueJDBCTransformTask t = new TorqueJDBCTransformTask();
-        t.setDbDriver("com.mysql.jdbc.Driver");
+        t.setDbDriver("com.mysql.cj.jdbc.Driver");
         t.setDbUrl("jdbc:mysql://172.16.17.216:3306/cimuser");
         t.setOutputFile("schema/cim.xml");
         
@@ -525,7 +525,7 @@ public class OracleToMysql {
         Project project = new Project();
         project.setSystemProperties();
         task.setProject(project);
-        task.setDriver("com.mysql.jdbc.Driver");
+        task.setDriver("com.mysql.cj.jdbc.Driver");
         OnError action = new OnError();
         action.setValue(action.CONTINUE);
         task.setOnerror(action);
@@ -571,7 +571,7 @@ public class OracleToMysql {
         Project project = new Project();
         project.setSystemProperties();
         task.setProject(project);
-        task.setDriver("com.mysql.jdbc.Driver");
+        task.setDriver("com.mysql.cj.jdbc.Driver");
         OnError action = new OnError();
         action.setValue(action.CONTINUE);
         task.setOnerror(action);
@@ -610,7 +610,7 @@ public class OracleToMysql {
         Project project = new Project();
         project.setSystemProperties();
         task.setProject(project);
-        task.setDriver("com.mysql.jdbc.Driver");
+        task.setDriver("com.mysql.cj.jdbc.Driver");
         OnError action = new OnError();
         action.setValue(action.CONTINUE);
         task.setOnerror(action);
@@ -654,7 +654,7 @@ public class OracleToMysql {
         Project project = new Project();
         project.setSystemProperties();
         task.setProject(project);
-        task.setDriver("com.mysql.jdbc.Driver");
+        task.setDriver("com.mysql.cj.jdbc.Driver");
         OnError action = new OnError();
         action.setValue(action.CONTINUE);
         task.setOnerror(action);
@@ -697,7 +697,7 @@ public class OracleToMysql {
         Project project = new Project();
         project.setSystemProperties();
         task.setProject(project);
-        task.setDriver("com.mysql.jdbc.Driver");
+        task.setDriver("com.mysql.cj.jdbc.Driver");
         OnError action = new OnError();
         action.setValue(action.CONTINUE);
         task.setOnerror(action);
@@ -742,7 +742,7 @@ public class OracleToMysql {
         Project project = new Project();
         project.setSystemProperties();
         task.setProject(project);
-        task.setDriver("com.mysql.jdbc.Driver");
+        task.setDriver("com.mysql.cj.jdbc.Driver");
         OnError action = new OnError();
         action.setValue(action.CONTINUE);
         task.setOnerror(action);

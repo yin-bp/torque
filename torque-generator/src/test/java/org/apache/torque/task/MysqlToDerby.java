@@ -40,7 +40,7 @@ public class MysqlToDerby
     public void testmysql()
     {
         TorqueJDBCTransformTask t = new TorqueJDBCTransformTask();
-        t.setDbDriver("com.mysql.jdbc.Driver");
+        t.setDbDriver("com.mysql.cj.jdbc.Driver");
         t.setDbUrl("jdbc:mysql://localhost:3306/cim");
         t.setOutputFile("torque-test/schema/sany-mms.xml");
         t.setDbPassword("123456");

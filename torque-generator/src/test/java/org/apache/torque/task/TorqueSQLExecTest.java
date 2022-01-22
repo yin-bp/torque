@@ -63,7 +63,7 @@ public class TorqueSQLExecTest
         Project project = new Project();
         project.setSystemProperties();
         task.setProject(project);
-        task.setDriver("com.mysql.jdbc.Driver");
+        task.setDriver("com.mysql.cj.jdbc.Driver");
         OnError action = new OnError();
         action.setValue(action.CONTINUE);
         task.setOnerror(action);

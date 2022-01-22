@@ -62,7 +62,7 @@ public class DBToXML {
 	    public void testmysql()
 	    {
 	        TorqueJDBCTransformTask t = new TorqueJDBCTransformTask();
-	        t.setDbDriver("com.mysql.jdbc.Driver");
+	        t.setDbDriver("com.mysql.cj.jdbc.Driver");
 	        t.setDbUrl("jdbc:mysql://localhost:3306/ecportal");
 	        t.setOutputFile("torque-test/schema/ecportal.xml");
 	        t.setDbPassword("123456");

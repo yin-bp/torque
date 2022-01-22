@@ -88,7 +88,7 @@ public class TorqueJDBCTransformTaskTest
     public void testmysql()
     {
         TorqueJDBCTransformTask t = new TorqueJDBCTransformTask();
-        t.setDbDriver("com.mysql.jdbc.Driver");
+        t.setDbDriver("com.mysql.cj.jdbc.Driver");
         t.setDbUrl("jdbc:mysql://172.16.25.153:3306/cimalerm");
         t.setOutputFile("torque-test/schema/cim_alerm.xml");
         t.setDbPassword("123456");
