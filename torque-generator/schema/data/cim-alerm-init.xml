@@ -2,7 +2,7 @@
 <manager-config>
 	<description>
 <![CDATA[
-	cim alerm sqlåˆå§‹åŒ–è¯­å¥
+	cim alerm sql³õÊ¼»¯Óï¾ä
  ]]>
 	</description>
 	
@@ -46,11 +46,11 @@
 				]]></property>
                    
 				   <property index="7"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(1 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:IPåœ°å€ä¸º${hostip}çš„æœåŠ¡å™¨è¿è¡Œ${rs}ï¼' ,'polaytemplate',0)
+ values(1 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:IPµØÖ·Îª${hostip}µÄ·þÎñÆ÷ÔËÐÐ${rs}£¡' ,'polaytemplate',0)
 				]]></property>
 
 					<property index="8"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(1 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:IPåœ°å€ä¸º${hostip}çš„æœåŠ¡å™¨è¿è¡Œ${rs}ï¼ï¼Œå¼‚å¸¸ä¿¡æ¯ï¼š${errormsg}' ,'polaytemplate',1)
+ values(1 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:IPµØÖ·Îª${hostip}µÄ·þÎñÆ÷ÔËÐÐ${rs}£¡£¬Òì³£ÐÅÏ¢£º${errormsg}' ,'polaytemplate',1)
 				]]></property>
 
 			<property index="18"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
@@ -58,11 +58,11 @@
 				]]></property>
                    
 				   <property index="19"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(2 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„MQ(${appname})è¿è¡Œ:${rs}!' ,'polaytemplate',0)
+ values(2 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄMQ(${appname})ÔËÐÐ:${rs}!' ,'polaytemplate',0)
 				]]></property>
 
 					<property index="20"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(2 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„MQ(${appname})è¿è¡Œ:${rs},å¼‚å¸¸ä¿¡æ¯ï¼š${errormsg}' ,'polaytemplate',1)
+ values(2 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄMQ(${appname})ÔËÐÐ:${rs},Òì³£ÐÅÏ¢£º${errormsg}' ,'polaytemplate',1)
 				]]></property>
 
 
@@ -71,11 +71,11 @@
 				]]></property>
                    
 				   <property index="10"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(3 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ETL(${appname})è¿è¡Œ:${rs}!' ,'polaytemplate',0)
+ values(3 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄETL(${appname})ÔËÐÐ:${rs}!' ,'polaytemplate',0)
 				]]></property>
 
 					<property index="11"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(3 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ETL(${appname})è¿è¡Œ:${rs},å¼‚å¸¸ä¿¡æ¯ï¼š${errormsg}' ,'polaytemplate',1)
+ values(3 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄETL(${appname})ÔËÐÐ:${rs},Òì³£ÐÅÏ¢£º${errormsg}' ,'polaytemplate',1)
 				]]></property>
 
 
@@ -86,11 +86,11 @@
 				]]></property>
                    
 				   <property index="13"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(4 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ETL(${appname})çš„(${repname})èµ„æºåº“è¿è¡Œ:${rs}' ,'polaytemplate',0)
+ values(4 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄETL(${appname})µÄ(${repname})×ÊÔ´¿âÔËÐÐ:${rs}' ,'polaytemplate',0)
 				]]></property>
 
 					<property index="14"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(4 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ETL(${appname})çš„(${repname})èµ„æºåº“è¿è¡Œ:${rs},å¼‚å¸¸ä¿¡æ¯ï¼š${errormsg}' ,'polaytemplate',1)
+ values(4 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄETL(${appname})µÄ(${repname})×ÊÔ´¿âÔËÐÐ:${rs},Òì³£ÐÅÏ¢£º${errormsg}' ,'polaytemplate',1)
 				]]></property>
 
 
@@ -101,11 +101,11 @@
 				]]></property>
                    
 				   <property index="16"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(5 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ETL(${appname})çš„(${repname})èµ„æºåº“ï¼Œ${objname}æ•°æ®æºè¿è¡Œ:${rs}' ,'polaytemplate',0)
+ values(5 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄETL(${appname})µÄ(${repname})×ÊÔ´¿â£¬${objname}Êý¾ÝÔ´ÔËÐÐ:${rs}' ,'polaytemplate',0)
 				]]></property>
 
 					<property index="17"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(5 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ETL(${appname})çš„(${repname})èµ„æºåº“ï¼Œ${objname}æ•°æ®æºè¿è¡Œ:${rs},å¼‚å¸¸ä¿¡æ¯ï¼š${errormsg}' ,'polaytemplate',1)
+ values(5 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄETL(${appname})µÄ(${repname})×ÊÔ´¿â£¬${objname}Êý¾ÝÔ´ÔËÐÐ:${rs},Òì³£ÐÅÏ¢£º${errormsg}' ,'polaytemplate',1)
 				]]></property>
 							
 
@@ -116,11 +116,11 @@
 				]]></property>
                    
 				   <property index="22"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(6 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ESB(${appname})çš„(${repname})èµ„æºåº“ï¼Œ${objname}æ•°æ®æºè¿è¡Œ:${rs}' ,'polaytemplate',0)
+ values(6 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄESB(${appname})µÄ(${repname})×ÊÔ´¿â£¬${objname}Êý¾ÝÔ´ÔËÐÐ:${rs}' ,'polaytemplate',0)
 				]]></property>
 
 					<property index="23"><![CDATA[insert into cim_alerm_params(NODE_ID ,NAME ,VALUE ,PARAM_TYPE,RN) 
- values(6 ,'leveltpl' ,'æ‚¨å¥½,ç§‘åˆ›åº”ç”¨ç›‘æŽ§ä¸­å¿ƒæç¤ºæ‚¨:åœ°å€ä¸º${hostip}çš„ESB(${appname})çš„(${repname})èµ„æºåº“ï¼Œ${objname}æ•°æ®æºè¿è¡Œ:${rs},å¼‚å¸¸ä¿¡æ¯ï¼š${errormsg}' ,'polaytemplate',1)
+ values(6 ,'leveltpl' ,'ÄúºÃ,bbossÓ¦ÓÃ¼à¿ØÖÐÐÄÌáÊ¾Äú:µØÖ·Îª${hostip}µÄESB(${appname})µÄ(${repname})×ÊÔ´¿â£¬${objname}Êý¾ÝÔ´ÔËÐÐ:${rs},Òì³£ÐÅÏ¢£º${errormsg}' ,'polaytemplate',1)
 				]]></property>
 						</list>
 					</property>
