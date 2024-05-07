@@ -1592,7 +1592,7 @@ nocache
 									values
 									  ('51',
 									   3,
-									   '非三一域用户',
+									   '非bboss域用户',
 									   '2',
 									   2)]]></property>
 								<property index="24"><![CDATA[insert into td_sm_dictdata
@@ -1604,7 +1604,7 @@ nocache
 									values
 									  ('52',
 									   3,
-									   '三一域用户',
+									   'bboss域用户',
 									   '1',
 									   1)]]></property>
 								<property index="25"><![CDATA[insert into td_sm_dictdata
