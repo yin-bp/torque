@@ -194,7 +194,7 @@ task releaseSystemVersion(type: Zip,dependsOn:['copyToolFiles','copyResourcesfil
 										 'copySchemasfiles','copyIndexsfiles','copyPatchsfiles','copyDatasfiles']) {
 
 	//appendix = 'wrapper'
-	classifier = 'released'
+	archiveClassifier = 'released'
 	from 'build/dist/'
 
 }
@@ -204,7 +204,7 @@ task releaseVersion(type: Zip,dependsOn:['copyToolFiles', 'copyResourcesfiles',
 											   'copyAllSchemasfiles', 'copyIndexsfiles', 'copyPatchsfiles', 'copyAllDatasfiles']) {
 
 	//appendix = 'wrapper'
-	classifier = 'released'
+	archiveClassifier = 'released'
 	from 'build/dist/'
 
 }
