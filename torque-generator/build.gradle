@@ -62,7 +62,7 @@ dependencies {
 	api(
 			[group: 'com.bbossgroups', name: 'bboss-persistent', version: "${bboss_version}", transitive: true],
 	)
-	api 'com.mysql:mysql-connector-j:9.1.0'
+	api 'com.mysql:mysql-connector-j:8.2.0'
 	api (
 			fileTree(dir: 'lib', include: '**/*.jar')
 	)
