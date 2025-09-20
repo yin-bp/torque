@@ -76,135 +76,150 @@ dependencies {
 	api 'xerces:xercesImpl:2.12.2'
 	api 'xml-apis:xml-apis:2.0.2'
 }
+// 创建可解析的配置
+configurations {
+    apiResolvable {
+        canBeResolved = true
+        extendsFrom api
+    }
+    compileOnlyResolvable {
+        canBeResolved = true
+        extendsFrom compileOnly
+    }
 
-task copyJarFiles(type: Sync,dependsOn:'jar'){
+    runtimeOnlyResolvable {
+        canBeResolved = true
+        extendsFrom runtimeOnly
+    }
+}
+tasks.register('copyJarFiles', Sync) {
+    dependsOn 'jar'
 
 
+    from configurations.apiResolvable {
 
-	from configurations.api{
-		canBeResolved=true
-
-	}
-	from jar.outputs
-	exclude { details -> details.file.name.startsWith('bboss-rt')  }
-	into 'build/dist/lib'
+    }
+    from jar.outputs
+    exclude { details -> details.file.name.startsWith('bboss-rt') }
+    into 'build/dist/lib'
 
 }
 
-task copyRTJarFiles(type: Copy,dependsOn:'copyJarFiles'){
-	from configurations.runtimeOnly{
-		canBeResolved=true
+tasks.register('copyRTJarFiles', Copy) {
+    dependsOn 'copyJarFiles'
+    from configurations.runtimeOnlyResolvable {
 
-	} - configurations.api{
-		canBeResolved=true
+    } - configurations.apiResolvable {
 
-	}
-	into 'build/dist'
-	include { details -> details.file.name.startsWith('bboss-rt')  }
-	rename ("bboss-rt-${bboss_version}.jar", "${project.name}-boot-${bboss_version}.jar")
+    }
+    into 'build/dist'
+    include { details -> details.file.name.startsWith('bboss-rt') }
+    rename("bboss-rt-${bboss_version}.jar", "${project.name}-boot-${bboss_version}.jar")
 }
-task copyToolFiles(type: Copy ,dependsOn:'copyRTJarFiles')  {
-	from ('runfiles')
-			{
-				expand(
-						bboss_version:"${bboss_version}",
-						project:"${project.name}"
-				)
+tasks.register('copyToolFiles', Copy) {
+    dependsOn 'copyRTJarFiles'
+    from('runfiles')
+            {
+                expand(
+                        bboss_version: "${bboss_version}",
+                        project: "${project.name}"
+                )
 
-			}
-	filteringCharset = 'UTF-8'
-	into 'build/dist/'
+            }
+    filteringCharset = 'UTF-8'
+    into 'build/dist/'
 
-
-
-}
-task copyResourcesfiles(type: Sync )  {
-	from fileTree(dir: 'src/test/resources')
-	filteringCharset = 'UTF-8'
-	into 'build/dist/resources'
-}
-task copyTemplatesfiles(type: Sync )  {
-	from fileTree(file('templates'))
-	filteringCharset = 'UTF-8'
-	into 'build/dist/templates'
-}
-task copyAllSchemasfiles(type: Sync )  {
-	from fileTree(file('schema')){
-		include '**/*.xml'
-	}
-	from fileTree(file('schema-assemble/system'))
-	filteringCharset = 'UTF-8'
-	into 'build/dist/schema'
-}
-task copySchemasfiles(type: Sync )  {
-	from fileTree(file('schema')){
-		include '**/cms.xml'
-		include '**/sys.xml'
-		include '**/tableinfo.xml'
-		include '**/test.xml'
-	}
-	from fileTree(file('schema-assemble/system'))
-	filteringCharset = 'UTF-8'
-	into 'build/dist/schema'
-}
-
-
-task copyIndexsfiles(type: Sync )  {
-	from fileTree(file( 'schema/index')){
-		include '*.xml'
-
-	}
-	filteringCharset = 'UTF-8'
-	into 'build/dist/schema/index'
-}
-
-task copyPatchsfiles(type: Sync )  {
-	from fileTree(file('schema/patch')){
-		include '*.xml'
-
-	}
-	filteringCharset = 'UTF-8'
-	into 'build/dist/schema/patch'
-}
-
-task copyDatasfiles(type: Sync )  {
-	from fileTree(file('schema/data')){
-		include '**/cmc-init.xml'
-		include '**/mysql-sequence.xml'
-		include '**/sys-init.xml'
-		include '**/cms-init.xml'
-		include '**/cms-init-1.xml'
-
-	}
-	filteringCharset = 'UTF-8'
-	into 'build/dist/schema/data'
-}
-
-task copyAllDatasfiles(type: Sync )  {
-	from fileTree(file('schema/data')){
-		include '**/*.xml'
-
-	}
-	filteringCharset = 'UTF-8'
-	into 'build/dist/schema/data'
-}
-
-task releaseSystemVersion(type: Zip,dependsOn:['copyToolFiles','copyResourcesfiles',
-										 'copyTemplatesfiles',
-										 'copySchemasfiles','copyIndexsfiles','copyPatchsfiles','copyDatasfiles']) {
-
-	//appendix = 'wrapper'
-	archiveClassifier = 'released'
-	from 'build/dist/'
 
 }
+tasks.register('copyResourcesfiles', Sync) {
+    from fileTree(dir: 'src/test/resources')
+    filteringCharset = 'UTF-8'
+    into 'build/dist/resources'
+}
+tasks.register('copyTemplatesfiles', Sync) {
+    from fileTree(file('templates'))
+    filteringCharset = 'UTF-8'
+    into 'build/dist/templates'
+}
+tasks.register('copyAllSchemasfiles', Sync) {
+    from fileTree(file('schema')) {
+        include '**/*.xml'
+    }
+    from fileTree(file('schema-assemble/system'))
+    filteringCharset = 'UTF-8'
+    into 'build/dist/schema'
+}
+tasks.register('copySchemasfiles', Sync) {
+    from fileTree(file('schema')) {
+        include '**/cms.xml'
+        include '**/sys.xml'
+        include '**/tableinfo.xml'
+        include '**/test.xml'
+    }
+    from fileTree(file('schema-assemble/system'))
+    filteringCharset = 'UTF-8'
+    into 'build/dist/schema'
+}
 
-task releaseVersion(type: Zip,dependsOn:['copyToolFiles', 'copyResourcesfiles',
-											   'copyTemplatesfiles',
-											   'copyAllSchemasfiles', 'copyIndexsfiles', 'copyPatchsfiles', 'copyAllDatasfiles']) {
 
-	//appendix = 'wrapper'
-	archiveClassifier = 'released'
-	from 'build/dist/'
+tasks.register('copyIndexsfiles', Sync) {
+    from fileTree(file('schema/index')) {
+        include '*.xml'
+
+    }
+    filteringCharset = 'UTF-8'
+    into 'build/dist/schema/index'
+}
+
+tasks.register('copyPatchsfiles', Sync) {
+    from fileTree(file('schema/patch')) {
+        include '*.xml'
+
+    }
+    filteringCharset = 'UTF-8'
+    into 'build/dist/schema/patch'
+}
+
+tasks.register('copyDatasfiles', Sync) {
+    from fileTree(file('schema/data')) {
+        include '**/cmc-init.xml'
+        include '**/mysql-sequence.xml'
+        include '**/sys-init.xml'
+        include '**/cms-init.xml'
+        include '**/cms-init-1.xml'
+
+    }
+    filteringCharset = 'UTF-8'
+    into 'build/dist/schema/data'
+}
+
+tasks.register('copyAllDatasfiles', Sync) {
+    from fileTree(file('schema/data')) {
+        include '**/*.xml'
+
+    }
+    filteringCharset = 'UTF-8'
+    into 'build/dist/schema/data'
+}
+
+tasks.register('releaseSystemVersion', Zip) {
+    dependsOn 'copyToolFiles', 'copyResourcesfiles',
+            'copyTemplatesfiles',
+            'copySchemasfiles', 'copyIndexsfiles', 'copyPatchsfiles', 'copyDatasfiles'
+
+    //appendix = 'wrapper'
+    archiveClassifier = 'released'
+    from 'build/dist/'
+
+}
+
+tasks.register('releaseVersion', Zip) {
+    dependsOn 'copyToolFiles', 'copyResourcesfiles',
+            'copyTemplatesfiles',
+            'copyAllSchemasfiles', 'copyIndexsfiles', 'copyPatchsfiles', 'copyAllDatasfiles'
+
+    //appendix = 'wrapper'
+    archiveClassifier = 'released'
+    from 'build/dist/'
 
 }
