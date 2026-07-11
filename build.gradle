@@ -71,7 +71,7 @@ configure(allprojects) { project ->
 }
 
 configure(subprojects) { subproject ->
-	task sourcesJar(type: Jar) {
+	tasks.register('sourcesJar', Jar) {
 		archiveClassifier = "sources"
 		from sourceSets.main.allJava
 		duplicatesStrategy = DuplicatesStrategy.INCLUDE
@@ -79,7 +79,8 @@ configure(subprojects) { subproject ->
 	processResources {
 		duplicatesStrategy = DuplicatesStrategy.INCLUDE
 	}
-	task javaDocJar(type: Jar, dependsOn: javadoc) {
+	tasks.register('javaDocJar', Jar) {
+        dependsOn 'javadoc'
 		archiveClassifier = "javadoc"
 		from javadoc.destinationDir
 	}
